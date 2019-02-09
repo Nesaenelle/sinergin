@@ -126,13 +126,13 @@
             bottom: 100%;
             left: 50%;
           }
-          .arrow_box:after {
+          &:after {
             border-color: rgba(255, 255, 255, 0);
             border-bottom-color: #fff;
             border-width: 30px;
             margin-left: -30px;
           }
-          .arrow_box:before {
+          &:before {
             border-color: rgba(194, 225, 245, 0);
             border-bottom-color: #6697d3;
             border-width: 32px;
@@ -168,14 +168,14 @@
           pointer-events: none;
         }
   
-        &:after {
-          border-color: rgba(136, 183, 213, 0);
-          border-width: 30px;
-        }
-        &:before {
-          border-color: rgba(194, 225, 245, 0);
-          border-width: 32px;
-        }
+        // &:after {
+        //   border-color: rgba(136, 183, 213, 0);
+        //   border-width: 30px;
+        // }
+        // &:before {
+        //   border-color: rgba(194, 225, 245, 0);
+        //   border-width: 32px;
+        // }
         &--image {
           width: 65%;
           img {

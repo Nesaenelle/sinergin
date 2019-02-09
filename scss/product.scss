@@ -12,6 +12,11 @@
   }
   .wrapper {
     width: 50%;
+    p {
+      margin-top: 20px;
+      color: #fff;
+      font-family: "Proxima-Nova";
+    }
     &__buttons {
       display: flex;
       flex-wrap: wrap;
