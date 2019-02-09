@@ -1,0 +1,720 @@
+@import "reset.scss";
+@import "variables.scss";
+
+body {
+  font-family: "Panton";
+}
+
+@font-face {
+  font-family: "Panton"; // src: url('fonts/Rubik-Light.eot'); /* IE9 Compat Modes */
+  src: //url('fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        // url('fonts/Rubik-Light.woff2') format('woff2'), /* Super Modern Browsers */
+        // url('fonts/Rubik-Light.woff') format('woff'), 
+        /* Pretty Modern Browsers */ url("../fonts/Panton-Regular.otf")
+    format("truetype");
+  /* Safari, Android, iOS */
+  // url('fonts/Rubik-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+  // font-weight: 500;
+}
+
+@font-face {
+  font-family: "Panton"; // src: url('fonts/Rubik-Light.eot'); /* IE9 Compat Modes */
+  src: //url('fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          // url('fonts/Rubik-Light.woff2') format('woff2'), /* Super Modern Browsers */
+          // url('fonts/Rubik-Light.woff') format('woff'), 
+          /* Pretty Modern Browsers */ url("../fonts/Panton-SemiBold.otf")
+    format("truetype");
+  /* Safari, Android, iOS */
+  // url('fonts/Rubik-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "RotondaB"; // src: url('fonts/Rubik-Light.eot'); /* IE9 Compat Modes */
+  src: //url('fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        // url('fonts/Rubik-Light.woff2') format('woff2'), /* Super Modern Browsers */
+        // url('fonts/Rubik-Light.woff') format('woff'), 
+        /* Pretty Modern Browsers */ url("../fonts/RotondaB.ttf")
+    format("truetype");
+  /* Safari, Android, iOS */
+  // url('fonts/Rubik-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+  // font-weight: 500;
+}
+@font-face {
+  font-family: "Proxima-Nova"; // src: url('fonts/Rubik-Light.eot'); /* IE9 Compat Modes */
+  src: //url('fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        // url('fonts/Rubik-Light.woff2') format('woff2'), /* Super Modern Browsers */
+        // url('fonts/Rubik-Light.woff') format('woff'), 
+        /* Pretty Modern Browsers */ url("../fonts/Proxima Nova Regular.otf")
+    format("truetype");
+  /* Safari, Android, iOS */
+  // url('fonts/Rubik-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+  // font-weight: 500;
+}
+
+.icon {
+  display: inline-block;
+  &-arrow {
+    background: url(../img/arrow.svg);
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.pdf-link {
+  color: #fff;
+  font-family: "Proxima-Nova";
+  text-decoration: underline;
+}
+
+.btn {
+  display: block;
+  padding: 10px;
+  border: 1px solid;
+
+  outline: none;
+  cursor: pointer;
+  &-transparent {
+    border-radius: 10px;
+    background: none;
+  }
+  &-buy {
+    background: #f6da1f;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: #22627c;
+    font-weight: 600;
+    font-size: 16px;
+    img {
+      width: 35px;
+      margin-right: 10px;
+    }
+  }
+  &-find {
+    border: none;
+    background: #22627d;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: #85a6d6;
+    font-weight: 600;
+    font-size: 16px;
+    img {
+      width: 25px;
+      margin-right: 10px;
+    }
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+header {
+  .container {
+    max-width: 1520px;
+    // max-width: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn {
+    padding: 5px 10px;
+    background: #173f58;
+    color: #fff;
+  }
+  .logo {
+    font-size: 36px;
+    font-weight: 600;
+    color: #173f58;
+  }
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        font-size: 14px;
+        font-weight: 500;
+
+        a {
+          display: block;
+          padding: 40px 20px;
+          color: #173f58;
+          position: relative;
+          transition: 0.2s;
+          &:after {
+            content: "";
+            height: 1px;
+            background: #6697d3;
+            width: 100%;
+            position: absolute;
+            // bottom: 0;
+            bottom: calc(50% - 10px);
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+          }
+          &:hover {
+            color: #6697d3;
+          }
+          &.active {
+            color: #6697d3;
+            &:after {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#how-to-slow-section {
+  background: url(../img/main-bg.png) no-repeat;
+  //   background: #ccc;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  .container {
+    max-width: 1520px;
+  }
+  .title {
+    color: #fff;
+    // font-family: 'RotondaB';
+    font-size: 64px;
+  }
+}
+
+#get-old-section {
+  background: #dfd6cd;
+  padding: 50px 0;
+  .title {
+    color: #22627c;
+  }
+  p {
+    margin-top: 15px;
+    color: #173f58;
+    font-family: "Proxima-Nova";
+  }
+}
+
+#theories-section {
+  padding: 50px 0;
+  .theories-list {
+    &__item {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      &:first-child {
+        margin-top: 0;
+      }
+      &_img {
+        width: 48%;
+        //   flex: 1;
+      }
+      > div {
+        width: 48%;
+        //   flex: 1;
+      }
+      &_title {
+        color: #6697d3;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      &_text {
+        font-family: "Proxima-Nova";
+        font-size: 14px;
+        color: #173f58;
+        margin-top: 15px;
+      }
+    }
+  }
+  .hypothesis-list {
+    &__item {
+      margin-top: 20px;
+      &.active {
+        .icon {
+          transform: rotate(180deg);
+        }
+      }
+      .icon {
+        margin-left: 10px;
+        transition: 0.2s;
+      }
+      &_title {
+        color: #328aa5;
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        &:before {
+          content: "";
+          width: 8px;
+          height: 8px;
+          background: #328aa5;
+          border-radius: 100%;
+          display: block;
+          margin-right: 10px;
+        }
+      }
+      &_text {
+        font-family: "Proxima-Nova";
+        font-size: 14px;
+        color: #173f58;
+        margin-top: 8px;
+        padding-left: 20px;
+        display: none;
+      }
+    }
+  }
+  .info-block {
+    background: #6697d2;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: "Proxima-Nova";
+  }
+}
+
+#free-radicals-section {
+  padding: 50px 0;
+  overflow: hidden;
+  .free-radicals__intro {
+    background: #6697d2;
+    height: 350px;
+    position: relative;
+    &:after {
+      // background: url(../img/big-arrow.svg);
+      // background-size: cover;
+      width: 0;
+      height: 0;
+      margin-left: -500px;
+      margin-top: -500px;
+
+      border-left: 500px solid transparent;
+      border-right: 500px solid transparent;
+      border-top: 500px solid #4679bd;
+      width: calc(100%-40px);
+      // height: 50px;
+      position: relative;
+      //   content: "";
+      display: block;
+    }
+    .container {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      padding: 50px 0;
+      height: 100%;
+    }
+
+    &_img {
+      background: url(../img/woman.png);
+      background-size: cover;
+      width: 50%;
+      height: 400px;
+      position: absolute;
+      left: 0;
+      top: -45px;
+    }
+    &_info {
+      width: 50%;
+      &--title {
+        font-size: 32px;
+        color: #fff;
+      }
+      p {
+        font-size: 16px;
+        margin-top: 15px;
+        color: #fff;
+        font-family: "Proxima-Nova";
+      }
+    }
+  }
+  .free-radicals__details {
+    margin-top: 50px;
+    &_item {
+      margin-top: 20px;
+      &--title {
+        font-size: 20px;
+        color: #6697d3;
+      }
+      &--text {
+        font-size: 14px;
+        color: #173f58;
+        margin-top: 10px;
+        font-family: "Proxima-Nova";
+      }
+    }
+  }
+  .free-radicals__images {
+    display: flex;
+    //   flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &_item {
+      width: 48%;
+      padding: 15px;
+      border: 2px solid #6697d3;
+      border-radius: 20px;
+      margin-top: 50px;
+      position: relative;
+      &:nth-child(1) {
+        &:after,
+        &:before {
+            left: 100%;
+            top: 50%;
+        }
+        &:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-left-color: #fff;
+            border-width: 30px;
+            margin-top: -30px;
+        }
+        &:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-left-color: #6697d3;
+            border-width: 32px;
+            margin-top: -32px;
+        }
+      }
+      &:nth-child(2) {
+        &:after,
+        &:before {
+            top: 100%;
+            left: 50%;
+        }
+        &:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-top-color: #fff;
+            border-width: 30px;
+            margin-left: -30px;
+        }
+        &:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-top-color: #6697d3;
+            border-width: 32px;
+            margin-left: -32px;
+        }
+      }
+
+      &:nth-child(3) {
+        &:after,
+        &:before {
+            bottom: 100%;
+            left: 50%;
+        }
+        .arrow_box:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-bottom-color: #fff;
+            border-width: 30px;
+            margin-left: -30px;
+        }
+        .arrow_box:before {
+
+            border-color: rgba(194, 225, 245, 0);
+            border-bottom-color: #6697d3;
+            border-width: 32px;
+            margin-left: -32px;
+        }
+      }
+      &:nth-child(4) {
+        &:after,
+        &:before {
+            right: 100%;
+            top: 50%;
+        }
+        &:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-right-color: #fff;
+            border-width: 30px;
+            margin-top: -30px;
+        }
+        &:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-right-color: #6697d3;
+            border-width: 32px;
+            margin-top: -32px;
+        }
+      }
+      &:after,
+      &:before {
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+
+      &:after {
+        border-color: rgba(136, 183, 213, 0);
+        border-width: 30px;
+      }
+      &:before {
+        border-color: rgba(194, 225, 245, 0);
+        border-width: 32px;
+      }
+      &--image {
+        width: 65%;
+        img {
+          width: 100%;
+        }
+      }
+      &--text {
+        color: #173f58;
+        font-family: "Proxima-Nova";
+      }
+    }
+  }
+  .info-block {
+    background: #6697d2;
+    padding: 20px 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+}
+#antioxidants-section {
+  background: #22627c;
+  padding: 50px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .title {
+    color: #fff;
+    // width: 100%;
+    font-size: 38px;
+  }
+  .antioxidants-list {
+    width: 65%;
+    &__item {
+      display: flex;
+      margin-top: 20px;
+      &--img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+      &--text {
+        padding-top: 10px;
+        color: #fff;
+        font-size: 20px;
+        font-family: "Proxima-Nova";
+      }
+    }
+  }
+  .antioxidants-images {
+    width: 30%;
+    img {
+      width: 100%;
+      height: 500px;
+    }
+  }
+  .antioxidants-help {
+    margin-top: 50px;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Proxima-Nova";
+  }
+}
+
+.buy-section {
+  padding: 50px 0;
+  background: #6697d2;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .title {
+    color: #fff;
+    font-size: 38px;
+  }
+  .wrapper {
+    width: 50%;
+    &__buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+      .btn {
+      }
+    }
+  }
+  &__product {
+    width: 45%;
+    text-align: center;
+    &-img {
+      width: 100%;
+    }
+    .pdf-link {
+    }
+  }
+  .antioxidants-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item {
+      width: 48%;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      font-family: "Proxima-Nova";
+      color: #fff;
+      img {
+        width: 40px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .cell {
+    padding: 20px 40px;
+    border-radius: 20px;
+    background: #22627d;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 100px;
+    h3 {
+      color: #fff;
+      font-size: 32px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #fff;
+      width: 60%;
+      font-family: "Proxima-Nova";
+    }
+    &__img {
+      width: 50%;
+      position: absolute;
+      right: 0;
+      transform: translate(50%, -100px);
+    }
+  }
+}
+
+#antioxidants-groups-section {
+  padding: 50px 0;
+  .antioxidants-groups-list {
+    &__item {
+      overflow: hidden;
+      &--title {
+        color: #6697d3;
+        font-size: 42px;
+        margin-bottom: 20px;
+      }
+      &--text {
+        color: #173f58;
+        font-size: 18px;
+        font-family: "Proxima-Nova";
+        width: 50%;
+        float: left;
+        p {
+          padding-top: 10px;
+        }
+        h3 {
+          color: #6697d3;
+          font-size: 26px;
+        }
+      }
+      &--img {
+        width: 50%;
+        float: left;
+        font-size: 0;
+        img {
+          display: block;
+          margin: auto;
+          max-width: 70%;
+        }
+      }
+    }
+  }
+  .info-block {
+    background: #6697d2;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 10px;
+    margin: 40px 0;
+    font-family: "Proxima-Nova";
+  }
+}
+
+#efficiency-section {
+  background: #22627d;
+}
+
+#feedback-section {
+  background: #dfd6cd;
+  padding: 50px 0;
+  .btn-transparent {
+    margin: 40px auto 0;
+  }
+
+  .feedback-list {
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      &_user {
+        width: 120px;
+        text-align: center;
+        &--icon {
+          width: 90px;
+          height: 90px;
+          background: #338aa6;
+          border-radius: 100%;
+          margin: auto;
+        }
+        &--name {
+          margin-top: 10px;
+          color: #22627c;
+        }
+        &--place {
+          margin-top: 5px;
+          color: #328aa5;
+        }
+      }
+      &_details {
+        width: calc(100%-120px - 20px);
+        padding: 20px 30px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 2px 5px 35px -12px #000;
+        &--text {
+          font-family: "Proxima-Nova";
+        }
+        &--date {
+          text-align: right;
+          color: #555;
+          font-size: 14px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 20px;
+}

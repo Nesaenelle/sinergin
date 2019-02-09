@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sinergin</title>
+    <link rel="stylesheet" href="public/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <!-- Fix for iOS Safari zooming bug -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="container">
+                <a class="logo">СИНЕРГИН</a>
+                <nav>
+                    <ul>
+
+                        <li><a href="" class="active" @click="navigation($event)"> ПРИЧИНЫ СТАРЕНИЯ</a></li>
+                        <li><a href="" @click="navigation($event)"> РЕШЕНИЕ</a></li>
+                        <li><a href="" @click="navigation($event)"> СИНЕРГИН</a></li>
+                        <li><a href="" @click="navigation($event)"> ДОКАЗАННАЯ ЭФФЕКТИВНОСТЬ</a></li>
+                        <li><a href="" @click="navigation($event)"> ОТЗЫВЫ</a></li>
+                    </ul>
+                </nav>
+                <button class="btn">ГДЕ КУПИТЬ?</button>
+            </div>
+
+        </header>
+        <main>
+            <section id="how-to-slow-section">
+                <div class="container">
+                    <h2 class="title">Как замедлить<br> процессы<br> старения?</h2>
+                </div>
+            </section>
+            <section id="get-old-section">
+                <div class="container">
+                    <h2 class="title">Почему люди стареют?</h2>
+                    <p>Возможности современной медицины поистине огромны – сегодня врачи могут пересадить сердце,
+                        вернуть
+                        острое зрение и даже распечатать на принтере новые органы взамен износившихся. Но ученые и
+                        врачи
+                        так и не смогли до конца разгадать одну из величайших загадок биологии - как и почему люди
+                        стареют.
+                        Есть только догадки, теории, гипотезы.</p>
+                </div>
+            </section>
+            <section id="theories-section">
+                <div class="container">
+                    <div class="theories-list">
+                        <div class="theories-list__item">
+                            <div class="theories-list__item_img"><img src="img/evo.svg" alt=""></div>
+                            <div>
+                                <div class="theories-list__item_title">Эвоюционная теория</div>
+                                <div class="theories-list__item_text">Старение генетически запрограммированно, чтобы
+                                    старые
+                                    организмы освобождали жизненное пространство молодым.</div>
+                            </div>
+                        </div>
+                        <div class="theories-list__item">
+                            <div>
+                                <div class="theories-list__item_title"> «Дегенеративная» теория</div>
+                                <div class="theories-list__item_text">Старение – это неизбежное снижение эффективности
+                                    работы
+                                    организма из-за изнашивания его механизмов. В рамках «дегенеративной» теории можно
+                                    выделить
+                                    несколько отдельных гипотез: </div>
+                            </div>
+                            <div class="theories-list__item_img"><img src="img/aging.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="hypothesis-list">
+                        <div class="hypothesis-list__item active">
+                            <div class="hypothesis-list__item_title" @click="toggleItem($event)"> Свободно-радикальная
+                                гипотеза <i class="icon icon-arrow"></i>
+                            </div>
+                            <div class="hypothesis-list__item_text">
+                                Старение происходит из-за поражения ДНК, белков и липидов (жиров) свободными радикалами
+                                кислорода, которые неизбежно образуются в процессе жизнедеятельности клеток. Из-за
+                                таких
+                                повреждений нарушаются физиологические функции клеток, что приводит к поражению тканей
+                                и
+                                органов – организм стареет. Чем дольше живет организм и, соответственно, чем дольше
+                                работают
+                                его клетки, тем сильнее развивается старение.
+                            </div>
+                        </div>
+                        <div class="hypothesis-list__item">
+                            <div class="hypothesis-list__item_title" @click="toggleItem($event)">Мутационная гипотеза
+                                <i class="icon icon-arrow"></i>
+                            </div>
+                            <div class="hypothesis-list__item_text">
+                                Старение происходит вследствие накопления мутаций в результате повреждения ДНК и ошибок
+                                копирования при делении клеток. Чем дольше организм живет, тем больше накапливается
+                                мутаций.
+                            </div>
+                        </div>
+                        <div class="hypothesis-list__item">
+                            <div class="hypothesis-list__item_title" @click="toggleItem($event)">Теломерная гипотеза <i
+                                    class="icon icon-arrow"></i>
+                            </div>
+                            <div class="hypothesis-list__item_text">
+                                Обновление организма происходит за счет деления клеток. Каждая клетка запрограммирована
+                                на
+                                50-60 делений. При каждом делении укорачивается теломера – своеобразный «счетчик» на
+                                конце
+                                хромосомы. После того, как клетка поделилась в последний раз, она больше не может
+                                обновиться. Когда таких клеток становится много – организм перестает обновляться и
+                                быстро
+                                дряхлеет. Если остановить «счетчик» - прекратить укорачивание теломер, то организм
+                                будет
+                                обновляться все время.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        Это разделение довольно условно, поскольку все описанные механизмы важны и взаимосвязаны. К
+                        примеру, одним из механизмов возникновения мутаций является окислительный стресс (или
+                        активность
+                        свободных радикалов), что объединяет мутационную теорию со свободно-радикальной.
+                    </div>
+                </div>
+
+
+
+            </section>
+            <section id="free-radicals-section">
+
+                <div class="free-radicals__intro">
+                    <div class="container">
+                        <div class="free-radicals__intro_img"></div>
+                        <div class="free-radicals__intro_info">
+                            <div class="free-radicals__intro_info--title">Свободные радикалы –<br>
+                                ускорители старения</div>
+                            <p>
+                                Итак, на сегодняшний день у науки нет точного ответа, что именно запускает процессы
+                                старения,
+                                зато известно, что его ускоряет - свободные радикалы.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="free-radicals__details">
+                        <div class="free-radicals__details_item">
+                            <div class="free-radicals__details_item--title"> Что такое свободные радикалы?</div>
+                            <p class="free-radicals__details_item--text">Свободные радикалы – активные молекулы
+                                (например,
+                                реактивный кислород). Небольшое количество свободных радикалов образуется в качестве
+                                побочных продуктов некоторых биохимических реакций. </p>
+                        </div>
+                        <div class="free-radicals__details_item">
+                            <div class="free-radicals__details_item--title">Чем опасны свободные радикалы?</div>
+                            <p class="free-radicals__details_item--text">Если количество свободных радикалов возрастает
+                                сверх меры, они начинают атаковать соседние клетки - разрушают их стенки, повреждая ДНК
+                                и
+                                вызывая в них мутации. Это явление называется окислительный стресс. </p>
+                        </div>
+                        <div class="free-radicals__details_item">
+                            <div class="free-radicals__details_item--title">Как свободные радикалы ускоряют старение?
+                            </div>
+                            <p class="free-radicals__details_item--text">Старение начинается на клеточном уровне: </p>
+                        </div>
+                    </div>
+                    <div class="free-radicals__images">
+                        <div class="free-radicals__images_item">
+                            <div class="free-radicals__images_item--image"><img src="img/dna.svg" alt=""></div>
+                            <div class="free-radicals__images_item--text">Повреждается ДНК здоровой клетки.
+                                Очень часто – под действием свободных радикалов. </div>
+
+                        </div>
+                        <div class="free-radicals__images_item">
+                            <div class="free-radicals__images_item--image"><img src="img/molecule.svg" alt=""></div>
+                            <div class="free-radicals__images_item--text">Здоровые клетки начинают перерождаться в
+                                стареющие (сенесцентные) клетки.. </div>
+
+                        </div>
+                        <div class="free-radicals__images_item">
+                            <div class="free-radicals__images_item--image"><img src="img/dna-2.svg" alt=""></div>
+                            <div class="free-radicals__images_item--text">При воспалении организм увеличивает
+                                производство
+                                свободных радикалов. Они, в свою очередь, поражают ДНК здоровых клеток рядом с
+                                первоначальной клеткой. </div>
+
+                        </div>
+                        <div class="free-radicals__images_item">
+                            <div class="free-radicals__images_item--image"><img src="img/cell.svg" alt=""></div>
+                            <div class="free-radicals__images_item--text">Стареющие клетки разрушительно действуют на
+                                окружающие ткани и вызывают воспалительные реакции. [11, 12 , 13]</div>
+
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        Результат: свободные радикалы ускоряют процессы старения.
+                    </div>
+                </div>
+            </section>
+            <section id="antioxidants-section">
+                <div class="container">
+                    <h2 class="title">Антиоксиданты против свободных радикалов</h2>
+                    <div class="antioxidants-list">
+                        <div class="antioxidants-list__item"><img class="antioxidants-list__item--img" src="img/sheild.svg"
+                                alt="">
+                            <div class="antioxidants-list__item--text">
+                                Антиоксиданты — это соединения, которые нейтрализуют
+                                свободные радикалы, не давая им повреждать клетки.</div>
+                        </div>
+                        <div class="antioxidants-list__item"><img class="antioxidants-list__item--img" src="img/sheild.svg"
+                                alt="">
+                            <div class="antioxidants-list__item--text">В организме есть собственная антиоксидантная
+                                защита,
+                                которая
+                                могла бы успешно справляться со свободными радикалами, если бы мы жили в идеальном мире
+                                и
+                                на
+                                нас не воздействовали разнообразные вредные факторы: плохая экологическая обстановка,
+                                стрессы,
+                                несбаланси- рованное питание и т.п.</div>
+                        </div>
+                        <div class="antioxidants-list__item"><img class="antioxidants-list__item--img" src="img/sheild.svg"
+                                alt="">
+                            <div class="antioxidants-list__item--text">Под воздействием неблагоприятных факторов
+                                количество
+                                свободных радикалов возрастает сверх меры, и организм не в состоянии справиться с ними
+                                самостоятельно. Поэтому нужно принимать антиоксиданты дополнительно.</div>
+                        </div>
+                        <div class="antioxidants-list__item"><img class="antioxidants-list__item--img" src="img/sheild.svg"
+                                alt="">
+                            <div class="antioxidants-list__item--text">Больше антиоксидантов – меньше свободных
+                                радикалов – меньше
+                                факторов, ускоряющих старение.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="antioxidants-images">
+                        <!-- <div class="antioxidants-images__item"></div>
+                        <div class="antioxidants-images__item"></div> -->
+                        <img src="img/antioxidants.svg" alt="">
+                    </div>
+                    <div class="antioxidants-help">Помоги своему организму обезвредить свободные радикалы – принимай
+                        антиоксиданты!</div>
+                </div>
+            </section>
+            <section class="buy-section">
+                <div class="container">
+                    <div class="buy-section__product">
+                        <img class="buy-section__product-img" src="img/sinergin.png" alt="">
+                        <a target="_blank" class="pdf-link" href="/themes/sinergin/assets/Sinergin.pdf">Скачать
+                            инструкцию в PDF</a>
+                    </div>
+
+                    <div class="wrapper">
+                        <h2 class="title">6 мощных антиоксидантов в высоких дозировках</h2>
+                        <div class="antioxidants-list">
+                            <div class="antioxidants-list__item"><img src="img/coensim-small.svg" alt=""> Коэнзим Q10</div>
+                            <div class="antioxidants-list__item"><img src="img/beta-karotin.svg" alt=""> Бета-каротин</div>
+                            <div class="antioxidants-list__item"><img src="img/likopin.svg" alt=""> Ликопин</div>
+                            <div class="antioxidants-list__item"><img src="img/vitamin-c.svg" alt=""> Витамин C</div>
+                            <div class="antioxidants-list__item"><img src="img/rutin.svg" alt=""> Рутин</div>
+                            <div class="antioxidants-list__item"><img src="img/vitamin-e.svg" alt=""> Витамин Е</div>
+                        </div>
+                        <div class="wrapper__buttons">
+                            <button class="btn btn-buy"> <img src="img/cart.svg" alt="">КУПИТЬ ОНЛАЙН</button>
+                            <button class="btn btn-find"><img src="img/location.svg" alt="">ГДЕ КУПИТЬ</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="cell">
+                        <h3>Компоненты действуют<br>
+                            синергично</h3>
+                        <p>Это означает, что их совместное действие значительно эффективнее, чем если бы каждый из них
+                            попадал в организм отдельно и «работал» сам по себе.</p>
+                        <img class="cell__img" src="img/cells.svg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section id="antioxidants-groups-section">
+                <div class="container">
+                    <div class="antioxidants-groups-list">
+                        <div class="antioxidants-groups-list__item">
+                            <div class="antioxidants-groups-list__item--title">Все антиоксиданты разделяют
+                                на две большие группы: </div>
+                            <div class="antioxidants-groups-list__item--text">
+                                <p> Водорастворимые (гидрофильные): витамин С, рутин. Эти антиоксиданты нужны для
+                                    защиты
+                                    крови.
+                                    Они нейтрализуют водорастворимые свободные радикалы, которые могут попасть в кровь
+                                    из
+                                    желудочно-кишечного тракта, печени, почек, а также образовываться в самой крови.</p>
+                            </div>
+                            <div class="antioxidants-groups-list__item--img">
+                                <img src="img/link.png" alt="">
+                            </div>
+                            <div class="antioxidants-groups-list__item--img">
+                                <img src="img/water.png" alt="">
+                            </div>
+                            <div class="antioxidants-groups-list__item--text">
+                                <p>Жирорастворимые (липофильные, растворяются в липидах). К ним относятся витамин Е,
+                                    каротиноиды, коэнзим Q10. Липофильные антиоксиданты помогают защищать мембраны
+                                    клеток и
+                                    поддерживать их целостность.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            Особенность комплекса Синергин – сочетание в составе гидрофильных и липофильных
+                            антиоксидантов,
+                            что способствует наиболее эффективной нейтрализации свободных радикалов внутри каждой
+                            клетки,
+                            всех тканей.
+                        </div>
+                        <div class="antioxidants-groups-list__item">
+
+                            <div class="antioxidants-groups-list__item--title">Как работают компоненты Синергина?</div>
+                            <div class="antioxidants-groups-list__item--img">
+                                <img src="img/coensim.svg" alt="">
+                            </div>
+                            <div class="antioxidants-groups-list__item--text">
+                                <h3>Коэнзим Q10</h3>
+                                <p> Достоверно помогает уменьшить признаки старения кожи при приеме в течение 12
+                                    недель.
+                                    <sup> 5</sup></p>
+                                <p> Замедляет процессы старения. </p>
+                                <p> Предотвращает развитие возраст-ассоциированных заболеваний: диабет,
+                                    нейродегенеративные
+                                    расстройства, заболевания сердца, почек, нарушения работы репродуктивной системы.
+                                    <sup>4</sup></p>
+                            </div>
+                        </div>
+                        <div class="antioxidants-groups-list__item">
+                            <div class="antioxidants-groups-list__item--text">
+                                <h3>Токоферол (витамин Е)</h3>
+                                <p> Замедляет старение кожи и предотвращает разрушение коллагена и эластана.<sup>6</sup></p>
+                                <p>Защищает от вредного действия солнечных лучей.</p>
+                                <p>Помогает сохранить мышление, речь, поведение, внимание и память даже в преклонном
+                                    возрасте. <sup>6</sup></p>
+                            </div>
+                            <div class="antioxidants-groups-list__item--img">
+                                <img src="img/avocado.png" alt="">
+                            </div>
+                        </div>
+                        <div class="antioxidants-groups-list__item">
+                            <div class="antioxidants-groups-list__item--img">
+                                <img src="img/orange.png" alt="">
+                            </div>
+                            <div class="antioxidants-groups-list__item--text">
+                                <h3> Витамин С</h3>
+                                <p>Необходим для выработки коллагена в коже.<sup>7</sup></p>
+                                <p>Помогает снизить риск возраст-ассоциированной болезни Альцгеймера при приеме в
+                                    высоких
+                                    дозировках.<sup>8</sup></p>
+                                <p> Способствует уменьшению усталости и утомляемости.<sup>9</sup></p>
+                            </div>
+                        </div>
+                        <div class="antioxidants-groups-list__item">
+                            <div class="antioxidants-groups-list__item--text">
+                                <p>
+                                    <h3>Каротиноид ликопин</h3>
+                                </p>
+                                <p> Замедляет фотостарение кожи.<sup>10</sup></p>
+                                <p> Защищает сетчатку глаз, помогая предотвратить возрастные изменения зрения.<sup>11</sup></p>
+                            </div>
+                            <div class="antioxidants-groups-list__item--img">
+                                <img src="img/tomato.png" alt="">
+                            </div>
+                        </div>
+                        <div class="antioxidants-groups-list__item">
+                            <div class="antioxidants-groups-list__item--img">
+                                <img src="img/carrot.png" alt="">
+                            </div>
+                            <div class="antioxidants-groups-list__item--text">
+                                <h3> Бета-каротин (провитамин А)</h3>
+                                Продлевает жизнь клеток, синтезирующих коллаген и эластан.
+                                Обеспечивает защиту кожи от повреждения свободными радикалами.<sup>12</sup>
+                            </div>
+                        </div>
+                        <div class="antioxidants-groups-list__item">
+                            <div class="antioxidants-groups-list__item--text">
+                                <h3>Рутин (или витамин Р)</h3>
+                                Улучшает эластичность и упругость кожи.<sup>13</sup>
+                                Эффективен для профилактики варикозного расширения сосудов, тяжести и усталости в
+                                ногах.
+                            </div>
+                            <div class="antioxidants-groups-list__item--img">
+                                <img src="img/gooseberry.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section id="">
+                <div class="container">
+                    <h2>Синергин – всего 2 капсулы
+                        в день для замедления
+                        процессов старения!</h2>
+                </div>
+            </section> -->
+            <section id="efficiency-section">
+                <div class="container">
+                    <h2>Доказанная эффективность</h2>
+                    <div>
+                        <div>После 35 лет начинает снижаться я синтез Q10 – одного из мощнейших антиоксидантов в
+                            организме. В 45 его недостаток становится уже заметными и ощутимым. Поэтому уровень Q10 в
+                            крови организм «считает» своеобразным маркером возраста.</div>
+                    </div>
+                    <div>
+                        <div>Употребление витамина С позволяет на 52-62% снизить темпы укорачивания теломер –
+                            «счетчиков» на конце хромосом, что способствует обновлению организма и замедляет старение.
+                            Среди мужчин и женщин в возрасте 45-79 лет увеличение потребления витамина С всего на 50 мг
+                            в день позволило снизить относительную смертность на 20%.</div>
+                    </div>
+                    <div>
+                        <div>80% видимых признаков старения кожи лица – результат воздействия ультрафиолетовых лучей,
+                            от которых может защитить бета-каротин.</div>
+                    </div>
+                    <div>
+                        <div>Употребление ликопина помогает на 50% снизить повреждения ДНК клеток и уменьшить
+                            окислительный стресс, который приводит к старению организма.</div>
+                    </div>
+                    <div>
+                        <div>
+                            У людей, которые употребляют достаточное количество витамина Е, на 36 % снижается
+                            возраст-ассоциированное ухудшение когнитивных функций (память, скорость реакции, внимание,
+                            восприятия).
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            Употребление рутина может сократить количество сенесцентных клеток на 40%.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="feedback-section">
+                <div class="container">
+                    <h2 class="title">Отзывы потребителей</h2>
+                    <div class="feedback-list">
+                        <div class="feedback-list__item">
+                            <div class="feedback-list__item_user">
+                                <div class="feedback-list__item_user--icon"><img src="img/comment.svg" alt=""></div>
+                                <div class="feedback-list__item_user--name">Маргарита</div>
+                                <div class="feedback-list__item_user--place">г. Новосибирск</div>
+                            </div>
+                            <div class="feedback-list__item_details">
+                                <div class="feedback-list__item_details--text">
+                                    Купила данный препарат маме просто для поддержки организма. Каких-то особенных
+                                    эффектов не ждала, но после месяца применения у мамы на седых волосах начали
+                                    отрастать темные корни, т.е. седые волосы стали превращаться в нормальные! Я и не
+                                    думала, что такое в принципе бывает. Сама тоже принимаю Синергин, состояние бодрое,
+                                    хорошее, оптимистичное, думаю, что отчасти это и с витаминами связано. Рекомендую!
+                                </div>
+                                <div class="feedback-list__item_details--date">20.03.18</div>
+                            </div>
+                        </div>
+                        <div class="feedback-list__item">
+                            <div class="feedback-list__item_details">
+                                <div class="feedback-list__item_details--text">
+                                    Покупала особо ни на что не надеясь, так… для поддержки организма. Но спустя пару
+                                    недель почувствовала, что прибавилось энергии и улучшилось настроение.
+                                </div>
+                                <div class="feedback-list__item_details--date">20.03.18</div>
+                            </div>
+                            <div class="feedback-list__item_user">
+                                <div class="feedback-list__item_user--icon"></div>
+                                <div class="feedback-list__item_user--name">Gia</div>
+                                <div class="feedback-list__item_user--place">г. Москва</div>
+                            </div>
+                        </div>
+                        <div class="feedback-list__item">
+                            <div class="feedback-list__item_user">
+                                <div class="feedback-list__item_user--icon"></div>
+                                <div class="feedback-list__item_user--name">Екатерина</div>
+                                <div class="feedback-list__item_user--place">г. Омск</div>
+                            </div>
+                            <div class="feedback-list__item_details">
+                                <div class="feedback-list__item_details--text">
+                                    Советую тем, кто хочет получить красивый ровный, стойкий, насыщенный загар без
+                                    ожогов и пигментных пятен. Действительно, после курса этих витаминов загар ложится
+                                    потрясно (летом проверяла на себе). Ну и, кроме того, антиоксиданты усиливают
+                                    иммунитет, улучшают зрение, состояние волос и кожи.
+                                </div>
+                                <div class="feedback-list__item_details--date">20.03.18</div>
+                            </div>
+                        </div>
+                        <div class="feedback-list__item">
+                            <div class="feedback-list__item_details">
+                                <div class="feedback-list__item_details--text">
+                                    По правде говоря, я не очень верила, что этот Синергин как-то так очень круто
+                                    поможет. Но толк от него в результате был: кожа стала мягенькой и как бы изнутри
+                                    напитанной, пропало ощущение наждачки. Одними кремами такого результата не
+                                    добьешься, хотя я косметическим уходом никогда не пренебрегаю. Для меня это был
+                                    совершенно неожиданный эффект
+                                </div>
+                                <div class="feedback-list__item_details--date">20.03.18</div>
+                            </div>
+                            <div class="feedback-list__item_user">
+                                <div class="feedback-list__item_user--icon"></div>
+                                <div class="feedback-list__item_user--name">Ksenia91</div>
+                                <div class="feedback-list__item_user--place">г. Пермь</div>
+                            </div>
+                        </div>
+                        <div class="feedback-list__item">
+                            <div class="feedback-list__item_user">
+                                <div class="feedback-list__item_user--icon"></div>
+                                <div class="feedback-list__item_user--name">Александр</div>
+                                <div class="feedback-list__item_user--place">г. Краснодар</div>
+                            </div>
+                            <div class="feedback-list__item_details">
+                                <div class="feedback-list__item_details--text">
+                                    Я ведущий мероприятий уже 15 лет. Мне важно хорошо выглядеть – я не имею права быть
+                                    вялым или неопрятным. Тем более, что молодые коллеги наступают на пятки. В сезон
+                                    праздников часто приходится работать каждый день, иногда сплю всего 4-5 часов.
+                                    Как-то утром заметил, что круги под глазами потемнела, кожа уже не какая-то не
+                                    такая, общее очертание лица какое-то нерезкое. Интернет рассказал, что в моем
+                                    возрасте нужен не только крем после бритья, но и набор всяких лифтингов, сывороток,
+                                    филеров (всего не запомнил). Я столько не зарабатываю! Стал разбираться в процессе,
+                                    и понял, что есть и другой путь – пить антиоксиданты. Два месяца принимаю Синергин.
+                                    Результат есть! Выгляжу лучше по утрам и вечерам! Никаких мешков под глазами!
+                                    Высыпаюсь лучше! Бодрость на целый день! Завидуйте, молодежь!
+                                </div>
+                                <div class="feedback-list__item_details--date">20.03.18</div>
+                            </div>
+                        </div>
+                        <div class="feedback-list__item">
+                            <div class="feedback-list__item_details">
+                                <div class="feedback-list__item_details--text">
+                                    Классный комплекс! Улучшает память и внимание, нормализует давление, помогает при
+                                    переутомлении. Еще заметила, что кожа стала более упругой и менее сухой (вечно
+                                    страдаю от сухости кожи)
+                                </div>
+                                <div class="feedback-list__item_details--date">20.03.18</div>
+                            </div>
+                            <div class="feedback-list__item_user">
+                                <div class="feedback-list__item_user--icon"></div>
+                                <div class="feedback-list__item_user--name">Машуля</div>
+                                <div class="feedback-list__item_user--place">г. Москва</div>
+                            </div>
+                        </div>
+                        <div class="feedback-list__item">
+                            <div class="feedback-list__item_user">
+                                <div class="feedback-list__item_user--icon"></div>
+                                <div class="feedback-list__item_user--name">Evgeniy2017</div>
+                                <div class="feedback-list__item_user--place">г. Екатеринбург</div>
+                            </div>
+                            <div class="feedback-list__item_details">
+                                <div class="feedback-list__item_details--text">
+                                    Из-за работы сохнет кожа на руках, всегда пользовался жирным кремом для рук. Одна
+                                    знакомая посоветовала пропить витамин Е в «хорошей дозировке». В аптеке нашли
+                                    высокую дозировку в Синергине. С одной стороны, цена не самая маленькая, но с
+                                    другой стороны, на крем я не меньше трачу. И скажу честно, удивился, когда заметил,
+                                    что руки перестали сохнуть и стягиваться. Бонусом получил бодрое настроение. Думаю,
+                                    дело не только в витамине Е, а в том, что Синергин - комплекс антиоксидантов.
+                                    Кремом я все еще пользуюсь, но уже не так много и часто.
+                                </div>
+                                <div class="feedback-list__item_details--date">20.03.18</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-transparent">ДОБАВИТЬ ОТЗЫВ</button>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <h2></h2>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <img src="img/footer-logo.svg" alt="">
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.4/dist/vue.js"></script>
+
+    <script src="public/app.js"></script>
+</body>
+
+</html>
