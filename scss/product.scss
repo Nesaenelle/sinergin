@@ -1,0 +1,78 @@
+.buy-section {
+  padding: 50px 0;
+  background: #6697d2;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .title {
+    color: #fff;
+    font-size: 38px;
+  }
+  .wrapper {
+    width: 50%;
+    &__buttons {
+      display: flex;
+      flex-wrap: wrap;
+      //   justify-content: space-between;
+      margin-top: 20px;
+      .btn {
+        margin-right: 20px;
+      }
+    }
+  }
+  &__product {
+    width: 45%;
+    text-align: center;
+    &-img {
+      width: 100%;
+    }
+    .pdf-link {
+    }
+  }
+  .antioxidants-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item {
+      width: 48%;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      font-family: "Proxima-Nova";
+      color: #fff;
+      img {
+        width: 40px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .cell {
+    padding: 20px 40px;
+    border-radius: 20px;
+    background: #22627d;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 100px;
+    h3 {
+      color: #fff;
+      font-size: 32px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #fff;
+      width: 60%;
+      font-family: "Proxima-Nova";
+    }
+    &__img {
+      width: 50%;
+      position: absolute;
+      right: 0;
+      transform: translate(50%, -100px);
+    }
+  }
+}

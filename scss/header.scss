@@ -1,0 +1,59 @@
+header {
+  .container {
+    max-width: 1520px;
+    // max-width: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn {
+    padding: 5px 10px;
+    background: #173f58;
+    color: #fff;
+  }
+  .logo {
+    font-size: 36px;
+    font-weight: 600;
+    color: #173f58;
+  }
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        font-size: 14px;
+        font-weight: 500;
+
+        a {
+          display: block;
+          padding: 40px 20px;
+          color: #173f58;
+          position: relative;
+          transition: 0.2s;
+          &:after {
+            content: "";
+            height: 1px;
+            background: #6697d3;
+            width: 100%;
+            position: absolute;
+            // bottom: 0;
+            bottom: calc(50% - 10px);
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+          }
+          &:hover {
+            color: #6697d3;
+          }
+          &.active {
+            color: #6697d3;
+            &:after {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}

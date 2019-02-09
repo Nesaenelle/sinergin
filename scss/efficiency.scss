@@ -1,0 +1,22 @@
+#efficiency-section {
+  background: #22627d;
+  padding: 50px 0;
+  .title {
+    color: #fff;
+    font-size: 32px;
+  }
+  .efficiency-list {
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      font-family: "Proxima-Nova";
+      img {
+        margin-right: 15px;
+        width: 40px;
+      }
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+}

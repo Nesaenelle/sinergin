@@ -1,0 +1,65 @@
+footer {
+  padding: 20px;
+  .logo {
+    display: flex;
+    align-items: center;
+    b {
+      margin: 0 15px;
+      font-size: 30px;
+      position: relative;
+      top: 2px;
+    }
+    img {
+      width: 180px;
+    }
+    a {
+      font-size: 20px;
+    }
+  }
+  .descr {
+    color: #848484;
+    font-family: "Proxima-Nova";
+  }
+  .reference {
+    font-size: 22px;
+    color: #173F58;
+    font-family: "Proxima-Nova";
+    width: 250px;
+    display: flex;
+    align-items: center;
+    margin: 30px auto;
+    .icon {
+      margin-right: 10px;
+    }
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    & + .row {
+      margin-top: 20px;
+    }
+  }
+  .col {
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    .btn {
+      & + .btn {
+        margin-left: 10px;
+      }
+    }
+  }
+  .address {
+    color: #173F58;
+    font-size: 12px;
+    font-family: "Proxima-Nova";
+  }
+  .hot-line {
+    color: #173F58;
+    font-size: 16px;
+  }
+  .phone {
+    color: #173F58;
+    font-size: 32px;
+  }
+}

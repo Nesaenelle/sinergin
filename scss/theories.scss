@@ -1,0 +1,81 @@
+#theories-section {
+    padding: 50px 0;
+    .theories-list {
+      &__item {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        &:first-child {
+          margin-top: 0;
+        }
+        &_img {
+          width: 48%;
+          //   flex: 1;
+        }
+        > div {
+          width: 48%;
+          //   flex: 1;
+        }
+        &_title {
+          color: #6697d3;
+          font-size: 24px;
+          font-weight: 500;
+        }
+        &_text {
+          font-family: "Proxima-Nova";
+          font-size: 14px;
+          color: #173f58;
+          margin-top: 15px;
+        }
+      }
+    }
+    .hypothesis-list {
+      &__item {
+        margin-top: 20px;
+        &.active {
+          .icon {
+            transform: rotate(180deg);
+          }
+        }
+        .icon {
+          margin-left: 10px;
+          transition: 0.2s;
+        }
+        &_title {
+          color: #328aa5;
+          font-size: 18px;
+          font-weight: 500;
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          cursor: pointer;
+          &:before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: #328aa5;
+            border-radius: 100%;
+            display: block;
+            margin-right: 10px;
+          }
+        }
+        &_text {
+          font-family: "Proxima-Nova";
+          font-size: 14px;
+          color: #173f58;
+          margin-top: 8px;
+          padding-left: 20px;
+          display: none;
+        }
+      }
+    }
+    .info-block {
+      background: #6697d2;
+      padding: 15px 20px;
+      color: #fff;
+      font-size: 13px;
+      border-radius: 10px;
+      margin-top: 20px;
+      font-family: "Proxima-Nova";
+    }
+  }

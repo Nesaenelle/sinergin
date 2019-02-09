@@ -1,0 +1,121 @@
+#antioxidants-section {
+  background: #22627c;
+  padding: 50px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .title {
+    color: #fff;
+    // width: 100%;
+    font-size: 38px;
+  }
+  .antioxidants-list {
+    width: 65%;
+    &__item {
+      display: flex;
+      margin-top: 20px;
+      &--img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+      &--text {
+        padding-top: 10px;
+        color: #fff;
+        font-size: 20px;
+        font-family: "Proxima-Nova";
+      }
+    }
+  }
+  .antioxidants-images {
+    width: 30%;
+    img {
+      width: 100%;
+      height: 500px;
+    }
+  }
+  .antioxidants-help {
+    margin-top: 50px;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Proxima-Nova";
+  }
+}
+
+#antioxidants-groups-section {
+  padding: 50px 0;
+  .antioxidants-groups-list {
+    &__item {
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-top: -30px;
+      &:first-child {
+        display: block;
+        margin: 0;
+
+        .antioxidants-groups-list__item--img,
+        .antioxidants-groups-list__item--text {
+          float: left;
+        }
+        .antioxidants-groups-list__item--img.first {
+          float: right;
+        }
+      }
+
+      .info-block + .antioxidants-groups-list__item {
+        margin: 0;
+      }
+
+      &--title {
+        color: #6697d3;
+        font-size: 42px;
+        margin-bottom: 20px;
+      }
+      &--text {
+        color: #173f58;
+        font-size: 18px;
+        font-family: "Proxima-Nova";
+        width: 50%;
+
+        align-self: center;
+        // float: left;
+        p {
+          padding-top: 10px;
+        }
+        h3 {
+          color: #6697d3;
+          font-size: 26px;
+        }
+      }
+      &--img {
+        width: 50%;
+        // float: left;
+        font-size: 0;
+        // &:nth-of-type(odd) {
+        //   float: right;
+        // }
+        // &:nth-of-type(even) {
+        //   float: left;
+        // }
+        img {
+          display: block;
+          margin: auto;
+          max-width: 70%;
+        }
+      }
+    }
+  }
+  .info-block {
+    background: #6697d2;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 60px 0;
+    font-family: "Proxima-Nova";
+  }
+}

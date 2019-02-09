@@ -3,6 +3,7 @@ var paths = {
     styles: {
         // By using styles/**/*.sass we're telling gulp to check all folders for any sass file
         src: "scss/style.scss",
+        watch: "scss/**/*",
         // Compiled files will end up in whichever folder it's found in (partials are not compiled)
         dest: "public",
     },
@@ -87,6 +88,9 @@ function watch() {
         }
     });
     gulp.watch(paths.styles.src, style);
+
+    gulp.watch(paths.styles.watch, style);
+    
     gulp.watch(paths.js.src, js);
     // gulp.watch(paths.vue.src, vue);
     // We should tell gulp which files to watch to trigger the reload

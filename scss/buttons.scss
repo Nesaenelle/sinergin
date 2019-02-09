@@ -1,0 +1,51 @@
+.btn {
+    display: block;
+    padding: 10px;
+    border: 1px solid;
+  
+    outline: none;
+    cursor: pointer;
+    &-buy {
+      background: #f6da1f;
+      border-radius: 10px;
+      border: none;
+      display: flex;
+      align-items: center;
+      color: #22627c;
+      font-weight: 600;
+      font-size: 16px;
+      img {
+        width: 35px;
+        margin-right: 10px;
+      }
+    }
+    &-find {
+      border: none;
+      background: #22627d;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      color: #85a6d6;
+      font-weight: 600;
+      font-size: 16px;
+      img {
+        width: 25px;
+        margin-right: 10px;
+      }
+    }
+    &-transparent {
+      border-radius: 15px;
+      border: 2px solid #22627C;
+      background: none;
+      display: flex;
+      align-items: center;
+      color: #22627C;
+      img {
+        width: 40px;
+        margin-right: 10px;
+      }
+    }
+    &:active {
+      transform: translateY(1px);
+    }
+  }
