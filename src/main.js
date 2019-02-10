@@ -8,8 +8,9 @@ var app = new Vue({
     mounted() {
         $('.hypothesis-list__item_text:first').slideDown(0);
 
-        $(document).on('scroll', ()=>{
-
+        this.headerCheck();
+        $(document).on('scroll', () => {
+            this.headerCheck();
         });
         $(window).on('click', (e) => {
             var modal = $('.modal.opened');
@@ -21,7 +22,11 @@ var app = new Vue({
     },
     methods: {
         headerCheck() {
-
+            if (document.documentElement.scrollTop > 200) {
+                $('header').addClass('fixed');
+            } else {
+                $('header').removeClass('fixed');
+            }
         },
         toggleAccordeonItem(e) {
             let target = e.currentTarget.parentNode;

@@ -1,12 +1,32 @@
 .buy-section {
   padding: 123px 0 150px 0;
   background: $c-light-blue;
+  position: relative;
   &--top {
     .buy-section__product-img {
       width: 700px;
       position: relative;
       left: -154px;
       top: 8px;
+    }
+    .triangle {
+      position: absolute;
+      bottom: 0;
+      &:after {
+        border-top: 80px solid $c-light-blue;
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid transparent;
+        width: 0;
+        height: 0;
+        // bottom: 0;
+        content: "";
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
     }
 
   }

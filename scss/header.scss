@@ -1,8 +1,31 @@
 header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  height: 188px;
+  transition: 0.2s;
+  z-index: 999;
+  &.fixed {
+    opacity: 0;
+    visibility: hidden;
+    // opacity: 0.5;
+    // position: fixed; 
+    height: 100px;
+    box-shadow: 0 0 20px -5px #000;
+    nav {      padding-top: 0;
+      ul {
+  
+      }
+    }
+    .btn {
+      margin-top: 0;
+    }
+  }
   .container {
     max-width: 1600px;
     // max-width: 1;
     display: flex;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
   }
@@ -29,23 +52,31 @@ header {
   }
   nav {
     padding-left: 20px;
+    padding-top: 20px;
     width: calc(100% - 230px - 162px);
+    height: 100%;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
     ul {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: center;  
+      height: 100%;
       li {
         font-size: 14px;
         font-weight: 500;
-  
+        height: 100%;
         a {
-          display: block;
-          padding: 92px 27px 74px;
+          padding: 0 27px;
           color: $c-dark-blue;
           // position: relative;
           transition: 0.2s;
           font-size: 18px;
           letter-spacing: 1px;
+          height: 100%;
+          display: flex;
+          align-items: center;
           span {
             position: relative;
             &:after {

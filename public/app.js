@@ -13,7 +13,10 @@ var app = new Vue({
 
         $('.hypothesis-list__item_text:first').slideDown(0);
 
-        $(document).on('scroll', function () {});
+        this.headerCheck();
+        $(document).on('scroll', function () {
+            _this.headerCheck();
+        });
         $(window).on('click', function (e) {
             var modal = $('.modal.opened');
 
@@ -24,7 +27,13 @@ var app = new Vue({
     },
 
     methods: {
-        headerCheck: function headerCheck() {},
+        headerCheck: function headerCheck() {
+            if (document.documentElement.scrollTop > 200) {
+                $('header').addClass('fixed');
+            } else {
+                $('header').removeClass('fixed');
+            }
+        },
         toggleAccordeonItem: function toggleAccordeonItem(e) {
             var target = e.currentTarget.parentNode;
             $(target).find('.hypothesis-list__item_text').stop().slideToggle();
