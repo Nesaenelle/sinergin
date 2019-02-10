@@ -12,6 +12,9 @@ header {
     color: $c-white;
     margin-top: 22px;
     width: 162px;
+    &:hover {
+      background: darken($c-dark-blue, 10%);
+    }
   }
   .logo {
     font-size: 46px;
@@ -25,6 +28,7 @@ header {
     left: -2px;
   }
   nav {
+    padding-left: 20px;
     width: calc(100% - 230px - 162px);
     ul {
       display: flex;
@@ -36,7 +40,7 @@ header {
   
         a {
           display: block;
-          padding: 92px 28px 74px 28px;
+          padding: 92px 27px 74px;
           color: $c-dark-blue;
           // position: relative;
           transition: 0.2s;

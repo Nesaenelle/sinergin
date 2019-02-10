@@ -9,11 +9,23 @@ var app = new Vue({
         message: 'Привет, Vue!'
     },
     mounted: function mounted() {
+        var _this = this;
+
         $('.hypothesis-list__item_text:first').slideDown(0);
+
+        $(document).on('scroll', function () {});
+        $(window).on('click', function (e) {
+            var modal = $('.modal.opened');
+
+            if (modal && e.target.contains(modal[0])) {
+                _this.closeModal();
+            }
+        });
     },
 
     methods: {
-        toggleItem: function toggleItem(e) {
+        headerCheck: function headerCheck() {},
+        toggleAccordeonItem: function toggleAccordeonItem(e) {
             var target = e.currentTarget.parentNode;
             $(target).find('.hypothesis-list__item_text').stop().slideToggle();
             if (target.classList.contains('active')) {
@@ -22,8 +34,25 @@ var app = new Vue({
                 target.classList.add('active');
             }
         },
+        toggleReferenceItem: function toggleReferenceItem(e) {
+            var target = e.currentTarget;
+            $(target).next().stop().slideToggle();
+            if (target.classList.contains('active')) {
+                target.classList.remove('active');
+            } else {
+                target.classList.add('active');
+            }
+        },
         navigation: function navigation(e) {
             e.preventDefault();
+        },
+        openModal: function openModal(name) {
+            $('.modal').filter('[data-id="' + name + '"]').addClass('opened');
+            $('.main-wrapper').addClass('opened');
+        },
+        closeModal: function closeModal() {
+            $('.modal').removeClass('opened');
+            $('.main-wrapper').removeClass('opened');
         }
     }
 });

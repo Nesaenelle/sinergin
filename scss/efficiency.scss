@@ -33,8 +33,10 @@
           font-size: 25px;
           letter-spacing: 0px;
           font-weight: 300;
-          line-height: 1.12em;
-
+          line-height: 1.3em;
+          sub {
+            line-height: 0;
+          }
           p {
             line-height: 1.4em;
             & + p {

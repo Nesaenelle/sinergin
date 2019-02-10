@@ -1,7 +1,15 @@
 .buy-section {
   padding: 123px 0 150px 0;
   background: $c-light-blue;
+  &--top {
+    .buy-section__product-img {
+      width: 700px;
+      position: relative;
+      left: -154px;
+      top: 8px;
+    }
 
+  }
   &--middle {
     background: #86a6d7;
     padding: 123px 0 127px;
@@ -72,14 +80,15 @@
   }
   &__product {
     width: 45%;
-    text-align: center;
+    // text-align: center;
     &-img {
       width: 100%;
     }
     .pdf-link {
       font-size: 26px;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
       font-weight: 300;
+      margin-left: 74px;
     }
   }
   .antioxidants-list {
@@ -100,6 +109,7 @@
       &:nth-child(even) {
         width: calc(42% + 3px);
       }
+      sub {}
       img {
         width: 56px;
         margin-right: 23px;
@@ -114,7 +124,7 @@
     position: relative;
     flex-wrap: wrap;
     width: 80%;
-    margin-top: 172px;
+    margin-top: 167px;
     letter-spacing: 1px;
     h3 {
       color: $c-white;

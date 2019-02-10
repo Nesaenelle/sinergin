@@ -7,11 +7,34 @@ var app = new Vue({
     },
     mounted() {
         $('.hypothesis-list__item_text:first').slideDown(0);
+
+        $(document).on('scroll', ()=>{
+
+        });
+        $(window).on('click', (e) => {
+            var modal = $('.modal.opened');
+
+            if (modal && e.target.contains(modal[0])) {
+                this.closeModal();
+            }
+        });
     },
     methods: {
-        toggleItem(e) {
+        headerCheck() {
+
+        },
+        toggleAccordeonItem(e) {
             let target = e.currentTarget.parentNode;
             $(target).find('.hypothesis-list__item_text').stop().slideToggle();
+            if (target.classList.contains('active')) {
+                target.classList.remove('active');
+            } else {
+                target.classList.add('active');
+            }
+        },
+        toggleReferenceItem(e) {
+            let target = e.currentTarget;
+            $(target).next().stop().slideToggle();
             if (target.classList.contains('active')) {
                 target.classList.remove('active');
             } else {
@@ -21,6 +44,14 @@ var app = new Vue({
         navigation(e) {
             e.preventDefault();
 
+        },
+        openModal(name) {
+            $('.modal').filter(`[data-id="${name}"]`).addClass('opened');
+            $('.main-wrapper').addClass('opened');
+        },
+        closeModal() {
+            $('.modal').removeClass('opened');
+            $('.main-wrapper').removeClass('opened');
         }
     }
 })

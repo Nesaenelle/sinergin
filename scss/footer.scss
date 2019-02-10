@@ -1,42 +1,91 @@
 footer {
-  padding: 20px;
+  padding: 30px 0;
+  background: #f4f4f4;
+  .container {
+    max-width: 1600px;
+  }
   .logo {
     display: flex;
     align-items: center;
     b {
-      margin: 0 15px;
+      margin: 0 39px;
       font-size: 30px;
       position: relative;
       top: 2px;
+      position: relative;
+      font-weight: bold;
+      &:after {
+        content: "";
+        background: #173F58;
+        width: 4px;
+        height: 55px;
+        display: block;
+      }
     }
     img {
-      width: 180px;
+      width: 275px;
     }
     a {
-      font-size: 20px;
+      font-weight: 500;
+      font-size: 32px;
+      color: #173F58;
     }
   }
   .descr {
     color: #848484;
     font-family: "Proxima-Nova";
+    font-size: 29px;
+    font-weight: 100;
+    letter-spacing: -0.4px;
   }
   .reference {
     font-size: 22px;
     color: $c-dark-blue;
     font-family: "Proxima-Nova";
-    width: 250px;
+
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 30px auto;
+    margin: 49px auto 82px;
+    justify-content: center;
     .icon {
       margin-right: 10px;
+      width: 46px;
+      height: 46px;
+      background-size: cover;
+      background: url(img/arrow-dark.svg);
+    }
+    &__toggle {
+      cursor: pointer;
+      width: 350px;
+      font-size: 36px;
+      letter-spacing: 0.6px;
+      color: #173f58;
+      font-weight: 500;
+    }
+    &__info {
+      width: 100%;
+      display: none;
+
+      &_wrapper {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        > div {
+          width: 45%;
+          & > div {
+            margin-top: 15px;
+            font-size: 25px;
+          }
+        }
+      }
     }
   }
   .row {
     display: flex;
     justify-content: space-between;
     & + .row {
-      margin-top: 20px;
+      margin-top: 27px;
     }
   }
   .col {
@@ -51,15 +100,18 @@ footer {
   }
   .address {
     color: $c-dark-blue;
-    font-size: 12px;
+    font-size: 18px;
     font-family: "Proxima-Nova";
   }
   .hot-line {
     color: $c-dark-blue;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: "Proxima-Nova";
   }
   .phone {
     color: $c-dark-blue;
-    font-size: 32px;
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 2.6px;
   }
 }

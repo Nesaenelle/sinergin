@@ -6,11 +6,9 @@
     color: #328aa5;
     letter-spacing: 1px;
   }
-  .btn-transparent {
-    margin: 40px auto 0;
-  }
+
   .btn {
-    margin: 30px auto;
+    margin: 79px auto 0;
   }
   .feedback-list {
     margin-top: 33px;
@@ -30,6 +28,11 @@
           background: #338aa6;
           border-radius: 100%;
           margin: auto;
+          display: flex;
+          justify-content: center;
+          img {
+            width: 90px;
+          }
         }
         &--name {
           margin-top: 17px;
@@ -43,6 +46,16 @@
           font-family: "Proxima-Nova";
           font-size: 20px;
         }
+        & + .feedback-list__item_details {
+          &:after {
+            left: 0;
+            border-right-color: #fff;
+            border-left: 0;
+            border-top: 0;
+            margin-top: 0;
+            margin-left: -35px;
+          }
+        }
       }
       &_details {
         width: calc(100% - 241px);
@@ -53,19 +66,24 @@
         letter-spacing: 0px;
         line-height: 2em;
         position: relative;
+        min-height: 220px;
+        display: flex;
+        flex-wrap: wrap;
+        &:first-child:after{
+          border-left-color: #fff;
+          border-right: 0;
+          border-top: 0;
+          margin-top: 0;
+          margin-right: -35px;
+          right: 0;
+        }
         &:after {
           content: '';
           position: absolute;
-          left: 0;
-          top: 98px;
+          top: 65px;
           width: 0;
           height: 0;
           border: 35px solid transparent;
-          border-right-color: #fff;
-          border-left: 0;
-          border-top: 0;
-          margin-top: -32.5px;
-          margin-left: -35px;
         }
         &--text {
           font-family: "Proxima-Nova";
@@ -80,6 +98,9 @@
           margin-top: 12px;
           font-family: Proxima-Nova;
           letter-spacing: 0.5px;
+          justify-self: flex-end;
+          width: 100%;
+          align-self: flex-end;
         }
       }
     }
