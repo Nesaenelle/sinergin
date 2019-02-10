@@ -19,11 +19,11 @@
                 <nav>
                     <ul>
 
-                        <li><a href="" class="active" @click="navigation($event)"> ПРИЧИНЫ СТАРЕНИЯ</a></li>
-                        <li><a href="" @click="navigation($event)"> РЕШЕНИЕ</a></li>
-                        <li><a href="" @click="navigation($event)"> СИНЕРГИН</a></li>
-                        <li><a href="" @click="navigation($event)"> ДОКАЗАННАЯ ЭФФЕКТИВНОСТЬ</a></li>
-                        <li><a href="" @click="navigation($event)"> ОТЗЫВЫ</a></li>
+                        <li><a href="" @click="navigation($event)"> <span> ПРИЧИНЫ СТАРЕНИЯ </span></a></li>
+                        <li><a href="" class="active" @click="navigation($event)"> <span> РЕШЕНИЕ</span></a></li>
+                        <li><a href="" @click="navigation($event)"> <span> СИНЕРГИН</span></a></li>
+                        <li><a href="" @click="navigation($event)"> <span> ДОКАЗАННАЯ ЭФФЕКТИВНОСТЬ</span></a></li>
+                        <li><a href="" @click="navigation($event)"> <span> ОТЗЫВЫ</span></a></li>
                     </ul>
                 </nav>
                 <button class="btn">ГДЕ КУПИТЬ?</button>
@@ -53,15 +53,15 @@
                     <div class="theories-list">
                         <div class="theories-list__item">
                             <div class="theories-list__item_img"><img src="img/evo.svg" alt=""></div>
-                            <div>
-                                <div class="theories-list__item_title">Эвоюционная теория</div>
+                            <div class="theories-list__item_wrapper">
+                                <div class="theories-list__item_title">Эволюционная теория</div>
                                 <div class="theories-list__item_text">Старение генетически запрограммированно, чтобы
                                     старые
                                     организмы освобождали жизненное пространство молодым.</div>
                             </div>
                         </div>
                         <div class="theories-list__item">
-                            <div>
+                            <div class="theories-list__item_wrapper">
                                 <div class="theories-list__item_title"> «Дегенеративная» теория</div>
                                 <div class="theories-list__item_text">Старение – это неизбежное снижение эффективности
                                     работы
@@ -146,7 +146,7 @@
                 <div class="container">
                     <div class="free-radicals__details">
                         <div class="free-radicals__details_item">
-                            <div class="free-radicals__details_item--title"> Что такое свободные радикалы?</div>
+                            <div class="free-radicals__details_item--title"> Что такое – свободные радикалы?</div>
                             <p class="free-radicals__details_item--text">Свободные радикалы – активные молекулы
                                 (например,
                                 реактивный кислород). Небольшое количество свободных радикалов образуется в качестве
@@ -224,8 +224,8 @@
                         <div class="antioxidants-list__item"><img class="antioxidants-list__item--img" src="img/sheild.svg"
                                 alt="">
                             <div class="antioxidants-list__item--text">Под воздействием неблагоприятных факторов
-                                количество
-                                свободных радикалов возрастает сверх меры, и организм не в состоянии справиться с ними
+                                количество свободных радикалов возрастает сверх меры, и организм не в состоянии
+                                справиться с ними
                                 самостоятельно. Поэтому нужно принимать антиоксиданты дополнительно.</div>
                         </div>
                         <div class="antioxidants-list__item"><img class="antioxidants-list__item--img" src="img/sheild.svg"
@@ -254,9 +254,9 @@
                     </div>
 
                     <div class="wrapper">
-                        <h2 class="title">6 мощных антиоксидантов в высоких дозировках</h2>
+                        <h2 class="title">6 мощных антиоксидантов в высоких дозировках: </h2>
                         <div class="antioxidants-list">
-                            <div class="antioxidants-list__item"><img src="img/coensim-small.svg" alt=""> Коэнзим Q10</div>
+                            <div class="antioxidants-list__item"><img src="img/coensim-small.svg" alt=""> Коэнзим Q<sub>10</sub></div>
                             <div class="antioxidants-list__item"><img src="img/beta-karotin.svg" alt=""> Бета-каротин</div>
                             <div class="antioxidants-list__item"><img src="img/likopin.svg" alt=""> Ликопин</div>
                             <div class="antioxidants-list__item"><img src="img/vitamin-c.svg" alt=""> Витамин C</div>
@@ -275,7 +275,7 @@
                         <h3>Компоненты действуют<br>
                             синергично</h3>
                         <p>Это означает, что их совместное действие значительно эффективнее, чем если бы каждый из них
-                            попадал в организм отдельно и «работал» сам по себе.</p>
+                            попадал в организм отдель-но и «работал» сам по себе.</p>
                         <img class="cell__img" src="img/cells.svg" alt="">
                     </div>
                 </div>
@@ -284,7 +284,7 @@
                 <div class="container">
                     <div class="antioxidants-groups-list">
                         <div class="antioxidants-groups-list__item">
-                            <div class="antioxidants-groups-list__item--title">Все антиоксиданты разделяют
+                            <div class="antioxidants-groups-list__item--title">Все антиоксиданты разделяют <br>
                                 на две большие группы: </div>
                             <div class="antioxidants-groups-list__item--text">
                                 <p> Водорастворимые (гидрофильные): витамин С, рутин. Эти антиоксиданты нужны для
@@ -294,13 +294,11 @@
                                     из
                                     желудочно-кишечного тракта, печени, почек, а также образовываться в самой крови.</p>
                             </div>
-                            <div class="antioxidants-groups-list__item--img first">
-                                <img src="img/water.png" alt="">
-                            </div>
-                            <div class="antioxidants-groups-list__item--img">
-                                <img src="img/link.png" alt="">
-                            </div>
-                            <div class="antioxidants-groups-list__item--text">
+                            <img src="img/water.png" alt="" class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-1">
+
+                            <img src="img/link.png" alt="" class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-2">
+
+                            <div class="antioxidants-groups-list__item--text antioxidants-groups-list__item--text-2">
                                 <p>Жирорастворимые (липофильные, растворяются в липидах). К ним относятся витамин Е,
                                     каротиноиды, коэнзим Q10. Липофильные антиоксиданты помогают защищать мембраны
                                     клеток и
@@ -318,7 +316,7 @@
                         <div class="antioxidants-groups-list__item">
 
                             <div class="antioxidants-groups-list__item--title">Как работают компоненты Синергина?</div>
-                            <div class="antioxidants-groups-list__item--img">
+                            <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-3">
                                 <img src="img/coensim.svg" alt="">
                             </div>
                             <div class="antioxidants-groups-list__item--text">
@@ -341,12 +339,12 @@
                                 <p>Помогает сохранить мышление, речь, поведение, внимание и память даже в преклонном
                                     возрасте. <sup>6</sup></p>
                             </div>
-                            <div class="antioxidants-groups-list__item--img">
+                            <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-4">
                                 <img src="img/avocado.png" alt="">
                             </div>
                         </div>
                         <div class="antioxidants-groups-list__item">
-                            <div class="antioxidants-groups-list__item--img">
+                            <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-5">
                                 <img src="img/orange.png" alt="">
                             </div>
                             <div class="antioxidants-groups-list__item--text">
@@ -366,12 +364,12 @@
                                 <p> Замедляет фотостарение кожи.<sup>10</sup></p>
                                 <p> Защищает сетчатку глаз, помогая предотвратить возрастные изменения зрения.<sup>11</sup></p>
                             </div>
-                            <div class="antioxidants-groups-list__item--img">
+                            <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-6">
                                 <img src="img/tomato.png" alt="">
                             </div>
                         </div>
                         <div class="antioxidants-groups-list__item">
-                            <div class="antioxidants-groups-list__item--img">
+                            <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-7">
                                 <img src="img/carrot.png" alt="">
                             </div>
                             <div class="antioxidants-groups-list__item--text">
@@ -387,7 +385,7 @@
                                 Эффективен для профилактики варикозного расширения сосудов, тяжести и усталости в
                                 ногах.
                             </div>
-                            <div class="antioxidants-groups-list__item--img">
+                            <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-8">
                                 <img src="img/gooseberry.png" alt="">
                             </div>
                         </div>
@@ -405,8 +403,10 @@
                         </h2>
                         <p>
                             Обратите внимание на экономичность! <br>
-                            1 упаковка Синергина рассчитана на 1 месяц приема. <br> <br>
-                            Рекомендуемая продолжительность курса: 1-3 месяца.
+                            1 упаковка Синергина рассчитана на 1 месяц приема. <br>
+                        </p>
+                        <p>
+                            Рекомендуемая продолжительность курса: <br> 1-3 месяца.
                         </p>
                         <div class="wrapper__buttons">
                             <button class="btn btn-buy"><img src="img/cart.svg" alt="">КУПИТЬ ОНЛАЙН</button>
@@ -423,45 +423,70 @@
             <section id="efficiency-section">
                 <div class="container">
                     <h2 class="title">Доказанная эффективность</h2>
-                    <div class="efficiency-list__item">
-                        <img src="img/coensim-small.svg" alt="">
-                        <div> После 35 лет начинает снижаться я синтез Q<sub>10</sub> – одного из мощнейших
-                            антиоксидантов в
-                            организме. В 45 его недостаток становится уже заметными и ощутимым. Поэтому уровень Q<sub>10</sub>
-                            в
-                            крови организм «считает» своеобразным маркером возраста.</div>
-                    </div>
-                    <div class="efficiency-list__item">
-                        <img src="img/vitamin-c.svg" alt="">
-                        Употребление витамина С позволяет на 52-62% снизить темпы укорачивания теломер –
-                        «счетчиков» на конце хромосом, что способствует обновлению организма и замедляет старение.
-                        Среди мужчин и женщин в возрасте 45-79 лет увеличение потребления витамина С всего на 50 мг
-                        в день позволило снизить относительную смертность на 20%.
-                    </div>
-                    <div class="efficiency-list__item">
-                        <img src="img/beta-karotin.svg" alt="">
-                        80% видимых признаков старения кожи лица – результат воздействия ультрафиолетовых лучей,
-                        от которых может защитить бета-каротин.
-                    </div>
-                    <div class="efficiency-list__item">
-                        <img src="img/likopin.svg" alt="">
-                        Употребление ликопина помогает на 50% снизить повреждения ДНК клеток и уменьшить
-                        окислительный стресс, который приводит к старению организма.
-                    </div>
-                    <div class="efficiency-list__item">
-                        <img src="img/rutin.svg" alt="">
+                    <div class="efficiency-list ">
+                        <div class="efficiency-list__item">
+                            <img src="img/coensim-small.svg" alt="">
+                            <div> После 35 лет начинает снижаться я синтез Q<sub>10</sub> – одного из мощнейших
+                                антиоксидантов в
+                                организме. В 45 его недостаток становится уже заметными и ощутимым. Поэтому уровень Q<sub>10</sub>
+                                в
+                                крови организм «считает» своеобразным маркером возраста.</div>
+                            <img src="img/chart.png" alt="" class="chart">
+                        </div>
+                        <div class="efficiency-list__item">
+                            <img src="img/vitamin-c.svg" alt="">
+                            <div>
+                                <p>
+                                    Употребление витамина С позволяет на 52-62% снизить темпы укорачивания теломер –
+                                    «счетчиков» на конце хромосом, что способствует обновлению организма и замедляет
+                                    старение.
+                           
+                                </p>
+                                <p> Среди мужчин и женщин в возрасте 45-79 лет увеличение потребления витамина С
+                                        всего <br> на
+                                        50 мг
+                                        в день позволило снизить относительную смертность на 20%.</p>
+                            </div>
 
-                        У людей, которые употребляют достаточное количество витамина Е, на 36 % снижается
-                        возраст-ассоциированное ухудшение когнитивных функций (память, скорость реакции, внимание,
-                        восприятия).
+                        </div>
+                        <div class="efficiency-list__item">
+                            <img src="img/beta-karotin.svg" alt="">
+                            <div>
+                                <p>
+                                    80% видимых признаков старения кожи лица – результат воздействия ультрафиолетовых <br>
+                                    лучей,
+                                    от которых может защитить бета-каротин.</p>
+                            </div>
 
+                        </div>
+                        <div class="efficiency-list__item">
+                            <img src="img/likopin.svg" alt="">
+                            <div>
+                                <p> Употребление ликопина помогает на 50% снизить повреждения ДНК клеток и уменьшить
+                                    окислительный стресс, который приводит к старению организма.</p>
+                            </div>
+                        </div>
+                        <div class="efficiency-list__item">
+                            <img src="img/rutin.svg" alt="">
+
+                            <div>
+                                <p> У людей, которые употребляют достаточное количество витамина Е, на 36 % снижается <br>
+                                    возраст-ассоциированное ухудшение когнитивных функций (память, скорость реакции,
+                                    внимание,
+                                    восприятия).</p>
+                            </div>
+
+                        </div>
+                        <div class="efficiency-list__item">
+                            <img src="img/vitamin-e.svg" alt="">
+
+                            <div>
+                                <p> Употребление рутина может сократить количество сенесцентных <br> клеток на 40%.</p>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="efficiency-list__item">
-                        <img src="img/vitamin-e.svg" alt="">
 
-                        Употребление рутина может сократить количество сенесцентных клеток на 40%.
-
-                    </div>
                 </div>
             </section>
 
@@ -477,7 +502,7 @@
                             </div>
                             <div class="feedback-list__item_details">
                                 <div class="feedback-list__item_details--text">
-                                    Купила данный препарат маме просто для поддержки организма. Каких-то особенных
+                                    Купила данный препарат маме просто для поддержки организма. <br>   Каких-то особенных
                                     эффектов не ждала, но после месяца применения у мамы на седых волосах начали
                                     отрастать темные корни, т.е. седые волосы стали превращаться в нормальные! Я и не
                                     думала, что такое в принципе бывает. Сама тоже принимаю Синергин, состояние бодрое,

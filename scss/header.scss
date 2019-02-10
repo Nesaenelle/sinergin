@@ -1,53 +1,69 @@
 header {
   .container {
-    max-width: 1520px;
+    max-width: 1600px;
     // max-width: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .btn {
-    padding: 5px 10px;
-    background: #173f58;
-    color: #fff;
+    padding: 10px 10px 8px;
+    background: $c-dark-blue;
+    color: $c-white;
+    margin-top: 22px;
+    width: 162px;
   }
   .logo {
-    font-size: 36px;
+    font-size: 46px;
     font-weight: 600;
-    color: #173f58;
+    color: $c-dark-blue;
+    font-family: "RotondaB";
+    letter-spacing: 0.6px;
+    width: 230px;
+    position: relative;
+    top: 3px;
+    left: -2px;
   }
   nav {
+    width: calc(100% - 230px - 162px);
     ul {
       display: flex;
       align-items: center;
+      justify-content: center;
       li {
         font-size: 14px;
         font-weight: 500;
-
+  
         a {
           display: block;
-          padding: 40px 20px;
-          color: #173f58;
-          position: relative;
+          padding: 92px 28px 74px 28px;
+          color: $c-dark-blue;
+          // position: relative;
           transition: 0.2s;
-          &:after {
-            content: "";
-            height: 1px;
-            background: #6697d3;
-            width: 100%;
-            position: absolute;
-            // bottom: 0;
-            bottom: calc(50% - 10px);
-            left: 0;
-            opacity: 0;
-            visibility: hidden;
+          font-size: 18px;
+          letter-spacing: 1px;
+          span {
+            position: relative;
+            &:after {
+              content: "";
+              height: 1px;
+              background: $c-light-blue;
+              width: 100%;
+              position: absolute;
+              // bottom: 0;
+              bottom: calc(50% - 10px);
+              left: 0;
+              opacity: 0;
+              visibility: hidden;
+            }
           }
+
           &:hover {
-            color: #6697d3;
+            color: $c-light-blue;
           }
           &.active {
-            color: #6697d3;
-            &:after {
+            color: $c-light-blue;
+            span:after {
               opacity: 1;
               visibility: visible;
             }

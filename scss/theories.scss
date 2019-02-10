@@ -1,81 +1,104 @@
 #theories-section {
-    padding: 50px 0;
-    .theories-list {
-      &__item {
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-between;
-        &:first-child {
-          margin-top: 0;
-        }
-        &_img {
-          width: 48%;
-          //   flex: 1;
-        }
-        > div {
-          width: 48%;
-          //   flex: 1;
-        }
-        &_title {
-          color: #6697d3;
-          font-size: 24px;
-          font-weight: 500;
-        }
-        &_text {
-          font-family: "Proxima-Nova";
-          font-size: 14px;
-          color: #173f58;
-          margin-top: 15px;
+  padding: 108px 0 171px 0px;
+  background: #f4f4f4;
+  .theories-list {
+    &__item {
+      margin-top: 70px;
+      display: flex;
+      justify-content: space-between;
+      &:first-child {
+        margin-top: 0;
+      }
+      &_img {
+        width: calc(50% - 44px);
+        &:nth-child(2) {
+          width: calc(50% - 119px);
+          margin-top: 11px;
         }
       }
-    }
-    .hypothesis-list {
-      &__item {
-        margin-top: 20px;
-        &.active {
-          .icon {
-            transform: rotate(180deg);
-          }
-        }
-        .icon {
-          margin-left: 10px;
-          transition: 0.2s;
-        }
-        &_title {
-          color: #328aa5;
-          font-size: 18px;
-          font-weight: 500;
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          cursor: pointer;
-          &:before {
-            content: "";
-            width: 8px;
-            height: 8px;
-            background: #328aa5;
-            border-radius: 100%;
-            display: block;
-            margin-right: 10px;
-          }
-        }
-        &_text {
-          font-family: "Proxima-Nova";
-          font-size: 14px;
-          color: #173f58;
-          margin-top: 8px;
-          padding-left: 20px;
-          display: none;
+      &_wrapper {
+        width: calc(50% - 10px);
+        padding-top: 8px;
+        &:nth-child(1) {
+          width: calc(50% + 30px);
         }
       }
-    }
-    .info-block {
-      background: #6697d2;
-      padding: 15px 20px;
-      color: #fff;
-      font-size: 13px;
-      border-radius: 10px;
-      margin-top: 20px;
-      font-family: "Proxima-Nova";
+      &_title {
+        color: $c-light-blue;
+        font-size: 50px;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+      &_text {
+        font-family: "Proxima-Nova";
+        font-size: 25px;
+        // padding-right: 10px;
+        line-height: 1.3em;
+        color: $c-dark-blue;
+        margin-top: 15px;
+      }
     }
   }
+  .hypothesis-list {
+    margin-top: 44px;
+    &__item {
+      margin-top: 53px;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-top: 44px;
+      }
+      &.active {
+        .icon {
+          transform: rotate(180deg);
+        }
+      }
+      .icon {
+        margin-left: 12px;
+        transition: 0.2s;
+      }
+      &_title {
+        color: #328aa5;
+        font-size: 32px;
+        font-weight: 500;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        letter-spacing: 1.6px;
+        &:before {
+          content: "";
+          width: 14px;
+          height: 14px;
+          background: #328aa5;
+          border-radius: 100%;
+          display: block;
+          margin-right: 16px;
+        }
+      }
+      &_text {
+        font-family: "Proxima-Nova";
+        font-size: 25px;
+        line-height: 1.3em;
+        color: $c-dark-blue;
+        margin-top: 8px;
+        padding-left: 30px;
+        letter-spacing: 0;
+        display: none;
+      }
+    }
+  }
+  .info-block {
+    background: $c-light-blue;
+    padding: 30px 30px 35px 30px;
+    color: #fff;
+    font-size: 25px;
+    line-height: 1.3em;
+    border-radius: 24px;
+    margin-top: 73px;
+    font-family: Proxima-Nova;
+    letter-spacing: -0.1px;
+    padding-right: 35px;
+  }
+}

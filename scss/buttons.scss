@@ -2,7 +2,8 @@
     display: block;
     padding: 10px;
     border: 1px solid;
-  
+    font-size: 18px;
+    letter-spacing: 1px;
     outline: none;
     cursor: pointer;
     &-buy {
@@ -11,7 +12,7 @@
       border: none;
       display: flex;
       align-items: center;
-      color: #22627c;
+      color: $c-semi-dark-blue;
       font-weight: 600;
       font-size: 16px;
       img {
@@ -21,7 +22,7 @@
     }
     &-find {
       border: none;
-      background: #22627d;
+      background: $c-semi-dark-blue;
       border-radius: 10px;
       display: flex;
       align-items: center;
@@ -35,11 +36,11 @@
     }
     &-transparent {
       border-radius: 15px;
-      border: 2px solid #22627C;
+      border: 2px solid $c-semi-dark-blue;
       background: none;
       display: flex;
       align-items: center;
-      color: #22627C;
+      color: $c-semi-dark-blue;
       img {
         width: 40px;
         margin-right: 10px;

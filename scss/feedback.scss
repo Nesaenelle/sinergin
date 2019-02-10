@@ -1,51 +1,87 @@
 #feedback-section {
-    background: #dfd6cd;
-    padding: 50px 0;
-    .btn-transparent {
-      margin: 40px auto 0;
-    }
-    .btn {margin: 30px auto;}
-    .feedback-list {
-      &__item {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 30px;
-        &_user {
-          width: 120px;
-          text-align: center;
-          &--icon {
-            width: 90px;
-            height: 90px;
-            background: #338aa6;
-            border-radius: 100%;
-            margin: auto;
-          }
-          &--name {
-            margin-top: 10px;
-            color: #22627c;
-          }
-          &--place {
-            margin-top: 5px;
-            color: #328aa5;
-          }
+  background: $c-ligh-brown;
+  padding: 85px 0;
+  .title {
+    font-size: 50px;
+    color: #328aa5;
+    letter-spacing: 1px;
+  }
+  .btn-transparent {
+    margin: 40px auto 0;
+  }
+  .btn {
+    margin: 30px auto;
+  }
+  .feedback-list {
+    margin-top: 33px;
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      &:first-child {
+        margin: 0;
+      }
+      &_user {
+        width: 215px;
+        text-align: center;
+        &--icon {
+          width: 146px;
+          height: 146px;
+          background: #338aa6;
+          border-radius: 100%;
+          margin: auto;
         }
-        &_details {
-          width: calc(100%-120px - 20px);
-          padding: 20px 30px;
-          background: #fff;
-          border-radius: 10px;
-          box-shadow: 2px 5px 35px -12px #000;
-          &--text {
-            font-family: "Proxima-Nova";
-            color: #173F58;
-          }
-          &--date {
-            text-align: right;
-            color: #555;
-            font-size: 14px;
-            margin-top: 20px;
-          }
+        &--name {
+          margin-top: 17px;
+          color: $c-semi-dark-blue;
+          font-family: "Proxima-Nova";
+          font-size: 26px;
+        }
+        &--place {
+          margin-top: 2px;
+          color: #328aa5;
+          font-family: "Proxima-Nova";
+          font-size: 20px;
+        }
+      }
+      &_details {
+        width: calc(100% - 241px);
+        padding: 27px 51px 22px 54px;
+        background: $c-white;
+        border-radius: 26px;
+        box-shadow: 10px 10px 65px -25px #000;
+        letter-spacing: 0px;
+        line-height: 2em;
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 98px;
+          width: 0;
+          height: 0;
+          border: 35px solid transparent;
+          border-right-color: #fff;
+          border-left: 0;
+          border-top: 0;
+          margin-top: -32.5px;
+          margin-left: -35px;
+        }
+        &--text {
+          font-family: "Proxima-Nova";
+          color: $c-dark-blue;
+          font-size: 25px;
+          padding-right: 30px;
+        }
+        &--date {
+          text-align: right;
+          color: #328AA5;
+          font-size: 20px;
+          margin-top: 12px;
+          font-family: Proxima-Nova;
+          letter-spacing: 0.5px;
         }
       }
     }
   }
+}

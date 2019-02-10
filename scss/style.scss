@@ -11,7 +11,7 @@
 @import "free-radicals.scss";
 @import "antioxidants.scss";
 @import "efficiency.scss";
-@import "product.scss";
+@import "buy.scss";
 
 body {
   font-family: "Panton";
@@ -21,20 +21,20 @@ body {
   display: inline-block;
   &-arrow {
     background: url(../img/arrow.svg);
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
   }
 }
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1304px;
   margin: auto;
   padding: 0 40px;
 }
 
 .pdf-link {
-  color: #fff;
+  color: $c-white;
   font-family: "Proxima-Nova";
   text-decoration: underline;
 }

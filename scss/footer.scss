@@ -22,7 +22,7 @@ footer {
   }
   .reference {
     font-size: 22px;
-    color: #173F58;
+    color: $c-dark-blue;
     font-family: "Proxima-Nova";
     width: 250px;
     display: flex;
@@ -50,16 +50,16 @@ footer {
     }
   }
   .address {
-    color: #173F58;
+    color: $c-dark-blue;
     font-size: 12px;
     font-family: "Proxima-Nova";
   }
   .hot-line {
-    color: #173F58;
+    color: $c-dark-blue;
     font-size: 16px;
   }
   .phone {
-    color: #173F58;
+    color: $c-dark-blue;
     font-size: 32px;
   }
 }

@@ -1,17 +1,15 @@
-
 #how-to-slow-section {
-    background: url(../img/main-bg.png) no-repeat;
-    //   background: #ccc;
-    background-size: cover;
-    background-position: center;
-    padding: 200px 0;
-    .container {
-      max-width: 1520px;
-    }
-    .title {
-      color: #fff;
-      // font-family: 'RotondaB';
-      font-size: 64px;
-    }
+  background: url(../img/main-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 221px 0 293px 0;
+  .container {
+    max-width: 1600px;
   }
-  
+  .title {
+    color: $c-white;
+    font-size: 87px;
+    line-height: 1.1em;
+    letter-spacing: 1px;
+  }
+}
