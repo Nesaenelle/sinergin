@@ -1,48 +1,8 @@
 .buy-section {
-  padding: 123px 0 150px 0;
+
   background: $c-light-blue;
   position: relative;
-  &--top {
-    .buy-section__product-img {
-      width: 700px;
-      position: relative;
-      left: -154px;
-      top: 8px;
-    }
-    .triangle {
-      position: absolute;
-      bottom: 0;
-      &:after {
-        border-top: 80px solid $c-light-blue;
-        border-left: 50vw solid transparent;
-        border-right: 50vw solid transparent;
-        width: 0;
-        height: 0;
-        // bottom: 0;
-        content: "";
-        display: block;
-        position: absolute;
-        overflow: hidden;
-        left: 0;
-        right: 0;
-        margin: auto;
-      }
-    }
 
-  }
-  &--middle {
-    background: #86a6d7;
-    padding: 123px 0 127px;
-    .wrapper {
-      .title {
-        font-size: 44px;
-        padding-right: 42px;
-      }
-      &__buttons {
-        margin-top: 64px;
-      }
-    }
-  }
   .title {
     color: $c-white;
     font-size: 50px;
@@ -100,7 +60,7 @@
   }
   &__product {
     width: 45%;
-    // text-align: center;
+    text-align: center;
     &-img {
       width: 100%;
     }
@@ -108,7 +68,6 @@
       font-size: 26px;
       letter-spacing: 1.2px;
       font-weight: 300;
-      margin-left: 74px;
     }
   }
   .antioxidants-list {
@@ -123,13 +82,17 @@
       margin-bottom: 17px;
       font-family: "Proxima-Nova";
       color: $c-white;
-      font-size: 31px;
+      font-size: 30px;
       font-weight: 300;
-      letter-spacing: -0.4px;
+      letter-spacing: -1px;
       &:nth-child(even) {
         width: calc(42% + 3px);
       }
-      sub {}
+      sub {
+        font-size: 20px;
+        position: relative;
+        top: 10px;
+      }
       img {
         width: 56px;
         margin-right: 23px;
@@ -167,6 +130,88 @@
       position: absolute;
       right: 0;
       transform: translate(45%, -88px);
+    }
+  }
+
+  &--top {
+    padding: 123px 0 157px 0;
+    .buy-section__product-img {
+      width: 700px;
+      position: relative;
+      left: -154px;
+      top: 8px;
+    }
+    .triangle {
+      position: absolute;
+      bottom: 0;
+      &:after {
+        border-top: 80px solid $c-light-blue;
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid transparent;
+        width: 0;
+        height: 0;
+        // bottom: 0;
+        content: "";
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+    .pdf-link {
+      margin-left: -67px;
+    }
+  }
+  &--middle {
+    background: #86a6d7;
+    padding: 123px 0 123px;
+    .buy-section__product-img {
+      width: 673px;
+      position: relative;
+      left: -22px;
+      top: 3px;
+    }
+    .wrapper {
+      .title {
+        font-size: 44px;
+        padding-right: 42px;
+      }
+      &__buttons {
+        margin-top: 64px;
+      }
+    }
+    .pdf-link {
+      margin-left: 52px;
+    }
+  }
+  &--bottom {
+    padding: 103px 0 100px;
+    .buy-section__product-img {
+      width: 645px;
+      position: relative;
+      left: -125px;
+      top: -6px;
+    }
+    .wrapper {
+      width: calc(55% - 5px);
+      &__buttons {
+        margin-top: 152px;
+      }
+    }
+    .pdf-link {
+      margin: -25px 0 0 -80px;
+      display: block;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: 500;
+      span {
+        display: inline-block;
+        margin-top: 34px;
+        letter-spacing: 2px;
+      }
     }
   }
 }
