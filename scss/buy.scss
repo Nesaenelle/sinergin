@@ -2,20 +2,35 @@
 
   background: $c-light-blue;
   position: relative;
-
+     @media screen and (max-width: 1200px) {
+        padding: 70px 0!important;
+     }
   .title {
     color: $c-white;
     font-size: 50px;
     letter-spacing: 1px;
+    @media screen and (max-width: 1200px) {
+      font-size: 42px;
+    }
+    @media screen and (max-width: 980px) {
+      font-size: 38px;
+    }
   }
   .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+       @media screen and (max-width: 980px) {
+    
+       }
   }
 
   .wrapper {
     width: calc(55% - 10px);
+    @media screen and (max-width: 980px) {
+    width: 100%;
+    margin-top: 30px;
+    }
     p {
       margin-top: 20px;
       color: $c-white;
@@ -26,6 +41,15 @@
       padding-right: 12px;
       margin-top: 48px;
       letter-spacing: 0.5px;
+         @media screen and (max-width: 1200px) {
+font-size: 20px;
+br {
+  display: none;
+}
+         }
+      @media screen and (max-width: 980px) {
+font-size: 18px;
+      }
       & + p {
         margin-top: 13px;
       }
@@ -43,9 +67,11 @@
         font-weight: 300;
         height: 85px;
         letter-spacing: 0.2px;
+
         &:last-child {
           margin: 0;
           padding: 11px 31px 11px 34px;
+          margin-left: 20px;
           img {
             width: 36px;
             margin-right: 14px;
@@ -61,13 +87,24 @@
   &__product {
     width: 45%;
     text-align: center;
+    @media screen and (max-width: 980px) {
+    width: 100%;
+    }
     &-img {
       width: 100%;
+          @media screen and (max-width: 980px) {
+            margin: auto!important; 
+          }
     }
     .pdf-link {
       font-size: 26px;
       letter-spacing: 1.2px;
       font-weight: 300;
+      @media screen and (max-width: 980px) {
+      width: 100%;display: block;
+      margin: 0!important;
+      font-size: 20px;
+      }
     }
   }
   .antioxidants-list {
@@ -85,6 +122,12 @@
       font-size: 30px;
       font-weight: 300;
       letter-spacing: -1px;
+         @media screen and (max-width: 1200px) {
+          font-size: 25px;
+         }
+         @media screen and (max-width: 980px) {
+   font-size: 20px;
+         }
       &:nth-child(even) {
         width: calc(42% + 3px);
       }
@@ -96,6 +139,9 @@
       img {
         width: 56px;
         margin-right: 23px;
+           @media screen and (max-width: 980px) {
+            width: 45px;
+           }
       }
     }
   }
@@ -109,10 +155,29 @@
     width: 80%;
     margin-top: 167px;
     letter-spacing: 1px;
+    @media screen and (max-width: 980px) {
+      width: 100%;
+      padding: 30px;
+      margin-top: 100px;
+    }
+
+    @media screen and (max-width: 600px) {
+      margin-top: 50px;
+    }
     h3 {
       color: $c-white;
       font-size: 50px;
       width: 100%;
+      @media screen and (max-width: 1200px) {
+        font-size: 42px;
+      }
+      @media screen and (max-width: 980px) {
+        font-size: 38px;
+        br {display: none;}
+      }
+             @media screen and (max-width: 600px) {
+      font-size: 30px;
+             }
     }
     p {
       margin-top: 25px;
@@ -124,22 +189,41 @@
       font-weight: 300;
       font-family: Proxima-Nova;
       letter-spacing: 0.7px;
+        @media screen and (max-width: 980px) {
+          width: 100%;
+        }
+         @media screen and (max-width: 600px) {
+  font-size: 18px;
+         }
     }
     &__img {
       width: 540px;
+      max-width: 540px;
       position: absolute;
       right: 0;
       transform: translate(45%, -88px);
+
+      @media screen and (max-width: 980px) {
+        position: static;
+        transform: translate(0, 0);
+        margin: 30px auto 0;
+        width: 100%;
+        align-self: center;
+      }
     }
   }
 
   &--top {
     padding: 123px 0 157px 0;
+
     .buy-section__product-img {
       width: 700px;
       position: relative;
       left: -154px;
       top: 8px;
+          @media screen and (max-width: 1200px) {
+              width: 600px;
+          }
     }
     .triangle {
       position: absolute;
@@ -177,6 +261,12 @@
       .title {
         font-size: 44px;
         padding-right: 42px;
+        @media screen and (max-width: 1200px) {
+          font-size: 38px;
+        }
+        @media screen and (max-width: 980px) {
+          font-size: 32px;
+        }
       }
       &__buttons {
         margin-top: 64px;
@@ -207,6 +297,12 @@
     .title {
       font-size: 48px;
       font-weight: 500;
+      @media screen and (max-width: 1200px) {
+        font-size: 42px;
+      }
+      @media screen and (max-width: 980px) {
+        font-size: 38px;
+      }
       span {
         display: inline-block;
         margin-top: 34px;

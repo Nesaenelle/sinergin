@@ -21,7 +21,7 @@ body {
 .icon {
   display: inline-block;
   &-arrow {
-    background: url(../img/arrow.svg);
+    background: url(../img/arrow.svg) no-repeat;
     width: 23px;
     height: 23px;
   }
