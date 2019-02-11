@@ -16,14 +16,14 @@
         <div class="main-wrapper">
             <header>
                 <div class="container">
-                    <a class="logo">СИНЕРГИН</a>
+                    <a class="logo" href="#home" @click.prevent="navigation($event)">СИНЕРГИН</a>
                     <nav>
                         <ul>
-                            <li><a href="" @click="navigation($event)"> <span> ПРИЧИНЫ СТАРЕНИЯ </span></a></li>
-                            <li><a href="" @click="navigation($event)"> <span> РЕШЕНИЕ</span></a></li>
-                            <li><a href="" @click="navigation($event)"> <span> СИНЕРГИН</span></a></li>
-                            <li><a href="" @click="navigation($event)"> <span> ДОКАЗАННАЯ ЭФФЕКТИВНОСТЬ</span></a></li>
-                            <li><a href="" @click="navigation($event)"> <span> ОТЗЫВЫ</span></a></li>
+                            <li><a href="#reasons" @click.prevent="navigation($event)"> <span> ПРИЧИНЫ СТАРЕНИЯ </span></a></li>
+                            <li><a href="#solution" @click.prevent="navigation($event)"> <span> РЕШЕНИЕ</span></a></li>
+                            <li><a href="#sinergin" @click.prevent="navigation($event)"> <span> СИНЕРГИН</span></a></li>
+                            <li><a href="#efficiency" @click.prevent="navigation($event)"> <span> ДОКАЗАННАЯ ЭФФЕКТИВНОСТЬ</span></a></li>
+                            <li><a href="#feedback" @click.prevent="navigation($event)"> <span> ОТЗЫВЫ</span></a></li>
                         </ul>
                     </nav>
                     <div class="right">
@@ -35,11 +35,11 @@
                             <button class="btn" @click.stop="openModal('pharmacy')">ГДЕ КУПИТЬ?</button>
                             <nav>
                                 <ul>
-                                    <li><a href="" @click="navigation($event)"> <span> ПРИЧИНЫ СТАРЕНИЯ </span></a></li>
-                                    <li><a href="" @click="navigation($event)"> <span> РЕШЕНИЕ</span></a></li>
-                                    <li><a href="" @click="navigation($event)"> <span> СИНЕРГИН</span></a></li>
-                                    <li><a href="" @click="navigation($event)"> <span> ДОКАЗАННАЯ ЭФФЕКТИВНОСТЬ</span></a></li>
-                                    <li><a href="" @click="navigation($event)"> <span> ОТЗЫВЫ</span></a></li>
+                                    <li><a href="#reasons" @click.prevent="navigation($event)"> <span> ПРИЧИНЫ СТАРЕНИЯ </span></a></li>
+                                    <li><a href="#solution" @click.prevent="navigation($event)"> <span> РЕШЕНИЕ</span></a></li>
+                                    <li><a href="#sinergin" @click.prevent="navigation($event)"> <span> СИНЕРГИН</span></a></li>
+                                    <li><a href="#efficiency" @click.prevent="navigation($event)"> <span> ДОКАЗАННАЯ ЭФФЕКТИВНОСТЬ</span></a></li>
+                                    <li><a href="#feedback" @click.prevent="navigation($event)"> <span> ОТЗЫВЫ</span></a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -47,12 +47,13 @@
                 </div>
             </header>
             <main>
+                <div data-navigation="home"></div>
                 <section id="how-to-slow-section">
                     <div class="container">
                         <h2 class="title">Как замедлить<br> процессы<br> старения?</h2>
                     </div>
                 </section>
-                <section id="aging-section">
+                <section id="aging-section" data-navigation="reasons">
                     <div class="container">
                         <h2 class="title">Почему люди стареют?</h2>
                         <p>Возможности современной медицины поистине огромны – сегодня врачи могут пересадить сердце,
@@ -223,7 +224,7 @@
                                         </div>
                                     </div>
                 </section>
-                <section id="antioxidants-section">
+                <section id="antioxidants-section" data-navigation="solution">
                     <div class="triangle"></div>
                     <div class="container">
                         <h2 class="title">Антиоксиданты против свободных радикалов</h2>
@@ -273,7 +274,7 @@
                                 антиоксиданты!</div>
                         </div>
                 </section>
-                <section class="buy-section buy-section--top">
+                <section class="buy-section buy-section--top" data-navigation="sinergin">
                     <div class="container">
                         <div class="buy-section__product">
                             <img class="buy-section__product-img" src="img/sinergin.png" alt="">
@@ -449,7 +450,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="efficiency-section">
+                <section id="efficiency-section" data-navigation="efficiency">
                     <div class="container">
                         <h2 class="title">Доказанная эффективность</h2>
                         <div class="efficiency-list ">
@@ -519,7 +520,7 @@
                             </div>
                         </div>
                 </section>
-                <section id="feedback-section">
+                <section id="feedback-section" data-navigation="feedback">
                     <div class="container">
                         <h2 class="title">Отзывы потребителей</h2>
                         <div class="feedback-list">
