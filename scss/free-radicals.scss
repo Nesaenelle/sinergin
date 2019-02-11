@@ -75,6 +75,12 @@
         letter-spacing: 1px;
         font-weight: 500;
         color: $c-light-blue;
+        @media screen and (max-width: 1200px) {
+          font-size: 42px;
+        }
+        @media screen and (max-width: 980px) {
+          font-size: 38px;
+        }
       }
       &--text {
         font-size: 14px;
@@ -86,6 +92,12 @@
         font-family: Proxima-Nova;
         letter-spacing: 0.5px;
         padding-right: 97px;
+        @media screen and (max-width: 1200px) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: 980px) {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -96,6 +108,9 @@
     justify-content: space-between;
     margin-top: 68px;
     padding-right: 12px;
+      @media screen and (max-width: 980px) {
+        padding-right: 0;
+      }
     &_item {
       width: calc(50% - 43px);
       padding: 38px 20px 24px 29px;
@@ -104,6 +119,11 @@
       margin-bottom: 80px;
       position: relative;
       // height: 266px;
+       @media screen and (max-width: 980px) {
+          width: 100%;
+       }
+
+
       &:nth-child(1) {
         .free-radicals__images_item--image {
           width: 59%;
@@ -219,6 +239,9 @@
       &--image {
         width: 65%;
         height: 104px;
+              @media screen and (max-width: 980px) {
+                height: auto!important;
+              }
         img {
           width: 100%;
         }
@@ -230,6 +253,31 @@
         line-height: 1.3em;
         font-weight: 400;
         letter-spacing: 0.5px;
+              @media screen and (max-width: 1200px) {
+                font-size: 20px;
+              }
+      }
+      &:nth-child(1),  &:nth-child(2),  &:nth-child(3),  &:nth-child(4) {
+             @media screen and (max-width: 980px) {
+                 &:after,
+                 &:before {
+                   top: 100%;
+                   left: 50%;
+                   margin-top: 0;
+                 }
+                 &:after {
+                   border-color: rgba(255, 255, 255, 0);
+                   border-top-color: #f4f4f4;
+                   border-width: 50px;
+                   margin-left: -50px;
+                 }
+                 &:before {
+                   border-color: rgba(194, 225, 245, 0);
+                   border-top-color: $c-light-blue;
+                   border-width: 56px;
+                   margin-left: -56px;
+                 }
+        }
       }
     }
   }
@@ -243,5 +291,11 @@
     font-family: Proxima-Nova;
     letter-spacing: 0.1px;
     padding: 41px 35px 35px 33px;
+    @media screen and (max-width: 1200px) {
+     font-size: 25px;
+    }
+    @media screen and (max-width: 980px) {
+     font-size: 20px;
+    }
   }
 }
