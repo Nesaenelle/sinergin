@@ -50,7 +50,7 @@ function style() {
             .on("error", sass.logError)
             .pipe(postcss([autoprefixer(), cssnano()]))
             // .pipe(rename('styles.css'))
-            .pipe(sourcemaps.write())
+            // .pipe(sourcemaps.write())
             .pipe(gulp.dest(paths.styles.dest))
             // Add browsersync stream pipe after compilation
             .pipe(browserSync.stream())

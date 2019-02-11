@@ -22,7 +22,8 @@
                             <li><a href="#reasons" @click.prevent="navigation($event)"> <span> ПРИЧИНЫ СТАРЕНИЯ </span></a></li>
                             <li><a href="#solution" @click.prevent="navigation($event)"> <span> РЕШЕНИЕ</span></a></li>
                             <li><a href="#sinergin" @click.prevent="navigation($event)"> <span> СИНЕРГИН</span></a></li>
-                            <li><a href="#efficiency" @click.prevent="navigation($event)"> <span> ДОКАЗАННАЯ ЭФФЕКТИВНОСТЬ</span></a></li>
+                            <li><a href="#efficiency" @click.prevent="navigation($event)"> <span> ДОКАЗАННАЯ
+                                        ЭФФЕКТИВНОСТЬ</span></a></li>
                             <li><a href="#feedback" @click.prevent="navigation($event)"> <span> ОТЗЫВЫ</span></a></li>
                         </ul>
                     </nav>
@@ -35,10 +36,12 @@
                             <button class="btn" @click.stop="openModal('pharmacy')">ГДЕ КУПИТЬ?</button>
                             <nav>
                                 <ul>
-                                    <li><a href="#reasons" @click.prevent="navigation($event)"> <span> ПРИЧИНЫ СТАРЕНИЯ </span></a></li>
+                                    <li><a href="#reasons" @click.prevent="navigation($event)"> <span> ПРИЧИНЫ СТАРЕНИЯ
+                                            </span></a></li>
                                     <li><a href="#solution" @click.prevent="navigation($event)"> <span> РЕШЕНИЕ</span></a></li>
                                     <li><a href="#sinergin" @click.prevent="navigation($event)"> <span> СИНЕРГИН</span></a></li>
-                                    <li><a href="#efficiency" @click.prevent="navigation($event)"> <span> ДОКАЗАННАЯ ЭФФЕКТИВНОСТЬ</span></a></li>
+                                    <li><a href="#efficiency" @click.prevent="navigation($event)"> <span> ДОКАЗАННАЯ
+                                                ЭФФЕКТИВНОСТЬ</span></a></li>
                                     <li><a href="#feedback" @click.prevent="navigation($event)"> <span> ОТЗЫВЫ</span></a></li>
                                 </ul>
                             </nav>
@@ -70,86 +73,86 @@
                         <div class="theories-list">
                             <div class="theories-list__item">
                                 <div class="theories-list__item_img"><img src="img/evo.svg" alt=""></div>
-                                    <div class="theories-list__item_wrapper">
-                                        <div class="theories-list__item_title">Эволюционная теория</div>
-                                        <div class="theories-list__item_text">Старение генетически запрограммированно,
-                                            чтобы
-                                            старые
-                                            организмы освобождали жизненное пространство молодым.</div>
-                                    </div>
-                                </div>
-                                <div class="theories-list__item">
-                                    <div class="theories-list__item_wrapper">
-                                        <div class="theories-list__item_title"> «Дегенеративная» теория</div>
-                                        <div class="theories-list__item_text">Старение – это неизбежное снижение
-                                            эффективности
-                                            работы
-                                            организма из-за изнашивания его механизмов. В рамках «дегенеративной» теории
-                                            можно
-                                            выделить
-                                            несколько отдельных гипотез: </div>
-                                    </div>
-                                    <div class="theories-list__item_img"><img src="img/aging.svg" alt=""></div>
-                                    </div>
-                                </div>
-                                <div class="hypothesis-list">
-                                    <div class="hypothesis-list__item active">
-                                        <div class="hypothesis-list__item_title" @click="toggleAccordeonItem($event)">
-                                            Свободно-радикальная
-                                            гипотеза <i class="icon icon-arrow"></i>
-                                        </div>
-                                        <div class="hypothesis-list__item_text">
-                                            Старение происходит из-за поражения ДНК, белков и липидов (жиров) свободными
-                                            радикалами
-                                            кислорода, которые неизбежно образуются в процессе жизнедеятельности клеток. Из-за
-                                            таких
-                                            повреждений нарушаются физиологические функции клеток, что приводит к поражению
-                                            тканей
-                                            и
-                                            органов – организм стареет. Чем дольше живет организм и, соответственно, чем дольше
-                                            работают
-                                            его клетки, тем сильнее развивается старение.
-                                        </div>
-                                    </div>
-                                    <div class="hypothesis-list__item">
-                                        <div class="hypothesis-list__item_title" @click="toggleAccordeonItem($event)">Мутационная
-                                            гипотеза
-                                            <i class="icon icon-arrow"></i>
-                                        </div>
-                                        <div class="hypothesis-list__item_text">
-                                            Старение происходит вследствие накопления мутаций в результате повреждения ДНК и
-                                            ошибок
-                                            копирования при делении клеток. Чем дольше организм живет, тем больше накапливается
-                                            мутаций.
-                                        </div>
-                                    </div>
-                                    <div class="hypothesis-list__item">
-                                        <div class="hypothesis-list__item_title" @click="toggleAccordeonItem($event)">Теломерная
-                                            гипотеза <i class="icon icon-arrow"></i>
-                                        </div>
-                                        <div class="hypothesis-list__item_text">
-                                            Обновление организма происходит за счет деления клеток. Каждая клетка
-                                            запрограммирована
-                                            на
-                                            50-60 делений. При каждом делении укорачивается теломера – своеобразный «счетчик»
-                                            на
-                                            конце
-                                            хромосомы. После того, как клетка поделилась в последний раз, она больше не может
-                                            обновиться. Когда таких клеток становится много – организм перестает обновляться и
-                                            быстро
-                                            дряхлеет. Если остановить «счетчик» - прекратить укорачивание теломер, то организм
-                                            будет
-                                            обновляться все время.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="info-block">
-                                    Это разделение довольно условно, поскольку все описанные механизмы важны и взаимосвязаны. К
-                                    примеру, одним из механизмов возникновения мутаций является окислительный стресс (или
-                                    активность
-                                    свободных радикалов), что объединяет мутационную теорию со свободно-радикальной.
+                                <div class="theories-list__item_wrapper">
+                                    <div class="theories-list__item_title">Эволюционная теория</div>
+                                    <div class="theories-list__item_text">Старение генетически запрограммированно,
+                                        чтобы
+                                        старые
+                                        организмы освобождали жизненное пространство молодым.</div>
                                 </div>
                             </div>
+                            <div class="theories-list__item">
+                                <div class="theories-list__item_wrapper">
+                                    <div class="theories-list__item_title"> «Дегенеративная» теория</div>
+                                    <div class="theories-list__item_text">Старение – это неизбежное снижение
+                                        эффективности
+                                        работы
+                                        организма из-за изнашивания его механизмов. В рамках «дегенеративной» теории
+                                        можно
+                                        выделить
+                                        несколько отдельных гипотез: </div>
+                                </div>
+                                <div class="theories-list__item_img"><img src="img/aging.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="hypothesis-list">
+                            <div class="hypothesis-list__item active">
+                                <div class="hypothesis-list__item_title" @click="toggleAccordeonItem($event)">
+                                    Свободно-радикальная
+                                    гипотеза <i class="icon icon-arrow"></i>
+                                </div>
+                                <div class="hypothesis-list__item_text">
+                                    Старение происходит из-за поражения ДНК, белков и липидов (жиров) свободными
+                                    радикалами
+                                    кислорода, которые неизбежно образуются в процессе жизнедеятельности клеток. Из-за
+                                    таких
+                                    повреждений нарушаются физиологические функции клеток, что приводит к поражению
+                                    тканей
+                                    и
+                                    органов – организм стареет. Чем дольше живет организм и, соответственно, чем дольше
+                                    работают
+                                    его клетки, тем сильнее развивается старение.
+                                </div>
+                            </div>
+                            <div class="hypothesis-list__item">
+                                <div class="hypothesis-list__item_title" @click="toggleAccordeonItem($event)">Мутационная
+                                    гипотеза
+                                    <i class="icon icon-arrow"></i>
+                                </div>
+                                <div class="hypothesis-list__item_text">
+                                    Старение происходит вследствие накопления мутаций в результате повреждения ДНК и
+                                    ошибок
+                                    копирования при делении клеток. Чем дольше организм живет, тем больше накапливается
+                                    мутаций.
+                                </div>
+                            </div>
+                            <div class="hypothesis-list__item">
+                                <div class="hypothesis-list__item_title" @click="toggleAccordeonItem($event)">Теломерная
+                                    гипотеза <i class="icon icon-arrow"></i>
+                                </div>
+                                <div class="hypothesis-list__item_text">
+                                    Обновление организма происходит за счет деления клеток. Каждая клетка
+                                    запрограммирована
+                                    на
+                                    50-60 делений. При каждом делении укорачивается теломера – своеобразный «счетчик»
+                                    на
+                                    конце
+                                    хромосомы. После того, как клетка поделилась в последний раз, она больше не может
+                                    обновиться. Когда таких клеток становится много – организм перестает обновляться и
+                                    быстро
+                                    дряхлеет. Если остановить «счетчик» - прекратить укорачивание теломер, то организм
+                                    будет
+                                    обновляться все время.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            Это разделение довольно условно, поскольку все описанные механизмы важны и взаимосвязаны. К
+                            примеру, одним из механизмов возникновения мутаций является окислительный стресс (или
+                            активность
+                            свободных радикалов), что объединяет мутационную теорию со свободно-радикальной.
+                        </div>
+                    </div>
                 </section>
                 <section id="free-radicals-section">
                     <div class="free-radicals__intro">
@@ -165,7 +168,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="triangle"></div>
+                        <!-- <div class="triangle"></div> -->
                     </div>
                     <div class="container">
                         <div class="free-radicals__details">
@@ -197,32 +200,32 @@
                         <div class="free-radicals__images">
                             <div class="free-radicals__images_item">
                                 <div class="free-radicals__images_item--image"><img src="img/dna.svg" alt=""></div>
-                                    <div class="free-radicals__images_item--text">Повреждается ДНК здоровой клетки.
-                                        Очень часто – под действием свободных радикалов. </div>
-                                </div>
-                                <div class="free-radicals__images_item">
-                                    <div class="free-radicals__images_item--image"><img src="img/molecule.svg" alt=""></div>
-                                        <div class="free-radicals__images_item--text">Здоровые клетки начинают перерождаться в
-                                            стареющие (сенесцентные) клетки.. </div>
-                                    </div>
-                                    <div class="free-radicals__images_item">
-                                        <div class="free-radicals__images_item--image"><img src="img/dna-2.svg" alt=""></div>
-                                            <div class="free-radicals__images_item--text">При воспалении организм увеличивает
-                                                производство
-                                                свободных радикалов. Они, в свою очередь, поражают ДНК здоровых клеток рядом с
-                                                первоначальной клеткой. </div>
-                                        </div>
-                                        <div class="free-radicals__images_item">
-                                            <div class="free-radicals__images_item--image"><img src="img/cell.svg" alt=""></div>
-                                                <div class="free-radicals__images_item--text">Стареющие клетки разрушительно действуют
-                                                    на
-                                                    окружающие ткани и вызывают воспалительные реакции. [11, 12 , 13]</div>
-                                            </div>
-                                        </div>
-                                        <div class="info-block">
-                                            Результат: свободные радикалы ускоряют процессы старения.
-                                        </div>
-                                    </div>
+                                <div class="free-radicals__images_item--text">Повреждается ДНК здоровой клетки.
+                                    Очень часто – под действием свободных радикалов. </div>
+                            </div>
+                            <div class="free-radicals__images_item">
+                                <div class="free-radicals__images_item--image"><img src="img/molecule.svg" alt=""></div>
+                                <div class="free-radicals__images_item--text">Здоровые клетки начинают перерождаться в
+                                    стареющие (сенесцентные) клетки.. </div>
+                            </div>
+                            <div class="free-radicals__images_item">
+                                <div class="free-radicals__images_item--image"><img src="img/dna-2.svg" alt=""></div>
+                                <div class="free-radicals__images_item--text">При воспалении организм увеличивает
+                                    производство
+                                    свободных радикалов. Они, в свою очередь, поражают ДНК здоровых клеток рядом с
+                                    первоначальной клеткой. </div>
+                            </div>
+                            <div class="free-radicals__images_item">
+                                <div class="free-radicals__images_item--image"><img src="img/cell.svg" alt=""></div>
+                                <div class="free-radicals__images_item--text">Стареющие клетки разрушительно действуют
+                                    на
+                                    окружающие ткани и вызывают воспалительные реакции. [11, 12 , 13]</div>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            Результат: свободные радикалы ускоряют процессы старения.
+                        </div>
+                    </div>
                 </section>
                 <section id="antioxidants-section" data-navigation="solution">
                     <div class="triangle"></div>
@@ -269,10 +272,10 @@
                                     <div class="antioxidants-images__item"></div> -->
                             <img src="img/antioxidants.svg" alt="">
                         </div>
-                            <div class="antioxidants-help">Помоги своему организму обезвредить свободные радикалы –
-                                принимай
-                                антиоксиданты!</div>
-                        </div>
+                        <div class="antioxidants-help">Помоги своему организму обезвредить свободные радикалы –
+                            принимай
+                            антиоксиданты!</div>
+                    </div>
                 </section>
                 <section class="buy-section buy-section--top" data-navigation="sinergin">
                     <div class="container">
@@ -287,27 +290,27 @@
                                 <div class="antioxidants-list__item"><img src="img/coensim-small.svg" alt=""> Коэнзим Q<sub>10</sub></div>
                                 <div class="antioxidants-list__item"><img src="img/beta-karotin.svg" alt="">
                                     Бета-каротин</div>
-                                    <div class="antioxidants-list__item"><img src="img/likopin.svg" alt=""> Ликопин</div>
-                                        <div class="antioxidants-list__item"><img src="img/vitamin-c.svg" alt=""> Витамин C</div>
-                                            <div class="antioxidants-list__item"><img src="img/rutin.svg" alt=""> Рутин</div>
-                                                <div class="antioxidants-list__item"><img src="img/vitamin-e.svg" alt=""> Витамин Е</div>
-                                                </div>
-                                                <div class="wrapper__buttons">
-                                                    <button class="btn btn-buy"> <img src="img/cart.svg" alt="">КУПИТЬ ОНЛАЙН</button>
-                                                        <button class="btn btn-find" @click.stop="openModal('pharmacy')"><img src="img/location.svg"
+                                <div class="antioxidants-list__item"><img src="img/likopin.svg" alt=""> Ликопин</div>
+                                <div class="antioxidants-list__item"><img src="img/vitamin-c.svg" alt=""> Витамин C</div>
+                                <div class="antioxidants-list__item"><img src="img/rutin.svg" alt=""> Рутин</div>
+                                <div class="antioxidants-list__item"><img src="img/vitamin-e.svg" alt=""> Витамин Е</div>
+                            </div>
+                            <div class="wrapper__buttons">
+                                <button class="btn btn-buy"> <img src="img/cart.svg" alt="">КУПИТЬ ОНЛАЙН</button>
+                                <button class="btn btn-find" @click.stop="openModal('pharmacy')"><img src="img/location.svg"
                                         alt="">ГДЕ КУПИТЬ?</button>
-                                                </div>
-                                            </div>
-                                            <div class="cell">
-                                                <h3>Компоненты действуют<br>
-                                синергично</h3>
-                                                <p>Это означает, что их совместное действие значительно эффективнее, чем если бы каждый из
-                                                    них
-                                                    попадал в организм отдель-но и «работал» сам по себе.</p>
-                                                <img class="cell__img" src="img/cells.png" alt="">
+                            </div>
                         </div>
-                                            </div>
-                                            <div class="triangle"></div>
+                        <div class="cell">
+                            <h3>Компоненты действуют<br>
+                                синергично</h3>
+                            <p>Это означает, что их совместное действие значительно эффективнее, чем если бы каждый из
+                                них
+                                попадал в организм отдель-но и «работал» сам по себе.</p>
+                            <img class="cell__img" src="img/cells.png" alt="">
+                        </div>
+                    </div>
+                    <div class="triangle"></div>
                 </section>
                 <section id="antioxidants-groups-section">
                     <div class="container">
@@ -330,7 +333,8 @@
                                 <div class="antioxidants-groups-list__item--text antioxidants-groups-list__item--text-2">
                                     <p>Жирорастворимые (липофильные, растворяются в липидах). К ним относятся витамин
                                         Е,
-                                        каротиноиды, коэнзим Q<sub>10</sub>. Липофильные антиоксиданты помогают защищать мембраны
+                                        каротиноиды, коэнзим Q<sub>10</sub>. Липофильные антиоксиданты помогают
+                                        защищать мембраны
                                         клеток и
                                         поддерживать их целостность.</p>
                                 </div>
@@ -342,85 +346,86 @@
                                 клетки,
                                 всех тканей.
                             </div>
+                            <div class="antioxidants-groups-list__item--title">Как работают компоненты Синергина?</div>
                             <div class="antioxidants-groups-list__item">
-                                <div class="antioxidants-groups-list__item--title">Как работают компоненты Синергина?</div>
+
                                 <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-3">
                                     <img src="img/coensim.svg" alt="">
                                 </div>
-                                    <div class="antioxidants-groups-list__item--text">
-                                        <h3>Коэнзим Q10</h3>
-                                        <p> Достоверно помогает уменьшить признаки старения кожи при приеме в течение 12
-                                            недель.
-                                            <sup> 5</sup></p>
-                                        <p> Замедляет процессы старения. </p>
-                                        <p> Предотвращает развитие возраст-ассоциированных заболеваний: диабет,
-                                            нейродегенеративные
-                                            расстройства, заболевания сердца, почек, нарушения работы репродуктивной
-                                            системы.
-                                            <sup>4</sup></p>
-                                    </div>
+                                <div class="antioxidants-groups-list__item--text">
+                                    <h3>Коэнзим Q10</h3>
+                                    <p> Достоверно помогает уменьшить признаки старения кожи при приеме в течение 12
+                                        недель.
+                                        <sup> 5</sup></p>
+                                    <p> Замедляет процессы старения. </p>
+                                    <p> Предотвращает развитие возраст-ассоциированных заболеваний: диабет,
+                                        нейродегенеративные
+                                        расстройства, заболевания сердца, почек, нарушения работы репродуктивной
+                                        системы.
+                                        <sup>4</sup></p>
                                 </div>
-                                <div class="antioxidants-groups-list__item">
-                                    <div class="antioxidants-groups-list__item--text">
-                                        <h3>Токоферол (витамин Е)</h3>
-                                        <p> Замедляет старение кожи и предотвращает разрушение коллагена и эластана.<sup>6</sup></p>
-                                        <p>Защищает от вредного действия солнечных лучей.</p>
-                                        <p>Помогает сохранить мышление, речь, поведение, внимание и память даже в
-                                            преклонном
-                                            возрасте. <sup>6</sup></p>
-                                    </div>
-                                    <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-4">
-                                        <img src="img/avocado.png" alt="">
+                            </div>
+                            <div class="antioxidants-groups-list__item">
+                                <div class="antioxidants-groups-list__item--text">
+                                    <h3>Токоферол (витамин Е)</h3>
+                                    <p> Замедляет старение кожи и предотвращает разрушение коллагена и эластана.<sup>6</sup></p>
+                                    <p>Защищает от вредного действия солнечных лучей.</p>
+                                    <p>Помогает сохранить мышление, речь, поведение, внимание и память даже в
+                                        преклонном
+                                        возрасте. <sup>6</sup></p>
                                 </div>
-                                    </div>
-                                    <div class="antioxidants-groups-list__item">
-                                        <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-5">
-                                            <img src="img/orange.png" alt="">
+                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-4">
+                                    <img src="img/avocado.png" alt="">
                                 </div>
-                                            <div class="antioxidants-groups-list__item--text">
-                                                <h3> Витамин С</h3>
-                                                <p>Необходим для выработки коллагена в коже.<sup>7</sup></p>
-                                                <p>Помогает снизить риск возраст-ассоциированной болезни Альцгеймера при приеме в
-                                                    высоких
-                                                    дозировках.<sup>8</sup></p>
-                                                <p> Способствует уменьшению усталости и утомляемости.<sup>9</sup></p>
-                                            </div>
-                                        </div>
-                                        <div class="antioxidants-groups-list__item">
-                                            <div class="antioxidants-groups-list__item--text">
-                                                <p>
-                                                    <h3>Каротиноид ликопин</h3>
-                                                </p>
-                                                <p> Замедляет фотостарение кожи.<sup>10</sup></p>
-                                                <p> Защищает сетчатку глаз, помогая предотвратить возрастные изменения зрения.<sup>11</sup></p>
-                                            </div>
-                                            <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-6">
-                                                <img src="img/tomato.png" alt="">
+                            </div>
+                            <div class="antioxidants-groups-list__item">
+                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-5">
+                                    <img src="img/orange.png" alt="">
                                 </div>
-                                            </div>
-                                            <div class="antioxidants-groups-list__item">
-                                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-7">
-                                                    <img src="img/carrot.png" alt="">
+                                <div class="antioxidants-groups-list__item--text">
+                                    <h3> Витамин С</h3>
+                                    <p>Необходим для выработки коллагена в коже.<sup>7</sup></p>
+                                    <p>Помогает снизить риск возраст-ассоциированной болезни Альцгеймера при приеме в
+                                        высоких
+                                        дозировках.<sup>8</sup></p>
+                                    <p> Способствует уменьшению усталости и утомляемости.<sup>9</sup></p>
                                 </div>
-                                                    <div class="antioxidants-groups-list__item--text">
-                                                        <h3> Бета-каротин (провитамин А)</h3>
-                                                        Продлевает жизнь клеток, синтезирующих коллаген и эластан.
-                                                        Обеспечивает защиту кожи от повреждения свободными радикалами.<sup>12</sup>
-                                                    </div>
-                                                </div>
-                                                <div class="antioxidants-groups-list__item">
-                                                    <div class="antioxidants-groups-list__item--text">
-                                                        <h3>Рутин (или витамин Р)</h3>
-                                                        Улучшает эластичность и упругость кожи.<sup>13</sup>
-                                                        Эффективен для профилактики варикозного расширения сосудов, тяжести и усталости в
-                                                        ногах.
-                                                    </div>
-                                                    <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-8">
-                                                        <img src="img/gooseberry.png" alt="">
+                            </div>
+                            <div class="antioxidants-groups-list__item">
+                                <div class="antioxidants-groups-list__item--text">
+
+                                    <h3>Каротиноид ликопин</h3>
+
+                                    <p> Замедляет фотостарение кожи.<sup>10</sup></p>
+                                    <p> Защищает сетчатку глаз, помогая предотвратить возрастные изменения зрения.<sup>11</sup></p>
                                 </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-6">
+                                    <img src="img/tomato.png" alt="">
+                                </div>
+                            </div>
+                            <div class="antioxidants-groups-list__item">
+                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-7">
+                                    <img src="img/carrot.png" alt="">
+                                </div>
+                                <div class="antioxidants-groups-list__item--text">
+                                    <h3> Бета-каротин (провитамин А)</h3>
+                                    Продлевает жизнь клеток, синтезирующих коллаген и эластан.
+                                    Обеспечивает защиту кожи от повреждения свободными радикалами.<sup>12</sup>
+                                </div>
+                            </div>
+                            <div class="antioxidants-groups-list__item">
+                                <div class="antioxidants-groups-list__item--text">
+                                    <h3>Рутин (или витамин Р)</h3>
+                                    Улучшает эластичность и упругость кожи.<sup>13</sup>
+                                    Эффективен для профилактики варикозного расширения сосудов, тяжести и усталости в
+                                    ногах.
+                                </div>
+                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-8">
+                                    <img src="img/gooseberry.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="buy-section buy-section--middle">
                     <div class="container">
@@ -439,7 +444,7 @@
                             </p>
                             <div class="wrapper__buttons">
                                 <button class="btn btn-buy"><img src="img/cart.svg" alt="">КУПИТЬ ОНЛАЙН</button>
-                                    <button class="btn btn-find" @click.stop="openModal('pharmacy')"><img src="img/location.svg"
+                                <button class="btn btn-find" @click.stop="openModal('pharmacy')"><img src="img/location.svg"
                                         alt="">ГДЕ КУПИТЬ?</button>
                             </div>
                         </div>
@@ -464,61 +469,61 @@
                                     крови организм «считает» своеобразным маркером возраста.</div>
                                 <img src="img/chart.png" alt="" class="chart">
                             </div>
-                                <div class="efficiency-list__item">
-                                    <img src="img/vitamin-c.svg" alt="">
-                                    <div>
-                                        <p>
-                                            Употребление витамина С позволяет на 52-62% снизить темпы укорачивания теломер
-                                            –
-                                            «счетчиков» на конце хромосом, что способствует обновлению организма и
-                                            замедляет
-                                            старение.
-                                        </p>
-                                        <p> Среди мужчин и женщин в возрасте 45-79 лет увеличение потребления витамина С
-                                            всего <br> на
-                                            50 мг
-                                            в день позволило снизить относительную смертность на 20%.</p>
-                                    </div>
+                            <div class="efficiency-list__item">
+                                <img src="img/vitamin-c.svg" alt="">
+                                <div>
+                                    <p>
+                                        Употребление витамина С позволяет на 52-62% снизить темпы укорачивания теломер
+                                        –
+                                        «счетчиков» на конце хромосом, что способствует обновлению организма и
+                                        замедляет
+                                        старение.
+                                    </p>
+                                    <p> Среди мужчин и женщин в возрасте 45-79 лет увеличение потребления витамина С
+                                        всего <br> на
+                                        50 мг
+                                        в день позволило снизить относительную смертность на 20%.</p>
                                 </div>
-                                <div class="efficiency-list__item">
-                                    <img src="img/beta-karotin.svg" alt="">
-                                    <div>
-                                        <p>
-                                            80% видимых признаков старения кожи лица – результат воздействия
-                                            ультрафиолетовых
-                                            <br>
-                                            лучей,
-                                            от которых может защитить бета-каротин.</p>
-                                    </div>
+                            </div>
+                            <div class="efficiency-list__item">
+                                <img src="img/beta-karotin.svg" alt="">
+                                <div>
+                                    <p>
+                                        80% видимых признаков старения кожи лица – результат воздействия
+                                        ультрафиолетовых
+                                        <br>
+                                        лучей,
+                                        от которых может защитить бета-каротин.</p>
                                 </div>
-                                <div class="efficiency-list__item">
-                                    <img src="img/likopin.svg" alt="">
-                                    <div>
-                                        <p> Употребление ликопина помогает на 50% снизить повреждения ДНК клеток и
-                                            уменьшить
-                                            окислительный стресс, который приводит к старению организма.</p>
-                                    </div>
+                            </div>
+                            <div class="efficiency-list__item">
+                                <img src="img/likopin.svg" alt="">
+                                <div>
+                                    <p> Употребление ликопина помогает на 50% снизить повреждения ДНК клеток и
+                                        уменьшить
+                                        окислительный стресс, который приводит к старению организма.</p>
                                 </div>
-                                <div class="efficiency-list__item">
-                                    <img src="img/rutin.svg" alt="">
-                                    <div>
-                                        <p> У людей, которые употребляют достаточное количество витамина Е, на 36 %
-                                            снижается
-                                            <br>
-                                            возраст-ассоциированное ухудшение когнитивных функций (память, скорость
-                                            реакции,
-                                            внимание,
-                                            восприятия).</p>
-                                    </div>
+                            </div>
+                            <div class="efficiency-list__item">
+                                <img src="img/rutin.svg" alt="">
+                                <div>
+                                    <p> У людей, которые употребляют достаточное количество витамина Е, на 36 %
+                                        снижается
+                                        <br>
+                                        возраст-ассоциированное ухудшение когнитивных функций (память, скорость
+                                        реакции,
+                                        внимание,
+                                        восприятия).</p>
                                 </div>
-                                <div class="efficiency-list__item">
-                                    <img src="img/vitamin-e.svg" alt="">
-                                    <div>
-                                        <p> Употребление рутина может сократить количество сенесцентных <br> клеток на 40%.</p>
-                                    </div>
+                            </div>
+                            <div class="efficiency-list__item">
+                                <img src="img/vitamin-e.svg" alt="">
+                                <div>
+                                    <p> Употребление рутина может сократить количество сенесцентных <br> клеток на 40%.</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </section>
                 <section id="feedback-section" data-navigation="feedback">
                     <div class="container">
@@ -527,143 +532,143 @@
                             <div class="feedback-list__item">
                                 <div class="feedback-list__item_user">
                                     <div class="feedback-list__item_user--icon"><img src="img/comment-icon.svg" alt=""></div>
-                                        <div class="feedback-list__item_user--name">Маргарита</div>
-                                        <div class="feedback-list__item_user--place">г. Новосибирск</div>
-                                    </div>
-                                    <div class="feedback-list__item_details">
-                                        <div class="feedback-list__item_details--text">
-                                            Купила данный препарат маме просто для поддержки организма. <br> Каких-то
-                                            особенных
-                                            эффектов не ждала, но после месяца применения у мамы на седых волосах начали
-                                            отрастать темные корни, т.е. седые волосы стали превращаться в нормальные! Я и
-                                            не
-                                            думала, что такое в принципе бывает. Сама тоже принимаю Синергин, состояние
-                                            бодрое,
-                                            хорошее, оптимистичное, думаю, что отчасти это и с витаминами связано.
-                                            Рекомендую!
-                                        </div>
-                                        <div class="feedback-list__item_details--date">20.03.18</div>
-                                    </div>
+                                    <div class="feedback-list__item_user--name">Маргарита</div>
+                                    <div class="feedback-list__item_user--place">г. Новосибирск</div>
                                 </div>
-                                <div class="feedback-list__item">
-                                    <div class="feedback-list__item_details">
-                                        <div class="feedback-list__item_details--text">
-                                            Покупала особо ни на что не надеясь, так… для поддержки организма. Но спустя
-                                            пару
-                                            недель почувствовала, что прибавилось энергии и улучшилось настроение.
-                                        </div>
-                                        <div class="feedback-list__item_details--date">20.03.18</div>
+                                <div class="feedback-list__item_details">
+                                    <div class="feedback-list__item_details--text">
+                                        Купила данный препарат маме просто для поддержки организма. <br> Каких-то
+                                        особенных
+                                        эффектов не ждала, но после месяца применения у мамы на седых волосах начали
+                                        отрастать темные корни, т.е. седые волосы стали превращаться в нормальные! Я и
+                                        не
+                                        думала, что такое в принципе бывает. Сама тоже принимаю Синергин, состояние
+                                        бодрое,
+                                        хорошее, оптимистичное, думаю, что отчасти это и с витаминами связано.
+                                        Рекомендую!
                                     </div>
-                                    <div class="feedback-list__item_user">
-                                        <div class="feedback-list__item_user--icon"><img src="img/comment-icon.svg" alt=""></div>
-                                            <div class="feedback-list__item_user--name">Gia</div>
-                                            <div class="feedback-list__item_user--place">г. Москва</div>
-                                        </div>
+                                    <div class="feedback-list__item_details--date">20.03.18</div>
+                                </div>
+                            </div>
+                            <div class="feedback-list__item">
+                                <div class="feedback-list__item_details">
+                                    <div class="feedback-list__item_details--text">
+                                        Покупала особо ни на что не надеясь, так… для поддержки организма. Но спустя
+                                        пару
+                                        недель почувствовала, что прибавилось энергии и улучшилось настроение.
                                     </div>
-                                    <div class="feedback-list__item">
-                                        <div class="feedback-list__item_user">
-                                            <div class="feedback-list__item_user--icon"><img src="img/comment-icon.svg" alt=""></div>
-                                                <div class="feedback-list__item_user--name">Екатерина</div>
-                                                <div class="feedback-list__item_user--place">г. Омск</div>
-                                            </div>
-                                            <div class="feedback-list__item_details">
-                                                <div class="feedback-list__item_details--text">
-                                                    Советую тем, кто хочет получить красивый ровный, стойкий, насыщенный загар без
-                                                    ожогов и пигментных пятен. Действительно, после курса этих витаминов загар
-                                                    ложится
-                                                    потрясно (летом проверяла на себе). Ну и, кроме того, антиоксиданты усиливают
-                                                    иммунитет, улучшают зрение, состояние волос и кожи.
-                                                </div>
-                                                <div class="feedback-list__item_details--date">20.03.18</div>
-                                            </div>
-                                        </div>
-                                        <div class="feedback-list__item">
-                                            <div class="feedback-list__item_details">
-                                                <div class="feedback-list__item_details--text">
-                                                    По правде говоря, я не очень верила, что этот Синергин как-то так очень круто
-                                                    поможет. Но толк от него в результате был: кожа стала мягенькой и как бы
-                                                    изнутри
-                                                    напитанной, пропало ощущение наждачки. Одними кремами такого результата не
-                                                    добьешься, хотя я косметическим уходом никогда не пренебрегаю. Для меня это был
-                                                    совершенно неожиданный эффект
-                                                </div>
-                                                <div class="feedback-list__item_details--date">20.03.18</div>
-                                            </div>
-                                            <div class="feedback-list__item_user">
-                                                <div class="feedback-list__item_user--icon"><img src="img/comment-icon.svg" alt=""></div>
-                                                    <div class="feedback-list__item_user--name">Ksenia91</div>
-                                                    <div class="feedback-list__item_user--place">г. Пермь</div>
-                                                </div>
-                                            </div>
-                                            <div class="feedback-list__item">
-                                                <div class="feedback-list__item_user">
-                                                    <div class="feedback-list__item_user--icon"><img src="img/comment-icon.svg" alt=""></div>
-                                                        <div class="feedback-list__item_user--name">Александр</div>
-                                                        <div class="feedback-list__item_user--place">г. Краснодар</div>
-                                                    </div>
-                                                    <div class="feedback-list__item_details">
-                                                        <div class="feedback-list__item_details--text">
-                                                            Я ведущий мероприятий уже 15 лет. Мне важно хорошо выглядеть – я не имею права
-                                                            быть
-                                                            вялым или неопрятным. Тем более, что молодые коллеги наступают на пятки. В
-                                                            сезон
-                                                            праздников часто приходится работать каждый день, иногда сплю всего 4-5 часов.
-                                                            Как-то утром заметил, что круги под глазами потемнела, кожа уже не какая-то не
-                                                            такая, общее очертание лица какое-то нерезкое. Интернет рассказал, что в моем
-                                                            возрасте нужен не только крем после бритья, но и набор всяких лифтингов,
-                                                            сывороток,
-                                                            филеров (всего не запомнил). Я столько не зарабатываю! Стал разбираться в
-                                                            процессе,
-                                                            и понял, что есть и другой путь – пить антиоксиданты. Два месяца принимаю
-                                                            Синергин.
-                                                            Результат есть! Выгляжу лучше по утрам и вечерам! Никаких мешков под глазами!
-                                                            Высыпаюсь лучше! Бодрость на целый день! Завидуйте, молодежь!
-                                                        </div>
-                                                        <div class="feedback-list__item_details--date">20.03.18</div>
-                                                    </div>
-                                                </div>
-                                                <div class="feedback-list__item">
-                                                    <div class="feedback-list__item_details">
-                                                        <div class="feedback-list__item_details--text">
-                                                            Классный комплекс! Улучшает память и внимание, нормализует давление, помогает
-                                                            при
-                                                            переутомлении. Еще заметила, что кожа стала более упругой и менее сухой (вечно
-                                                            страдаю от сухости кожи)
-                                                        </div>
-                                                        <div class="feedback-list__item_details--date">20.03.18</div>
-                                                    </div>
-                                                    <div class="feedback-list__item_user">
-                                                        <div class="feedback-list__item_user--icon"><img src="img/comment-icon.svg" alt=""></div>
-                                                            <div class="feedback-list__item_user--name">Машуля</div>
-                                                            <div class="feedback-list__item_user--place">г. Москва</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="feedback-list__item">
-                                                        <div class="feedback-list__item_user">
-                                                            <div class="feedback-list__item_user--icon"><img src="img/comment-icon.svg" alt=""></div>
-                                                                <div class="feedback-list__item_user--name">Evgeniy2017</div>
-                                                                <div class="feedback-list__item_user--place">г. Екатеринбург</div>
-                                                            </div>
-                                                            <div class="feedback-list__item_details">
-                                                                <div class="feedback-list__item_details--text">
-                                                                    Из-за работы сохнет кожа на руках, всегда пользовался жирным кремом для рук.
-                                                                    Одна
-                                                                    знакомая посоветовала пропить витамин Е в «хорошей дозировке». В аптеке нашли
-                                                                    высокую дозировку в Синергине. С одной стороны, цена не самая маленькая, но с
-                                                                    другой стороны, на крем я не меньше трачу. И скажу честно, удивился, когда
-                                                                    заметил,
-                                                                    что руки перестали сохнуть и стягиваться. Бонусом получил бодрое настроение.
-                                                                    Думаю,
-                                                                    дело не только в витамине Е, а в том, что Синергин - комплекс антиоксидантов.
-                                                                    Кремом я все еще пользуюсь, но уже не так много и часто.
-                                                                </div>
-                                                                <div class="feedback-list__item_details--date">20.03.18</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <button class="btn btn-transparent" @click.stop="openModal('feedback')"><img src="img/comments.svg"
+                                    <div class="feedback-list__item_details--date">20.03.18</div>
+                                </div>
+                                <div class="feedback-list__item_user">
+                                    <div class="feedback-list__item_user--icon"><img src="img/comment-icon.svg" alt=""></div>
+                                    <div class="feedback-list__item_user--name">Gia</div>
+                                    <div class="feedback-list__item_user--place">г. Москва</div>
+                                </div>
+                            </div>
+                            <div class="feedback-list__item">
+                                <div class="feedback-list__item_user">
+                                    <div class="feedback-list__item_user--icon"><img src="img/comment-icon.svg" alt=""></div>
+                                    <div class="feedback-list__item_user--name">Екатерина</div>
+                                    <div class="feedback-list__item_user--place">г. Омск</div>
+                                </div>
+                                <div class="feedback-list__item_details">
+                                    <div class="feedback-list__item_details--text">
+                                        Советую тем, кто хочет получить красивый ровный, стойкий, насыщенный загар без
+                                        ожогов и пигментных пятен. Действительно, после курса этих витаминов загар
+                                        ложится
+                                        потрясно (летом проверяла на себе). Ну и, кроме того, антиоксиданты усиливают
+                                        иммунитет, улучшают зрение, состояние волос и кожи.
+                                    </div>
+                                    <div class="feedback-list__item_details--date">20.03.18</div>
+                                </div>
+                            </div>
+                            <div class="feedback-list__item">
+                                <div class="feedback-list__item_details">
+                                    <div class="feedback-list__item_details--text">
+                                        По правде говоря, я не очень верила, что этот Синергин как-то так очень круто
+                                        поможет. Но толк от него в результате был: кожа стала мягенькой и как бы
+                                        изнутри
+                                        напитанной, пропало ощущение наждачки. Одними кремами такого результата не
+                                        добьешься, хотя я косметическим уходом никогда не пренебрегаю. Для меня это был
+                                        совершенно неожиданный эффект
+                                    </div>
+                                    <div class="feedback-list__item_details--date">20.03.18</div>
+                                </div>
+                                <div class="feedback-list__item_user">
+                                    <div class="feedback-list__item_user--icon"><img src="img/comment-icon.svg" alt=""></div>
+                                    <div class="feedback-list__item_user--name">Ksenia91</div>
+                                    <div class="feedback-list__item_user--place">г. Пермь</div>
+                                </div>
+                            </div>
+                            <div class="feedback-list__item">
+                                <div class="feedback-list__item_user">
+                                    <div class="feedback-list__item_user--icon"><img src="img/comment-icon.svg" alt=""></div>
+                                    <div class="feedback-list__item_user--name">Александр</div>
+                                    <div class="feedback-list__item_user--place">г. Краснодар</div>
+                                </div>
+                                <div class="feedback-list__item_details">
+                                    <div class="feedback-list__item_details--text">
+                                        Я ведущий мероприятий уже 15 лет. Мне важно хорошо выглядеть – я не имею права
+                                        быть
+                                        вялым или неопрятным. Тем более, что молодые коллеги наступают на пятки. В
+                                        сезон
+                                        праздников часто приходится работать каждый день, иногда сплю всего 4-5 часов.
+                                        Как-то утром заметил, что круги под глазами потемнела, кожа уже не какая-то не
+                                        такая, общее очертание лица какое-то нерезкое. Интернет рассказал, что в моем
+                                        возрасте нужен не только крем после бритья, но и набор всяких лифтингов,
+                                        сывороток,
+                                        филеров (всего не запомнил). Я столько не зарабатываю! Стал разбираться в
+                                        процессе,
+                                        и понял, что есть и другой путь – пить антиоксиданты. Два месяца принимаю
+                                        Синергин.
+                                        Результат есть! Выгляжу лучше по утрам и вечерам! Никаких мешков под глазами!
+                                        Высыпаюсь лучше! Бодрость на целый день! Завидуйте, молодежь!
+                                    </div>
+                                    <div class="feedback-list__item_details--date">20.03.18</div>
+                                </div>
+                            </div>
+                            <div class="feedback-list__item">
+                                <div class="feedback-list__item_details">
+                                    <div class="feedback-list__item_details--text">
+                                        Классный комплекс! Улучшает память и внимание, нормализует давление, помогает
+                                        при
+                                        переутомлении. Еще заметила, что кожа стала более упругой и менее сухой (вечно
+                                        страдаю от сухости кожи)
+                                    </div>
+                                    <div class="feedback-list__item_details--date">20.03.18</div>
+                                </div>
+                                <div class="feedback-list__item_user">
+                                    <div class="feedback-list__item_user--icon"><img src="img/comment-icon.svg" alt=""></div>
+                                    <div class="feedback-list__item_user--name">Машуля</div>
+                                    <div class="feedback-list__item_user--place">г. Москва</div>
+                                </div>
+                            </div>
+                            <div class="feedback-list__item">
+                                <div class="feedback-list__item_user">
+                                    <div class="feedback-list__item_user--icon"><img src="img/comment-icon.svg" alt=""></div>
+                                    <div class="feedback-list__item_user--name">Evgeniy2017</div>
+                                    <div class="feedback-list__item_user--place">г. Екатеринбург</div>
+                                </div>
+                                <div class="feedback-list__item_details">
+                                    <div class="feedback-list__item_details--text">
+                                        Из-за работы сохнет кожа на руках, всегда пользовался жирным кремом для рук.
+                                        Одна
+                                        знакомая посоветовала пропить витамин Е в «хорошей дозировке». В аптеке нашли
+                                        высокую дозировку в Синергине. С одной стороны, цена не самая маленькая, но с
+                                        другой стороны, на крем я не меньше трачу. И скажу честно, удивился, когда
+                                        заметил,
+                                        что руки перестали сохнуть и стягиваться. Бонусом получил бодрое настроение.
+                                        Думаю,
+                                        дело не только в витамине Е, а в том, что Синергин - комплекс антиоксидантов.
+                                        Кремом я все еще пользуюсь, но уже не так много и часто.
+                                    </div>
+                                    <div class="feedback-list__item_details--date">20.03.18</div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-transparent" @click.stop="openModal('feedback')"><img src="img/comments.svg"
                                 alt=""> ДОБАВИТЬ ОТЗЫВ</button>
-                                                </div>
+                    </div>
                 </section>
                 <section class="buy-section buy-section--bottom">
                     <div class="container">
@@ -680,7 +685,7 @@
                             </h2>
                             <div class="wrapper__buttons">
                                 <button class="btn btn-buy"><img src="img/cart.svg" alt="">КУПИТЬ ОНЛАЙН</button>
-                                    <button class="btn btn-find" @click.stop="openModal('pharmacy')"><img src="img/location.svg"
+                                <button class="btn btn-find" @click.stop="openModal('pharmacy')"><img src="img/location.svg"
                                         alt="">ГДЕ КУПИТЬ?</button>
                             </div>
                         </div>
@@ -785,7 +790,7 @@
                         </div>
                         <div class="col buttons">
                             <button class="btn btn-find"><img src="img/location-white.svg" alt="">ГДЕ КУПИТЬ?</button>
-                                <button class="btn btn-transparent" @click.stop="openModal('question')"><img src="img/comments-footer.svg"
+                            <button class="btn btn-transparent" @click.stop="openModal('question')"><img src="img/comments-footer.svg"
                                     alt=""> ЗАДАТЬ ВОПРОС</button>
                         </div>
                     </div>
@@ -797,51 +802,85 @@
                 <div class="modal-close" @click="closeModal()"></div>
                 <h2>Заказывайте Синергин в интернет-аптеках:</h2>
                 <div class="pharmacy-list">
-                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png" alt=""><span>piluli.ru</span></a>
-                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png" alt=""><span>ЛекПрайс</span></a>
-                    <a href="https://megapteka.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/megapteka.png" alt=""><span>Megapteka</span></a>
-                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png" alt=""><span>Аптека
+                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png"
+                            alt=""><span>piluli.ru</span></a>
+                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png"
+                            alt=""><span>ЛекПрайс</span></a>
+                    <a href="https://megapteka.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/megapteka.png"
+                            alt=""><span>Megapteka</span></a>
+                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png"
+                            alt=""><span>Аптека
                             онлайн</span></a>
-                    <a href="https://megapteka.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/megapteka.png" alt=""><span>Megapteka</span></a>
-                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png" alt=""><span>piluli.ru</span></a>
-                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png" alt=""><span>Аптека
+                    <a href="https://megapteka.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/megapteka.png"
+                            alt=""><span>Megapteka</span></a>
+                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png"
+                            alt=""><span>piluli.ru</span></a>
+                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png"
+                            alt=""><span>Аптека
                             онлайн</span></a>
-                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png" alt=""><span>ЛекПрайс</span></a>
-                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png" alt=""><span>piluli.ru</span></a>
-                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png" alt=""><span>ЛекПрайс</span></a>
+                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png"
+                            alt=""><span>ЛекПрайс</span></a>
+                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png"
+                            alt=""><span>piluli.ru</span></a>
+                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png"
+                            alt=""><span>ЛекПрайс</span></a>
                 </div>
                 <h2>Покупайте Синергин в аптеках:</h2>
                 <div class="pharmacy-list">
-                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png" alt=""><span>piluli.ru</span></a>
-                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png" alt=""><span>ЛекПрайс</span></a>
-                    <a href="https://megapteka.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/megapteka.png" alt=""><span>Megapteka</span></a>
-                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png" alt=""><span>Аптека
+                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png"
+                            alt=""><span>piluli.ru</span></a>
+                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png"
+                            alt=""><span>ЛекПрайс</span></a>
+                    <a href="https://megapteka.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/megapteka.png"
+                            alt=""><span>Megapteka</span></a>
+                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png"
+                            alt=""><span>Аптека
                             онлайн</span></a>
-                    <a href="https://megapteka.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/megapteka.png" alt=""><span>Megapteka</span></a>
-                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png" alt=""><span>piluli.ru</span></a>
-                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png" alt=""><span>Аптека
+                    <a href="https://megapteka.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/megapteka.png"
+                            alt=""><span>Megapteka</span></a>
+                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png"
+                            alt=""><span>piluli.ru</span></a>
+                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png"
+                            alt=""><span>Аптека
                             онлайн</span></a>
-                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png" alt=""><span>ЛекПрайс</span></a>
-                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png" alt=""><span>piluli.ru</span></a>
-                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png" alt=""><span>ЛекПрайс</span></a>
-                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png" alt=""><span>Аптека
+                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png"
+                            alt=""><span>ЛекПрайс</span></a>
+                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png"
+                            alt=""><span>piluli.ru</span></a>
+                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png"
+                            alt=""><span>ЛекПрайс</span></a>
+                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png"
+                            alt=""><span>Аптека
                             онлайн</span></a>
-                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png" alt=""><span>ЛекПрайс</span></a>
-                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png" alt=""><span>piluli.ru</span></a>
-                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png" alt=""><span>ЛекПрайс</span></a>
-                    <a href="https://megapteka.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/megapteka.png" alt=""><span>Megapteka</span></a>
-                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png" alt=""><span>Аптека
+                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png"
+                            alt=""><span>ЛекПрайс</span></a>
+                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png"
+                            alt=""><span>piluli.ru</span></a>
+                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png"
+                            alt=""><span>ЛекПрайс</span></a>
+                    <a href="https://megapteka.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/megapteka.png"
+                            alt=""><span>Megapteka</span></a>
+                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png"
+                            alt=""><span>Аптека
                             онлайн</span></a>
-                    <a href="https://megapteka.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/megapteka.png" alt=""><span>Megapteka</span></a>
-                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png" alt=""><span>piluli.ru</span></a>
-                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png" alt=""><span>Аптека
+                    <a href="https://megapteka.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/megapteka.png"
+                            alt=""><span>Megapteka</span></a>
+                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png"
+                            alt=""><span>piluli.ru</span></a>
+                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png"
+                            alt=""><span>Аптека
                             онлайн</span></a>
-                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png" alt=""><span>ЛекПрайс</span></a>
-                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png" alt=""><span>piluli.ru</span></a>
-                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png" alt=""><span>ЛекПрайс</span></a>
-                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png" alt=""><span>Аптека
+                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png"
+                            alt=""><span>ЛекПрайс</span></a>
+                    <a href="http://www.piluli.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/piluli.png"
+                            alt=""><span>piluli.ru</span></a>
+                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png"
+                            alt=""><span>ЛекПрайс</span></a>
+                    <a href="https://www.aptekaonline.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/aptekaonline.png"
+                            alt=""><span>Аптека
                             онлайн</span></a>
-                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png" alt=""><span>ЛекПрайс</span></a>
+                    <a href="http://lekprice.ru/" class="pharmacy-list__item" target="_blank"><img src="img/pharmacy/lek_price.png"
+                            alt=""><span>ЛекПрайс</span></a>
                 </div>
             </div>
         </div>
@@ -884,8 +923,9 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.4/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.4/dist/vue.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="public/app.js"></script>
 </body>
