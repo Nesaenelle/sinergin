@@ -889,9 +889,9 @@
                 <div class="modal-close" @click="closeModal()"></div>
                 <h2>Добавить отзыв</h2>
                 <form>
-                    <input type="text" placeholder="Ваше имя*" required>
-                    <input type="email" placeholder="Город" required>
-                    <textarea placeholder="Текст отзыва" required></textarea>
+                    <input type="text" placeholder="Ваше имя*" required  maxlength="40">
+                    <input type="email" placeholder="Город" required maxlength="40">
+                    <textarea placeholder="Текст отзыва" required maxlength="200"></textarea>
                     <div class="annotation">Пункты обозначенные *, обязательны к заполнению.</div>
                     <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
                     <label class="checkbox">
@@ -908,9 +908,9 @@
                 <div class="modal-close" @click="closeModal()"></div>
                 <h2>Задать вопрос</h2>
                 <form>
-                    <input type="text" placeholder="Ваше имя*" required>
-                    <input type="email" placeholder="Электронная почта*" required>
-                    <textarea placeholder="Задайте вопрос" required></textarea>
+                    <input type="text" placeholder="Ваше имя*" required maxlength="40">
+                    <input type="email" placeholder="Электронная почта*" required maxlength="40">
+                    <textarea placeholder="Задайте вопрос" required maxlength="200"></textarea>
                     <div class="annotation">Пункты обозначенные *, обязательны к заполнению.</div>
                     <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
                     <label class="checkbox">
