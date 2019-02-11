@@ -316,9 +316,13 @@ header {
                 top: 70px;
             }
         }
-
-        &.on-top {
-            top: 64px;
+        
+        .btn {
+          display: none;
+            @media screen and (max-width: 480px) {
+              display: block;
+              margin: 0 auto 20px;
+            }
         }
 
         nav {

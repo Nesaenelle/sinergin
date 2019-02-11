@@ -32,6 +32,7 @@
                             <span></span>
                         </div>
                         <div class="dropdown-menu" :class="{opened: showMenu}" ref="menu">
+                            <button class="btn" @click.stop="openModal('pharmacy')">ГДЕ КУПИТЬ?</button>
                             <nav>
                                 <ul>
                                     <li><a href="" @click="navigation($event)"> <span> ПРИЧИНЫ СТАРЕНИЯ </span></a></li>
@@ -781,7 +782,7 @@
                             <div class="hot-line"> Телефон горячей линии (с 9.00 до 18.00 по будням)</div>
                             <a href="tel:88002008686" class="phone"> 8 800 200-86-86</a>
                         </div>
-                        <div class="col">
+                        <div class="col buttons">
                             <button class="btn btn-find"><img src="img/location-white.svg" alt="">ГДЕ КУПИТЬ?</button>
                                 <button class="btn btn-transparent" @click.stop="openModal('question')"><img src="img/comments-footer.svg"
                                     alt=""> ЗАДАТЬ ВОПРОС</button>
