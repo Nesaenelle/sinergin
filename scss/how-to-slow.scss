@@ -3,6 +3,15 @@
   background-size: cover;
   background-position: center;
   padding: 221px 0 293px 0;
+    @media screen and (max-width: 980px) {
+      height: calc(100vh - 120px);
+      padding: 0;
+      display: flex;
+      align-items:center;
+    }
+    @media screen and (max-width: 600px) {
+      height: calc(100vh - 90px);
+    }
   .container {
     max-width: 1600px;
   }
@@ -14,6 +23,13 @@
     font-weight: 500;
     @media screen and (max-width: 1200px) {
       font-size: 60px;
+    }
+    @media screen and (max-width: 980px) {
+      font-size: 52px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 42px;
+      text-align: center;
     }
   }
 }

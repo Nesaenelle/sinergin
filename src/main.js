@@ -3,7 +3,7 @@
 var app = new Vue({
     el: '#app',
     data: {
-        message: 'Привет, Vue!'
+        showMenu: false
     },
     mounted() {
         $('.hypothesis-list__item_text:first').slideDown(0);
@@ -21,6 +21,9 @@ var app = new Vue({
         });
     },
     methods: {
+        toggleMenu() {
+          this.showMenu = !this.showMenu;
+        },
         headerCheck() {
             if (document.documentElement.scrollTop > 200) {
                 $('header').addClass('fixed');

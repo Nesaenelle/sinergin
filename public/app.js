@@ -6,7 +6,7 @@
 var app = new Vue({
     el: '#app',
     data: {
-        message: 'Привет, Vue!'
+        showMenu: false
     },
     mounted: function mounted() {
         var _this = this;
@@ -27,6 +27,9 @@ var app = new Vue({
     },
 
     methods: {
+        toggleMenu: function toggleMenu() {
+            this.showMenu = !this.showMenu;
+        },
         headerCheck: function headerCheck() {
             if (document.documentElement.scrollTop > 200) {
                 $('header').addClass('fixed');
