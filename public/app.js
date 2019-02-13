@@ -124,7 +124,7 @@ var app = new Vue({
             function scroll() {
                 var elem = e.currentTarget.getAttribute('href');
                 $([document.documentElement, document.body]).animate({
-                    scrollTop: $(elem).offset().top
+                    scrollTop: $(elem).offset().top - 80
                 }, 1000);
             }
             if ($('.reference').hasClass('active')) {
