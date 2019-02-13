@@ -12,6 +12,24 @@
         padding: 30px 0 30px 0px;
     }
 
+    .title {
+      color: $c-semi-dark-blue;
+      // width: 100%;
+      font-size: 52px;
+      letter-spacing: 1.3px;
+      margin-bottom: 49px;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 42px;
+      }
+      @media screen and (max-width: 980px) {
+        font-size: 38px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 30px;
+      }
+    }
+
     .theories-list {
         &__item {
             margin-top: 70px;
@@ -91,13 +109,14 @@
 
                 @media screen and (max-width: 980px) {
                     margin-top: 34px;
+                    font-size: 34px;
                 }
 
                 @media screen and (max-width: 600px) {
-                    font-size: 30px;
+                    font-size: 28px;
                 }
                 @media screen and (max-width: 475px) {
-                    font-size: 24px;
+                    font-size: 22px;
                 }
             }
 
@@ -215,7 +234,7 @@
         background: $c-light-blue;
         padding: 30px 30px 35px 30px;
         color: #fff;
-        font-size: 25px;
+        font-size: 33px;
         line-height: 1.3em;
         border-radius: 24px;
         margin-top: 75px;
@@ -224,15 +243,15 @@
         padding-right: 35px;
 
         @media screen and (max-width: 1200px) {
-            font-size: 20px;
+            font-size: 25px;
         }
 
         @media screen and (max-width: 980px) {
-            font-size: 18px;
+            font-size: 20px;
         }
 
         @media screen and (max-width: 600px) {
-            font-size: 16px;
+            font-size: 18px;
             padding: 25px;
         }
     }

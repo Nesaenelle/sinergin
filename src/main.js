@@ -5,7 +5,8 @@ let scrollInstance = new scrollToAnimate();
 var app = new Vue({
     el: '#app',
     data: {
-        showMenu: false
+        showMenu: false,
+        onTop: false
     },
     mounted() {
         [].forEach.call(document.querySelectorAll('img[data-src]'), (img)=>{
@@ -13,6 +14,10 @@ var app = new Vue({
           img.onload = ()=> {
             img.removeAttribute('data-src');
           };
+        });
+
+        window.addEventListener('scroll', () => {
+          this.onTop = document.documentElement.scrollTop > 300;
         });
 
         $('a[href^="#link-"]').on('click', (e)=>{
@@ -78,6 +83,9 @@ var app = new Vue({
           }, false);
     },
     methods: {
+        goTop() {
+            scrollInstance.animate(document.documentElement, 0, 1000);
+        },
         toggleMenu() {
             this.showMenu = !this.showMenu;
         },
@@ -90,7 +98,7 @@ var app = new Vue({
         },
         toggleAccordeonItem(e) {
             let target = e.currentTarget.parentNode;
-            $(target).find('.hypothesis-list__item_text').stop().slideToggle();
+            $(target).find('.hypothesis-list__item_text').stop().slideToggle(300);
             if (target.classList.contains('active')) {
                 target.classList.remove('active');
             } else {
@@ -99,7 +107,7 @@ var app = new Vue({
         },
         toggleReferenceItem(e) {
             let target = e.currentTarget;
-            $(target).next().stop().slideToggle();
+            $(target).next().stop().slideToggle(300);
             if (target.parentNode.classList.contains('active')) {
                 target.parentNode.classList.remove('active');
             } else {
@@ -115,7 +123,7 @@ var app = new Vue({
                 offset = 0;
             }
             if (elem) {
-              scrollInstance.animate(document.documentElement, offset, 1250);
+              scrollInstance.animate(document.documentElement, offset, 1000);
             }
         },
         openModal(name) {

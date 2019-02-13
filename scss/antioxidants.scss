@@ -385,6 +385,12 @@
             max-width: 300px;
             position: static !important;
           }
+          &.tomato {
+            max-width: 470px;
+           @media screen and (max-width: 600px) {
+            max-width: 260px;
+           }
+          }
         }
 
         &-3 {

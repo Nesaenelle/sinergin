@@ -101,6 +101,11 @@ header {
         position: relative;
         top: 3px;
         left: -2px;
+        display: flex;
+        align-items: baseline;
+        sub {
+
+        }
 
         @media screen and (max-width: 1200px) {
             font-size: 38px;
@@ -169,7 +174,7 @@ header {
                             width: 100%;
                             position: absolute;
                             // bottom: 0;
-                            bottom: calc(50% - 10px);
+                            bottom: 0;//calc(50% - 10px);
                             left: 0;
                             opacity: 0;
                             visibility: hidden;
