@@ -136,6 +136,20 @@ footer {
       height: 46px;
       background-size: cover;
       background: url(../img/arrow-dark.svg);
+      @media screen and (max-width: 1200px) {
+         width: 40px;
+         height: 40px;
+      }
+
+      @media screen and (max-width: 980px) {
+        width: 33px;
+        height: 33px;
+      }
+
+      @media screen and (max-width: 600px) {
+        width: 25px;
+        height: 25px;
+      }
     }
 
     &__toggle {

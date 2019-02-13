@@ -100,4 +100,12 @@ var app = new Vue({
             $('.main-wrapper').removeClass('opened');
         }
     }
-})
+});
+
+
+[].forEach.call(document.querySelectorAll('img[data-src]'), (img)=>{
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = ()=> {
+    img.removeAttribute('data-src');
+  };
+});
