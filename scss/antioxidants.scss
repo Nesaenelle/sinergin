@@ -93,7 +93,7 @@
       &--text {
         padding-top: 13px;
         color: $c-white;
-        font-family: Proxima-Nova;
+        font-family: Proxima-Nova, sans-serif;
         font-size: 24px;
         line-height: 1.35em;
         font-weight: 300;
@@ -145,7 +145,7 @@
     color: $c-white;
     margin-top: 68px;
     font-size: 28px;
-    font-family: Proxima-Nova;
+    font-family: Proxima-Nova, sans-serif;
     letter-spacing: 0.5px;
 
     @media screen and (max-width: 1200px) {

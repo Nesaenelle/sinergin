@@ -96,7 +96,7 @@ footer {
 
   .descr {
     color: #848484;
-    font-family: "Proxima-Nova";
+    font-family: "Proxima-Nova", sans-serif;
     font-size: 29px;
     font-weight: 100;
     letter-spacing: -0.4px;
@@ -118,7 +118,7 @@ footer {
   .reference {
     font-size: 22px;
     color: $c-dark-blue;
-    font-family: "Proxima-Nova";
+    font-family: "Proxima-Nova", sans-serif;
 
     display: flex;
     flex-wrap: wrap;
@@ -240,7 +240,7 @@ footer {
   .address {
     color: $c-dark-blue;
     font-size: 20px;
-    font-family: "Proxima-Nova";
+    font-family: "Proxima-Nova", sans-serif;
     line-height: 1.1em;
     letter-spacing: 0.2px;
 
@@ -257,7 +257,7 @@ footer {
   .hot-line {
     color: $c-dark-blue;
     font-size: 20px;
-    font-family: "Panton";
+    font-family: "Panton", sans-serif;
     letter-spacing: 0.3px;
     width: 100%;
 

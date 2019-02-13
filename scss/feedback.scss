@@ -128,7 +128,7 @@
                 &--name {
                     margin-top: 17px;
                     color: $c-semi-dark-blue;
-                    font-family: "Proxima-Nova";
+                    font-family: "Proxima-Nova", sans-serif;
                     font-size: 26px;
 
                     @media screen and (max-width: 1200px) {
@@ -147,7 +147,7 @@
                 &--place {
                     margin-top: 2px;
                     color: #328aa5;
-                    font-family: "Proxima-Nova";
+                    font-family: "Proxima-Nova", sans-serif;
                     font-size: 20px;
 
                     @media screen and (max-width: 980px) {
@@ -220,7 +220,7 @@
                 }
 
                 &--text {
-                    font-family: "Proxima-Nova";
+                    font-family: "Proxima-Nova", sans-serif;
                     color: $c-dark-blue;
                     font-size: 25px;
                     padding-right: 30px;
@@ -246,7 +246,7 @@
                     color: #328AA5;
                     font-size: 20px;
                     margin-top: 12px;
-                    font-family: Proxima-Nova;
+                    font-family: Proxima-Nova, sans-serif;
                     letter-spacing: 0.5px;
                     justify-self: flex-end;
                     width: 100%;
