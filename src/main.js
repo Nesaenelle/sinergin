@@ -8,6 +8,33 @@ var app = new Vue({
         showMenu: false
     },
     mounted() {
+        [].forEach.call(document.querySelectorAll('img[data-src]'), (img)=>{
+          img.setAttribute('src', img.getAttribute('data-src'));
+          img.onload = ()=> {
+            img.removeAttribute('data-src');
+          };
+        });
+
+        $('a[href^="#link-"]').on('click', (e)=>{
+            e.preventDefault();
+            function scroll() {
+                let elem = e.currentTarget.getAttribute('href');
+                 $([document.documentElement, document.body]).animate({
+                    scrollTop: $(elem).offset().top
+                }, 1000);
+            }
+            if($('.reference').hasClass('active')){
+                scroll();
+            } else {
+                let $target = $('.reference__toggle');
+                $target.next().stop().slideToggle(0);
+                if (!$target.parent().hasClass('active')) {
+                    $target.parent().addClass('active');
+                }
+                scroll();
+            }
+        })
+
         $('.hypothesis-list__item_text:first').slideDown(0);
 
         this.headerCheck();
@@ -100,12 +127,4 @@ var app = new Vue({
             $('.main-wrapper').removeClass('opened');
         }
     }
-});
-
-
-[].forEach.call(document.querySelectorAll('img[data-src]'), (img)=>{
-  img.setAttribute('src', img.getAttribute('data-src'));
-  img.onload = ()=> {
-    img.removeAttribute('data-src');
-  };
 });

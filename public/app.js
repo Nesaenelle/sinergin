@@ -112,6 +112,33 @@ var app = new Vue({
     mounted: function mounted() {
         var _this = this;
 
+        [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
+            img.setAttribute('src', img.getAttribute('data-src'));
+            img.onload = function () {
+                img.removeAttribute('data-src');
+            };
+        });
+
+        $('a[href^="#link-"]').on('click', function (e) {
+            e.preventDefault();
+            function scroll() {
+                var elem = e.currentTarget.getAttribute('href');
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $(elem).offset().top
+                }, 1000);
+            }
+            if ($('.reference').hasClass('active')) {
+                scroll();
+            } else {
+                var $target = $('.reference__toggle');
+                $target.next().stop().slideToggle(0);
+                if (!$target.parent().hasClass('active')) {
+                    $target.parent().addClass('active');
+                }
+                scroll();
+            }
+        });
+
         $('.hypothesis-list__item_text:first').slideDown(0);
 
         this.headerCheck();
@@ -205,13 +232,6 @@ var app = new Vue({
             $('.main-wrapper').removeClass('opened');
         }
     }
-});
-
-[].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
-    img.setAttribute('src', img.getAttribute('data-src'));
-    img.onload = function () {
-        img.removeAttribute('data-src');
-    };
 });
 
 },{"./Utils.js":1}]},{},[2]);
