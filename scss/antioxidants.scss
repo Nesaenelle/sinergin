@@ -328,7 +328,12 @@
         &-2 {
           padding-right: 0;
         }
-
+        a {
+          color: inherit; 
+          &:hover {
+            text-decoration: underline;
+          }
+        }
         p {
           padding-top: 14px;
           letter-spacing: 0.5px;

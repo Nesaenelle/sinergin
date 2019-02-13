@@ -178,10 +178,10 @@ var app = new Vue({
         toggleReferenceItem: function toggleReferenceItem(e) {
             var target = e.currentTarget;
             $(target).next().stop().slideToggle();
-            if (target.classList.contains('active')) {
-                target.classList.remove('active');
+            if (target.parentNode.classList.contains('active')) {
+                target.parentNode.classList.remove('active');
             } else {
-                target.classList.add('active');
+                target.parentNode.classList.add('active');
             }
         },
         navigation: function navigation(e) {

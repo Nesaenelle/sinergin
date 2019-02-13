@@ -126,6 +126,12 @@ footer {
     margin: 49px auto 82px;
     justify-content: center;
 
+    &.active {
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+
     @media screen and (max-width: 980px) {
       margin: 30px auto 30px;
     }
@@ -136,6 +142,7 @@ footer {
       height: 46px;
       background-size: cover;
       background: url(../img/arrow-dark.svg);
+      transition: 0.2s;
       @media screen and (max-width: 1200px) {
          width: 40px;
          height: 40px;
@@ -176,7 +183,7 @@ footer {
 
     &__info {
       width: 100%;
-      display: none;
+      // display: none;
 
       &_wrapper {
         margin-top: 30px;
