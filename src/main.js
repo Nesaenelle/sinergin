@@ -7,36 +7,33 @@ let scrollInstance = new scrollToAnimate();
 
 let directive = Vue.directive('animate', {
 
-  bind: (el, binding, vnode) => {
-    
-  },
-  // Когда привязанный элемент вставлен в DOM...
-  inserted: (el, binding, vnode) => {
-    let once = false;
+    bind: (el, binding, vnode) => {
 
-    // bus.$on('page-is-ready', () => {/
-      update();
-      window.addEventListener('scroll', () => {
-        if (!once) {
-          update();
+    },
+    // Когда привязанный элемент вставлен в DOM...
+    inserted: (el, binding, vnode) => {
+        let once = false;
+        update();
+        window.addEventListener('scroll', () => {
+            if (!once) {
+                update();
+            }
+        });
+
+        function update() {
+            if (isInViewport(el, 50)) {
+                el.classList.add(binding.value);
+                if (binding.arg === 'once') {
+                    once = true;
+                }
+            } else {
+                el.classList.remove(binding.value);
+            }
         }
-      });
+    }
+    // update: function() {
 
-      function update() {
-        if (isInViewport(el, 50)) {
-          el.classList.add(binding.value);
-          if (binding.arg === 'once') {
-            once = true;
-          }
-        } else {
-          el.classList.remove(binding.value);
-        }
-      }
-    // });
-  }
-  // update: function() {
-
-  // }
+    // }
 });
 Vue.use(directive);
 
@@ -48,26 +45,27 @@ var app = new Vue({
         onTop: false
     },
     mounted() {
-        [].forEach.call(document.querySelectorAll('img[data-src]'), (img)=>{
-          img.setAttribute('src', img.getAttribute('data-src'));
-          img.onload = ()=> {
-            img.removeAttribute('data-src');
-          };
+        [].forEach.call(document.querySelectorAll('img[data-src]'), (img) => {
+            img.setAttribute('src', img.getAttribute('data-src'));
+            img.onload = () => {
+                img.removeAttribute('data-src');
+            };
         });
 
         window.addEventListener('scroll', () => {
-          this.onTop = document.documentElement.scrollTop > 300;
+            this.onTop = document.documentElement.scrollTop > 300;
         });
 
-        $('a[href^="#link-"]').on('click', (e)=>{
+        $('a[href^="#link-"]').on('click', (e) => {
             e.preventDefault();
+
             function scroll() {
                 let elem = e.currentTarget.getAttribute('href');
-                 $([document.documentElement, document.body]).animate({
+                $([document.documentElement, document.body]).animate({
                     scrollTop: $(elem).offset().top - 80
                 }, 1000);
             }
-            if($('.reference').hasClass('active')){
+            if ($('.reference').hasClass('active')) {
                 scroll();
             } else {
                 let $target = $('.reference__toggle');
@@ -108,18 +106,18 @@ var app = new Vue({
 
         window.addEventListener('scroll', () => {
             tabs.each((i, elem) => {
-              if (isScrolledIntoView(elem, 110)) {
-                var id = elem.getAttribute('data-navigation');
-                links.each((i, link) => {
-                  if (link.getAttribute('href').substr(1) === id) {
-                    link.classList.add('active');
-                  } else {
-                    link.classList.remove('active');
-                  }
-                });
-              }
+                if (isScrolledIntoView(elem, 110)) {
+                    var id = elem.getAttribute('data-navigation');
+                    links.each((i, link) => {
+                        if (link.getAttribute('href').substr(1) === id) {
+                            link.classList.add('active');
+                        } else {
+                            link.classList.remove('active');
+                        }
+                    });
+                }
             });
-          }, false);
+        }, false);
     },
     methods: {
         goTop() {
@@ -158,11 +156,11 @@ var app = new Vue({
             var id = e.currentTarget.getAttribute('href').substr(1);
             var elem = document.querySelector(`[data-navigation="${id}"]`);
             let offset = elem.offsetTop - 99;
-            if(id === 'home'){
+            if (id === 'home') {
                 offset = 0;
             }
             if (elem) {
-              scrollInstance.animate(document.documentElement, offset, 1000);
+                scrollInstance.animate(document.documentElement, offset, 1000);
             }
         },
         openModal(name) {
@@ -175,5 +173,3 @@ var app = new Vue({
         }
     }
 });
-
-

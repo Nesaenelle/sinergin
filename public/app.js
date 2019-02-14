@@ -110,8 +110,6 @@ var directive = Vue.directive('animate', {
     // Когда привязанный элемент вставлен в DOM...
     inserted: function inserted(el, binding, vnode) {
         var once = false;
-
-        // bus.$on('page-is-ready', () => {/
         update();
         window.addEventListener('scroll', function () {
             if (!once) {
@@ -129,7 +127,6 @@ var directive = Vue.directive('animate', {
                 el.classList.remove(binding.value);
             }
         }
-        // });
     }
     // update: function() {
 
@@ -159,6 +156,7 @@ var app = new Vue({
 
         $('a[href^="#link-"]').on('click', function (e) {
             e.preventDefault();
+
             function scroll() {
                 var elem = e.currentTarget.getAttribute('href');
                 $([document.documentElement, document.body]).animate({

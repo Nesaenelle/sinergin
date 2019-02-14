@@ -280,12 +280,12 @@
                 </section>
                 <section class="buy-section buy-section--top" data-navigation="sinergin">
                     <div class="container">
-                        <div class="buy-section__product">
+                        <div class="buy-section__product animate" v-animate="'slide-left'">
                             <img class="buy-section__product-img" src="img/sinergin.png" alt="">
                             <a target="_blank" class="pdf-link" href="https://sinergin.ru/themes/sinergin/assets/Sinergin.pdf">Скачать
                                 инструкцию в PDF</a>
                         </div>
-                        <div class="wrapper">
+                        <div class="wrapper animate" v-animate="'slide-right'">
                             <h2 class="title">6 мощных антиоксидантов в оптимальных дозировках: </h2>
                             <div class="antioxidants-list">
                                 <div class="antioxidants-list__item"><img data-src="img/coensim-small.svg" alt=""> Коэнзим Q<sub>10</sub></div>
@@ -302,7 +302,7 @@
                                         alt="">ГДЕ КУПИТЬ?</button>
                             </div>
                         </div>
-                        <div class="cell">
+                        <div class="cell animate" v-animate="'slide-left'">
                             <h3>Компоненты действуют<br>
                                 синергично</h3>
                             <p>Это означает, что их совместное действие значительно эффективнее, чем если бы каждый из
@@ -317,9 +317,9 @@
                     <div class="container">
                         <div class="antioxidants-groups-list">
                             <div class="antioxidants-groups-list__item">
-                                <div class="antioxidants-groups-list__item--title">Все антиоксиданты разделяют <br>
+                                <div class="antioxidants-groups-list__item--title animate" v-animate="'slide-left'">Все антиоксиданты разделяют <br>
                                     на две большие группы: </div>
-                                <div class="antioxidants-groups-list__item--text antioxidants-groups-list__item--text-1">
+                                <div class="antioxidants-groups-list__item--text antioxidants-groups-list__item--text-1 animate" v-animate="'slide-left'">
                                     <p><b>Водорастворимые</b> (гидрофильные): витамин С, рутин. Эти антиоксиданты нужны для
                                         защиты
                                         крови.
@@ -329,9 +329,10 @@
                                         желудочно-кишечного тракта, печени, почек, а также образовываться в самой
                                         крови.</p>
                                 </div>
-                                <img data-src="img/water.jpg" alt="" class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-1">
-                                <img data-src="img/link.jpg" alt="" class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-2">
-                                <div class="antioxidants-groups-list__item--text antioxidants-groups-list__item--text-2">
+                                <img data-src="img/water.jpg" alt="" class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-1 animate" v-animate="'slide-right'">
+                                <img data-src="img/link.jpg" alt="" 
+                                class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-2 animate" v-animate="'slide-left'">
+                                <div class="antioxidants-groups-list__item--text antioxidants-groups-list__item--text-2 animate" v-animate="'slide-right'">
                                     <p><b>Жирорастворимые</b> (липофильные, растворяются в липидах). К ним относятся витамин
                                         Е,
                                         каротиноиды, коэнзим Q<sub>10</sub>. Липофильные антиоксиданты помогают
@@ -340,20 +341,20 @@
                                         поддерживать их целостность.</p>
                                 </div>
                             </div>
-                            <div class="info-block">
+                            <div class="info-block animate" v-animate="'slide-left'">
                                 Особенность комплекса Синергин – сочетание в составе гидрофильных и липофильных
                                 антиоксидантов,
                                 что способствует наиболее эффективной нейтрализации свободных радикалов внутри каждой
                                 клетки,
                                 всех тканей.
                             </div>
-                            <div class="antioxidants-groups-list__item--title">Как работают компоненты Синергина?</div>
+                            <div class="antioxidants-groups-list__item--title animate" v-animate="'slide-left'">Как работают компоненты Синергина?</div>
                             <div class="antioxidants-groups-list__item">
 
-                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-3">
+                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-3 animate" v-animate="'slide-left'">
                                     <img data-src="img/coensim.jpg" alt="">
                                 </div>
-                                <div class="antioxidants-groups-list__item--text">
+                                <div class="antioxidants-groups-list__item--text animate" v-animate="'slide-right'">
                                     <h3>Коэнзим Q10</h3>
                                     <p> Достоверно помогает уменьшить признаки старения кожи при приеме в течение 12
                                         недель.
@@ -367,7 +368,7 @@
                                 </div>
                             </div>
                             <div class="antioxidants-groups-list__item">
-                                <div class="antioxidants-groups-list__item--text">
+                                <div class="antioxidants-groups-list__item--text animate" v-animate="'slide-left'">
                                     <h3>Токоферол (витамин Е)</h3>
                                     <p> Замедляет старение кожи и предотвращает разрушение коллагена и эластана.
                                         <a href="#link-6"><sup>6</sup></a></p>
@@ -376,15 +377,15 @@
                                         преклонном
                                         возрасте. <a href="#link-6"><sup>6</sup></a></p>
                                 </div>
-                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-4">
+                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-4 animate" v-animate="'slide-right'">
                                     <img data-src="img/avocado.jpg" alt="">
                                 </div>
                             </div>
                             <div class="antioxidants-groups-list__item">
-                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-5">
+                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-5 animate" v-animate="'slide-left'">
                                     <img data-src="img/orange.jpg" alt="">
                                 </div>
-                                <div class="antioxidants-groups-list__item--text">
+                                <div class="antioxidants-groups-list__item--text animate" v-animate="'slide-right'">
                                     <h3> Витамин С</h3>
                                     <p>Необходим для выработки коллагена в коже.<a href="#link-7"><sup>7</sup></a></p>
                                     <p>Помогает снизить риск возраст-ассоциированной болезни Альцгеймера при приеме в
@@ -394,35 +395,35 @@
                                 </div>
                             </div>
                             <div class="antioxidants-groups-list__item">
-                                <div class="antioxidants-groups-list__item--text">
+                                <div class="antioxidants-groups-list__item--text animate" v-animate="'slide-left'">
 
                                     <h3>Каротиноид ликопин</h3>
 
                                     <p> Замедляет фотостарение кожи.<a href="#link-10"><sup>10</sup></a></p>
                                     <p> Защищает сетчатку глаз, помогая предотвратить возрастные изменения зрения.<a href="#link-11"><sup>11</sup></a></p>
                                 </div>
-                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-6">
+                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-6 animate" v-animate="'slide-right'">
                                     <img data-src="img/tomato.jpg" alt="" class="tomato">
                                 </div>
                             </div>
                             <div class="antioxidants-groups-list__item">
-                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-7">
+                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-7 animate" v-animate="'slide-left'">
                                     <img data-src="img/carrot.jpg" alt="">
                                 </div>
-                                <div class="antioxidants-groups-list__item--text">
+                                <div class="antioxidants-groups-list__item--text animate" v-animate="'slide-right'">
                                     <h3> Бета-каротин (провитамин А)</h3>
                                     Продлевает жизнь клеток, синтезирующих коллаген и эластан.
                                     Обеспечивает защиту кожи от повреждения свободными радикалами.<a href="#link-12"><sup>12</sup></a>
                                 </div>
                             </div>
                             <div class="antioxidants-groups-list__item">
-                                <div class="antioxidants-groups-list__item--text">
+                                <div class="antioxidants-groups-list__item--text animate" v-animate="'slide-left'">
                                     <h3>Рутин (или витамин Р)</h3>
                                     Улучшает эластичность и упругость кожи.<a href="#link-13"><sup>13</sup></a></sup>
                                     Эффективен для профилактики варикозного расширения сосудов, тяжести и усталости в
                                     ногах.
                                 </div>
-                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-8">
+                                <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-8 animate" v-animate="'slide-right'">
                                     <img data-src="img/gooseberry.jpg" alt="">
                                 </div>
                             </div>
@@ -431,7 +432,7 @@
                 </section>
                 <section class="buy-section buy-section--middle">
                     <div class="container">
-                        <div class="wrapper">
+                        <div class="wrapper animate" v-animate="'slide-left'">
                             <h2 class="title">
                                 Синергин – всего 2 капсулы
                                 в день для замедления
@@ -450,7 +451,7 @@
                                         alt="">ГДЕ КУПИТЬ?</button>
                             </div>
                         </div>
-                        <div class="buy-section__product">
+                        <div class="buy-section__product animate" v-animate="'slide-right'">
                             <img class="buy-section__product-img" src="img/sinergin-right.png" alt="">
                             <a target="_blank" class="pdf-link" href="https://sinergin.ru/themes/sinergin/assets/Sinergin.pdf">Скачать
                                 инструкцию в PDF</a>
@@ -459,9 +460,9 @@
                 </section>
                 <section id="efficiency-section" data-navigation="efficiency">
                     <div class="container">
-                        <h2 class="title">Доказанная эффективность</h2>
+                        <h2 class="title animate" v-animate="'slide-left'">Доказанная эффективность</h2>
                         <div class="efficiency-list ">
-                            <div class="efficiency-list__item">
+                            <div class="efficiency-list__item animate" v-animate="'slide-left'">
                                 <img data-src="img/coensim-small.svg" alt="">
                                 <div> После 35 лет начинает снижаться я синтез Q<sub>10</sub> – одного из мощнейших
                                     антиоксидантов в
@@ -471,7 +472,7 @@
                                     крови организм «считает» своеобразным маркером возраста.</div>
                                 <img data-src="img/chart.png" alt="" class="chart">
                             </div>
-                            <div class="efficiency-list__item">
+                            <div class="efficiency-list__item animate" v-animate="'slide-left'">
                                 <img data-src="img/vitamin-c.svg" alt="">
                                 <div>
                                     <p>
@@ -487,7 +488,7 @@
                                         в день позволило снизить относительную смертность на 20%.</p>
                                 </div>
                             </div>
-                            <div class="efficiency-list__item">
+                            <div class="efficiency-list__item animate" v-animate="'slide-left'">
                                 <img data-src="img/beta-karotin.svg" alt="">
                                 <div>
                                     <p>
@@ -498,7 +499,7 @@
                                         от которых может защитить бета-каротин.</p>
                                 </div>
                             </div>
-                            <div class="efficiency-list__item">
+                            <div class="efficiency-list__item animate" v-animate="'slide-left'">
                                 <img data-src="img/likopin.svg" alt="">
                                 <div>
                                     <p> Употребление ликопина помогает на 50% снизить повреждения ДНК клеток и
@@ -506,7 +507,7 @@
                                         окислительный стресс, который приводит к старению организма.</p>
                                 </div>
                             </div>
-                            <div class="efficiency-list__item">
+                            <div class="efficiency-list__item animate" v-animate="'slide-left'">
                                 <img data-src="img/vitamin-e.svg" alt="">
                                 <div>
                                     <p> У людей, которые употребляют достаточное количество витамина Е, на 36 %
@@ -518,7 +519,7 @@
                                         восприятия).</p>
                                 </div>
                             </div>
-                            <div class="efficiency-list__item">
+                            <div class="efficiency-list__item animate" v-animate="'slide-left'">
                                 <img data-src="img/rutin.svg" alt="">
                                 <div>
                                     <p> Употребление рутина может сократить количество сенесцентных <br> клеток на 40%.</p>
@@ -529,9 +530,9 @@
                 </section>
                 <section id="feedback-section" data-navigation="feedback">
                     <div class="container">
-                        <h2 class="title">Отзывы потребителей</h2>
+                        <h2 class="title animate" v-animate="'slide-left'">Отзывы потребителей</h2>
                         <div class="feedback-list">
-                            <div class="feedback-list__item">
+                            <div class="feedback-list__item animate" v-animate="'slide-left'">
                                 <div class="feedback-list__item_user">
                                     <div class="feedback-list__item_user--icon"><img data-src="img/comment-icon.svg" alt=""></div>
                                     <div class="feedback-list__item_user--name">Маргарита</div>
@@ -552,7 +553,7 @@
                                     <!-- <div class="feedback-list__item_details--date">20.03.18</div> -->
                                 </div>
                             </div>
-                            <div class="feedback-list__item">
+                            <div class="feedback-list__item animate" v-animate="'slide-right'">
                                 <div class="feedback-list__item_details">
                                     <div class="feedback-list__item_details--text">
                                         Покупала особо ни на что не надеясь, так… для поддержки организма. Но спустя
@@ -567,7 +568,7 @@
                                     <div class="feedback-list__item_user--place">г. Москва</div>
                                 </div>
                             </div>
-                            <div class="feedback-list__item">
+                            <div class="feedback-list__item animate" v-animate="'slide-left'">
                                 <div class="feedback-list__item_user">
                                     <div class="feedback-list__item_user--icon"><img data-src="img/comment-icon.svg" alt=""></div>
                                     <div class="feedback-list__item_user--name">Екатерина</div>
@@ -584,7 +585,7 @@
                                     <!-- <div class="feedback-list__item_details--date">20.03.18</div> -->
                                 </div>
                             </div>
-                            <div class="feedback-list__item">
+                            <div class="feedback-list__item animate" v-animate="'slide-right'">
                                 <div class="feedback-list__item_details">
                                     <div class="feedback-list__item_details--text">
                                         По правде говоря, я не очень верила, что этот Синергин как-то так очень круто
@@ -602,7 +603,7 @@
                                     <div class="feedback-list__item_user--place">г. Пермь</div>
                                 </div>
                             </div>
-                            <div class="feedback-list__item">
+                            <div class="feedback-list__item animate" v-animate="'slide-left'">
                                 <div class="feedback-list__item_user">
                                     <div class="feedback-list__item_user--icon"><img data-src="img/comment-icon.svg" alt=""></div>
                                     <div class="feedback-list__item_user--name">Александр</div>
@@ -629,7 +630,7 @@
                                     <!-- <div class="feedback-list__item_details--date">20.03.18</div> -->
                                 </div>
                             </div>
-                            <div class="feedback-list__item">
+                            <div class="feedback-list__item animate" v-animate="'slide-right'">
                                 <div class="feedback-list__item_details">
                                     <div class="feedback-list__item_details--text">
                                         Классный комплекс! Улучшает память и внимание, нормализует давление, помогает
@@ -645,7 +646,7 @@
                                     <div class="feedback-list__item_user--place">г. Москва</div>
                                 </div>
                             </div>
-                            <div class="feedback-list__item">
+                            <div class="feedback-list__item animate" v-animate="'slide-left'">
                                 <div class="feedback-list__item_user">
                                     <div class="feedback-list__item_user--icon"><img data-src="img/comment-icon.svg" alt=""></div>
                                     <div class="feedback-list__item_user--name">Evgeniy2017</div>
@@ -668,18 +669,19 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-transparent" @click.stop="openModal('feedback')"><img data-src="img/comments.svg"
+                        <button class="btn btn-transparent animate" v-animate="'slide-up'"
+                        @click.stop="openModal('feedback')"><img data-src="img/comments.svg"
                                 alt=""> ДОБАВИТЬ ОТЗЫВ</button>
                     </div>
                 </section>
                 <section class="buy-section buy-section--bottom">
                     <div class="container">
-                        <div class="buy-section__product">
+                        <div class="buy-section__product animate" v-animate="'slide-left'">
                             <img class="buy-section__product-img" src="img/sinergin.png" alt="">
                             <a target="_blank" class="pdf-link" href="https://sinergin.ru/themes/sinergin/assets/Sinergin.pdf">Скачать
                                 инструкцию в PDF</a>
                         </div>
-                        <div class="wrapper">
+                        <div class="wrapper animate" v-animate="'slide-right'">
                             <h2 class="title">
                                 Тысчячи людей убедились <br>
                                 в эффективности Синергина.
@@ -694,7 +696,7 @@
                     </div>
                 </section>
             </main>
-            <footer>
+            <footer class="animate" v-animate="'slide-left'">
                 <div class="container">
                     <div class="descr">
                         Биологическая активная добавка к пище. Не является лекарством. СГР №
