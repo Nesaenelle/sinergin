@@ -104,6 +104,39 @@ var _Utils = require('./Utils.js');
 var scrollInstance = new _Utils.scrollToAnimate(); // alert(2);
 
 
+var directive = Vue.directive('animate', {
+
+    bind: function bind(el, binding, vnode) {},
+    // Когда привязанный элемент вставлен в DOM...
+    inserted: function inserted(el, binding, vnode) {
+        var once = false;
+
+        // bus.$on('page-is-ready', () => {/
+        update();
+        window.addEventListener('scroll', function () {
+            if (!once) {
+                update();
+            }
+        });
+
+        function update() {
+            if ((0, _Utils.isInViewport)(el, 50)) {
+                el.classList.add(binding.value);
+                if (binding.arg === 'once') {
+                    once = true;
+                }
+            } else {
+                el.classList.remove(binding.value);
+            }
+        }
+        // });
+    }
+    // update: function() {
+
+    // }
+});
+Vue.use(directive);
+
 var app = new Vue({
     el: '#app',
     data: {

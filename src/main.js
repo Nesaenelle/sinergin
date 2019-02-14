@@ -1,6 +1,45 @@
 // alert(2);
-import { isScrolledIntoView, scrollToAnimate } from './Utils.js'
+import { isScrolledIntoView, scrollToAnimate, isInViewport } from './Utils.js'
+
 let scrollInstance = new scrollToAnimate();
+
+
+
+let directive = Vue.directive('animate', {
+
+  bind: (el, binding, vnode) => {
+    
+  },
+  // Когда привязанный элемент вставлен в DOM...
+  inserted: (el, binding, vnode) => {
+    let once = false;
+
+    // bus.$on('page-is-ready', () => {/
+      update();
+      window.addEventListener('scroll', () => {
+        if (!once) {
+          update();
+        }
+      });
+
+      function update() {
+        if (isInViewport(el, 50)) {
+          el.classList.add(binding.value);
+          if (binding.arg === 'once') {
+            once = true;
+          }
+        } else {
+          el.classList.remove(binding.value);
+        }
+      }
+    // });
+  }
+  // update: function() {
+
+  // }
+});
+Vue.use(directive);
+
 
 var app = new Vue({
     el: '#app',
@@ -136,3 +175,5 @@ var app = new Vue({
         }
     }
 });
+
+

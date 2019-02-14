@@ -53,13 +53,13 @@
                 <div data-navigation="home"></div>
                 <section id="how-to-slow-section">
                     <div class="container">
-                        <h2 class="title">Как замедлить<br> процессы<br> старения?</h2>
+                        <h2 class="title animate" v-animate="'slide-left'">Как замедлить<br> процессы<br> старения?</h2>
                     </div>
                 </section>
                 <section id="aging-section" data-navigation="reasons">
                     <div class="container">
-                        <h2 class="title">Почему люди стареют?</h2>
-                        <p>Возможности современной медицины поистине огромны – сегодня врачи могут пересадить сердце,
+                        <h2 class="title animate" v-animate="'slide-left'">Почему люди стареют?</h2>
+                        <p class="animate" v-animate="'slide-right'">Возможности современной медицины поистине огромны – сегодня врачи могут пересадить сердце,
                             вернуть
                             острое зрение и даже распечатать на принтере новые органы взамен износившихся. Но ученые и
                             врачи
@@ -70,9 +70,9 @@
                 </section>
                 <section id="theories-section">
                     <div class="container">
-                        <h2 class="title">Теории о механизме старения</h2>
+                        <h2 class="title animate" v-animate="'slide-left'">Теории о механизме старения</h2>
                         <div class="theories-list">
-                            <div class="theories-list__item">
+                            <div class="theories-list__item animate" v-animate="'slide-up'">
                                 <div class="theories-list__item_img"><img data-src="img/evo.svg" alt=""></div>
                                 <div class="theories-list__item_wrapper">
                                     <div class="theories-list__item_title">Эволюционная теория</div>
@@ -82,7 +82,7 @@
                                         организмы освобождали жизненное пространство молодым.</div>
                                 </div>
                             </div>
-                            <div class="theories-list__item">
+                            <div class="theories-list__item animate" v-animate="'slide-up'">
                                 <div class="theories-list__item_wrapper">
                                     <div class="theories-list__item_title"> «Дегенеративная» теория</div>
                                     <div class="theories-list__item_text">Старение – это неизбежное снижение
@@ -96,7 +96,7 @@
                                 <div class="theories-list__item_img"><img data-src="img/aging.svg" alt=""></div>
                             </div>
                         </div>
-                        <div class="hypothesis-list">
+                        <div class="hypothesis-list animate" v-animate="'slide-up'">
                             <div class="hypothesis-list__item active">
                                 <div class="hypothesis-list__item_title" @click="toggleAccordeonItem($event)">
                                     Свободно-радикальная
@@ -147,7 +147,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="info-block">
+                        <div class="info-block animate" v-animate="'slide-left'">
                             Это разделение довольно условно, поскольку все описанные механизмы важны и взаимосвязаны. К
                             примеру, одним из механизмов возникновения мутаций является окислительный стресс (или
                             активность
@@ -160,9 +160,9 @@
                         <div class="container">
                             <div class="free-radicals__intro_img"></div>
                             <div class="free-radicals__intro_info">
-                                <div class="free-radicals__intro_info--title">Свободные радикалы –<br>
+                                <div class="free-radicals__intro_info--title animate" v-animate="'slide-up'">Свободные радикалы –<br>
                                     ускорители старения</div>
-                                <p>
+                                <p class="animate" v-animate="'slide-up'">
                                     Итак, на сегодняшний день у науки нет точного ответа, что именно запускает процессы
                                     старения,
                                     зато известно, что его ускоряет – свободные радикалы.
@@ -173,7 +173,7 @@
                     </div>
                     <div class="container">
                         <div class="free-radicals__details">
-                            <div class="free-radicals__details_item">
+                            <div class="free-radicals__details_item animate"  v-animate="'slide-up'">
                                 <div class="free-radicals__details_item--title"> Что такое – свободные радикалы?</div>
                                 <p class="free-radicals__details_item--text">Свободные радикалы – активные молекулы
                                     (например,
@@ -181,7 +181,7 @@
                                     качестве
                                     побочных продуктов некоторых биохимических реакций. </p>
                             </div>
-                            <div class="free-radicals__details_item">
+                            <div class="free-radicals__details_item animate"  v-animate="'slide-up'">
                                 <div class="free-radicals__details_item--title">Чем опасны свободные радикалы?</div>
                                 <p class="free-radicals__details_item--text">Если количество свободных радикалов
                                     возрастает
@@ -190,8 +190,8 @@
                                     и
                                     вызывая в них мутации. Это явление называется окислительный стресс. </p>
                             </div>
-                            <div class="free-radicals__details_item">
-                                <div class="free-radicals__details_item--title">Как свободные радикалы ускоряют
+                            <div class="free-radicals__details_item animate"  v-animate="'slide-up'">
+                                <div class="free-radicals__details_item--title">Как свободные радикалы ускоряют 
                                     старение?
                                 </div>
                                 <p class="free-radicals__details_item--text">Старение начинается на клеточном уровне:
@@ -199,31 +199,31 @@
                             </div>
                         </div>
                         <div class="free-radicals__images">
-                            <div class="free-radicals__images_item">
+                            <div class="free-radicals__images_item animate" v-animate="'slide-up'">
                                 <div class="free-radicals__images_item--image"><img data-src="img/dna.svg" alt=""></div>
                                 <div class="free-radicals__images_item--text">Повреждается ДНК здоровой клетки.
                                     Очень часто – под действием свободных радикалов. </div>
                             </div>
-                            <div class="free-radicals__images_item">
+                            <div class="free-radicals__images_item animate" v-animate="'slide-up'">
                                 <div class="free-radicals__images_item--image"><img data-src="img/molecule.svg" alt=""></div>
                                 <div class="free-radicals__images_item--text">Здоровые клетки начинают перерождаться в
                                     стареющие (сенесцентные) клетки.. </div>
                             </div>
-                            <div class="free-radicals__images_item">
+                            <div class="free-radicals__images_item animate" v-animate="'slide-up'">
                                 <div class="free-radicals__images_item--image"><img data-src="img/dna-2.svg" alt=""></div>
                                 <div class="free-radicals__images_item--text">При воспалении организм увеличивает
                                     производство
                                     свободных радикалов. Они, в свою очередь, поражают ДНК здоровых клеток рядом с
                                     первоначальной клеткой. </div>
                             </div>
-                            <div class="free-radicals__images_item">
+                            <div class="free-radicals__images_item animate" v-animate="'slide-up'">
                                 <div class="free-radicals__images_item--image"><img data-src="img/cell.svg" alt=""></div>
                                 <div class="free-radicals__images_item--text">Стареющие клетки разрушительно действуют
                                     на
                                     окружающие ткани и вызывают воспалительные реакции. [<a href="#link-11">11</a>, <a href="#link-12">12</a> , <a href="#link-13">13</a>]</div>
                             </div>
                         </div>
-                        <div class="info-block">
+                        <div class="info-block animate"  v-animate="'slide-left'">
                             Результат: свободные радикалы ускоряют процессы старения.
                         </div>
                     </div>
@@ -231,15 +231,15 @@
                 <section id="antioxidants-section" data-navigation="solution">
                     <div class="triangle"></div>
                     <div class="container">
-                        <h2 class="title">Антиоксиданты против свободных радикалов</h2>
+                        <h2 class="title animate" v-animate="'slide-left'">Антиоксиданты против свободных радикалов</h2>
                         <div class="antioxidants-list">
-                            <div class="antioxidants-list__item"><img class="antioxidants-list__item--img" src="img/sheild.svg"
+                            <div class="antioxidants-list__item animate" v-animate="'slide-left'"><img class="antioxidants-list__item--img" src="img/sheild.svg"
                                     alt="">
                                 <div class="antioxidants-list__item--text">
                                     Антиоксиданты — это соединения, которые нейтрализуют
                                     свободные радикалы, не давая им повреждать клетки.</div>
                             </div>
-                            <div class="antioxidants-list__item"><img class="antioxidants-list__item--img" src="img/sheild.svg"
+                            <div class="antioxidants-list__item animate" v-animate="'slide-left'"><img class="antioxidants-list__item--img" src="img/sheild.svg"
                                     alt="">
                                 <div class="antioxidants-list__item--text">В организме есть собственная антиоксидантная
                                     защита,
@@ -253,14 +253,14 @@
                                     стрессы,
                                     несбалансированное питание и т.п.</div>
                             </div>
-                            <div class="antioxidants-list__item"><img class="antioxidants-list__item--img" src="img/sheild.svg"
+                            <div class="antioxidants-list__item animate" v-animate="'slide-left'"><img class="antioxidants-list__item--img" src="img/sheild.svg"
                                     alt="">
                                 <div class="antioxidants-list__item--text">Под воздействием неблагоприятных факторов
                                     количество свободных радикалов возрастает сверх меры, и организм не в состоянии
                                     справиться с ними
                                     самостоятельно. Поэтому нужно принимать антиоксиданты дополнительно.</div>
                             </div>
-                            <div class="antioxidants-list__item"><img class="antioxidants-list__item--img" src="img/sheild.svg"
+                            <div class="antioxidants-list__item animate" v-animate="'slide-left'"><img class="antioxidants-list__item--img" src="img/sheild.svg"
                                     alt="">
                                 <div class="antioxidants-list__item--text">Больше антиоксидантов – меньше свободных
                                     радикалов – меньше
@@ -268,12 +268,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="antioxidants-images">
+                        <div class="antioxidants-images animate"  v-animate="'slide-right'">
                             <!-- <div class="antioxidants-images__item"></div>
                                     <div class="antioxidants-images__item"></div> -->
                             <img data-src="img/antioxidants.svg" alt="">
                         </div>
-                        <div class="antioxidants-help">Помоги своему организму обезвредить свободные радикалы –
+                        <div class="antioxidants-help animate" v-animate="'slide-left'">Помоги своему организму обезвредить свободные радикалы –
                             принимай
                             антиоксиданты!</div>
                     </div>

@@ -93,3 +93,110 @@ section {
         margin-top: 4px;
     }
 }
+
+
+.animate {
+  // transform: translate3d(0vw, 0, 0px);
+  opacity: 0;
+  // visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-duration: 1.8s;
+  will-change: opacity, transform;
+}
+
+@keyframes slideinLeft {
+  0% {
+    // transform: translateX(-100%);
+    transform: translate3d(-50vw, 0, 0px);
+    opacity: 0;
+    // visibility: hidden;
+  }
+
+  100% {
+    // transform: translateY(0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    // visibility: visible;
+  }
+}
+
+@keyframes slideinRight {
+  0% {
+    // transform: translateX(100%);
+    transform: translate3d(50vw, 0, 0px);
+    opacity: 0;
+    // visibility: hidden;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    // visibility: visible;
+  }
+}
+
+@keyframes slideinUp {
+  0% {
+    // transform: translateX(-100%);
+    transform: translate3d(0, 50vh, 0px);
+    opacity: 0;
+    // visibility: hidden;
+  }
+
+  100% {
+    // transform: translateY(0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    // visibility: visible;
+  }
+}
+
+@keyframes slideinDown {
+  0% {
+    // transform: translateX(-100%);
+    transform: translate3d(0, -50vh, 0px);
+    opacity: 0;
+    // visibility: hidden;
+  }
+
+  100% {
+    // transform: translateY(0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    // visibility: visible;
+  }
+}
+
+
+.slide-left {
+  // opacity: 1;
+  // visibility: visible;
+  // transform: translate3d(-100vw, 0, 0px);
+  opacity: 0;
+  animation-name: slideinLeft;
+}
+
+.slide-right {
+  opacity: 0;
+  // opacity: 1;
+  // visibility: visible;
+  // transform: translate3d(100vw, 0, 0px);
+  animation-name: slideinRight;
+}
+
+.slide-up {
+  opacity: 0;
+  // opacity: 1;
+  // visibility: visible;
+  // transform: translate3d(0, 100vh, 0px);
+  animation-name: slideinUp;
+}
+
+
+.slide-down {
+  opacity: 0;
+  // opacity: 1;
+  // visibility: visible;
+  // transform: translate3d(0, -100vh, 0px);
+  animation-name: slideinDown;
+}
