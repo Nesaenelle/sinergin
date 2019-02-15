@@ -160,7 +160,7 @@
         box-shadow: 0 0 30px -10px #000;
       }
       img {
-        max-width: 95px;
+        max-width: 75px;
         position: absolute;
         left: 0;
         right: 0;
@@ -169,9 +169,13 @@
           width: 100%;
           padding: 0 15px;
         }
+        @media screen and (max-width: 800px) {
+          padding: 0 0;
+          max-width: 60px;
+        }
       }
       span {
-        margin-top: 45px;
+        margin-top: 40px;
         display: block;
         width: 100%;
         color: #22627c;
