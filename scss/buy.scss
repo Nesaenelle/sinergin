@@ -298,7 +298,12 @@
 
   &--top {
     padding: 123px 0 157px 0;
-
+    @media screen and (max-width: 600px) {
+      padding-bottom: 40px!important;
+    }
+    @media screen and (max-width: 480px) {
+      padding-bottom: 20px!important;
+    }
     .buy-section__product-img {
       width: 700px;
       position: relative;

@@ -53,12 +53,12 @@
                 <div data-navigation="home"></div>
                 <section id="how-to-slow-section">
                     <div class="container">
-                        <h2 class="title animate" v-animate="'slide-left'">Как замедлить<br> процессы<br> старения?</h2>
+                        <h2 class="title">Как замедлить<br> процессы<br> старения?</h2>
                     </div>
                 </section>
                 <section id="aging-section" data-navigation="reasons">
                     <div class="container">
-                        <h2 class="title animate" v-animate="'slide-left'">Почему люди стареют?</h2>
+                        <h2 class="title">Почему люди стареют?</h2>
                         <p class="animate" v-animate="'slide-right'">Возможности современной медицины поистине огромны – сегодня врачи могут пересадить сердце,
                             вернуть
                             острое зрение и даже распечатать на принтере новые органы взамен износившихся. Но ученые и
@@ -70,22 +70,22 @@
                 </section>
                 <section id="theories-section">
                     <div class="container">
-                        <h2 class="title animate" v-animate="'slide-left'">Теории о механизме старения</h2>
+                        <h2 class="title">Теории о механизме старения</h2>
                         <div class="theories-list">
-                            <div class="theories-list__item animate" v-animate="'slide-up'">
+                            <div class="theories-list__item">
                                 <div class="theories-list__item_img"><img data-src="img/evo.svg" alt=""></div>
                                 <div class="theories-list__item_wrapper">
                                     <div class="theories-list__item_title">Эволюционная теория</div>
-                                    <div class="theories-list__item_text">Старение генетически запрограммированно,
+                                    <div class="theories-list__item_text animate" v-animate="'slide-right'">Старение генетически запрограммированно,
                                         чтобы
                                         старые
                                         организмы освобождали жизненное пространство молодым.</div>
                                 </div>
                             </div>
-                            <div class="theories-list__item animate" v-animate="'slide-up'">
+                            <div class="theories-list__item">
                                 <div class="theories-list__item_wrapper">
                                     <div class="theories-list__item_title"> «Дегенеративная» теория</div>
-                                    <div class="theories-list__item_text">Старение – это неизбежное снижение
+                                    <div class="theories-list__item_text animate" v-animate="'slide-left'">Старение – это неизбежное снижение
                                         эффективности
                                         работы
                                         организма из-за изнашивания его механизмов. В рамках «дегенеративной» теории
@@ -96,13 +96,13 @@
                                 <div class="theories-list__item_img"><img data-src="img/aging.svg" alt=""></div>
                             </div>
                         </div>
-                        <div class="hypothesis-list animate" v-animate="'slide-up'">
+                        <div class="hypothesis-list">
                             <div class="hypothesis-list__item active">
                                 <div class="hypothesis-list__item_title" @click="toggleAccordeonItem($event)">
                                     Свободно-радикальная
                                     гипотеза <i class="icon icon-arrow"></i>
                                 </div>
-                                <div class="hypothesis-list__item_text">
+                                <div class="hypothesis-list__item_text animate" v-animate="'slide-left'">
                                     Старение происходит из-за поражения ДНК, белков и липидов (жиров) свободными
                                     радикалами
                                     кислорода, которые неизбежно образуются в процессе жизнедеятельности клеток. Из-за
@@ -115,7 +115,7 @@
                                     его клетки, тем сильнее развивается старение.
                                 </div>
                             </div>
-                            <div class="hypothesis-list__item">
+                            <div class="hypothesis-list__item animate" v-animate="'slide-up'">
                                 <div class="hypothesis-list__item_title" @click="toggleAccordeonItem($event)">Мутационная
                                     гипотеза
                                     <i class="icon icon-arrow"></i>
@@ -127,7 +127,7 @@
                                     мутаций.
                                 </div>
                             </div>
-                            <div class="hypothesis-list__item">
+                            <div class="hypothesis-list__item animate" v-animate="'slide-up'">
                                 <div class="hypothesis-list__item_title" @click="toggleAccordeonItem($event)">Теломерная
                                     гипотеза <i class="icon icon-arrow"></i>
                                 </div>
@@ -160,7 +160,7 @@
                         <div class="container">
                             <div class="free-radicals__intro_img"></div>
                             <div class="free-radicals__intro_info">
-                                <div class="free-radicals__intro_info--title animate" v-animate="'slide-up'">Свободные радикалы –<br>
+                                <div class="free-radicals__intro_info--title">Свободные радикалы –<br>
                                     ускорители старения</div>
                                 <p class="animate" v-animate="'slide-up'">
                                     Итак, на сегодняшний день у науки нет точного ответа, что именно запускает процессы
@@ -173,28 +173,28 @@
                     </div>
                     <div class="container">
                         <div class="free-radicals__details">
-                            <div class="free-radicals__details_item animate"  v-animate="'slide-up'">
+                            <div class="free-radicals__details_item">
                                 <div class="free-radicals__details_item--title"> Что такое – свободные радикалы?</div>
-                                <p class="free-radicals__details_item--text">Свободные радикалы – активные молекулы
+                                <p class="free-radicals__details_item--text animate" v-animate="'slide-left'">Свободные радикалы – активные молекулы
                                     (например,
                                     реактивный кислород). Небольшое количество свободных радикалов образуется в
                                     качестве
                                     побочных продуктов некоторых биохимических реакций. </p>
                             </div>
-                            <div class="free-radicals__details_item animate"  v-animate="'slide-up'">
+                            <div class="free-radicals__details_item">
                                 <div class="free-radicals__details_item--title">Чем опасны свободные радикалы?</div>
-                                <p class="free-radicals__details_item--text">Если количество свободных радикалов
+                                <p class="free-radicals__details_item--text animate" v-animate="'slide-left'">Если количество свободных радикалов
                                     возрастает
                                     сверх меры, они начинают атаковать соседние клетки – разрушают их стенки, повреждая
                                     ДНК
                                     и
                                     вызывая в них мутации. Это явление называется окислительный стресс. </p>
                             </div>
-                            <div class="free-radicals__details_item animate"  v-animate="'slide-up'">
+                            <div class="free-radicals__details_item">
                                 <div class="free-radicals__details_item--title">Как свободные радикалы ускоряют 
                                     старение?
                                 </div>
-                                <p class="free-radicals__details_item--text">Старение начинается на клеточном уровне:
+                                <p class="free-radicals__details_item--text animate" v-animate="'slide-left'">Старение начинается на клеточном уровне:
                                 </p>
                             </div>
                         </div>
@@ -231,7 +231,7 @@
                 <section id="antioxidants-section" data-navigation="solution">
                     <div class="triangle"></div>
                     <div class="container">
-                        <h2 class="title animate" v-animate="'slide-left'">Антиоксиданты против свободных радикалов</h2>
+                        <h2 class="title">Антиоксиданты против свободных радикалов</h2>
                         <div class="antioxidants-list">
                             <div class="antioxidants-list__item animate" v-animate="'slide-left'"><img class="antioxidants-list__item--img" src="img/sheild.svg"
                                     alt="">
@@ -280,12 +280,12 @@
                 </section>
                 <section class="buy-section buy-section--top" data-navigation="sinergin">
                     <div class="container">
-                        <div class="buy-section__product animate" v-animate="'slide-left'">
+                        <div class="buy-section__product">
                             <img class="buy-section__product-img" src="img/sinergin.png" alt="">
                             <a target="_blank" class="pdf-link" href="https://sinergin.ru/themes/sinergin/assets/Sinergin.pdf">Скачать
                                 инструкцию в PDF</a>
                         </div>
-                        <div class="wrapper animate" v-animate="'slide-right'">
+                        <div class="wrapper">
                             <h2 class="title">6 мощных антиоксидантов в оптимальных дозировках: </h2>
                             <div class="antioxidants-list">
                                 <div class="antioxidants-list__item"><img data-src="img/coensim-small.svg" alt=""> Коэнзим Q<sub>10</sub></div>
@@ -302,7 +302,7 @@
                                         alt="">ГДЕ КУПИТЬ?</button>
                             </div>
                         </div>
-                        <div class="cell animate" v-animate="'slide-left'">
+                        <div class="cell">
                             <h3>Компоненты действуют<br>
                                 синергично</h3>
                             <p>Это означает, что их совместное действие значительно эффективнее, чем если бы каждый из
@@ -317,7 +317,7 @@
                     <div class="container">
                         <div class="antioxidants-groups-list">
                             <div class="antioxidants-groups-list__item">
-                                <div class="antioxidants-groups-list__item--title animate" v-animate="'slide-left'">Все антиоксиданты разделяют <br>
+                                <div class="antioxidants-groups-list__item--title">Все антиоксиданты разделяют <br>
                                     на две большие группы: </div>
                                 <div class="antioxidants-groups-list__item--text antioxidants-groups-list__item--text-1 animate" v-animate="'slide-left'">
                                     <p><b>Водорастворимые</b> (гидрофильные): витамин С, рутин. Эти антиоксиданты нужны для
@@ -348,7 +348,7 @@
                                 клетки,
                                 всех тканей.
                             </div>
-                            <div class="antioxidants-groups-list__item--title animate" v-animate="'slide-left'">Как работают компоненты Синергина?</div>
+                            <div class="antioxidants-groups-list__item--title">Как работают компоненты Синергина?</div>
                             <div class="antioxidants-groups-list__item">
 
                                 <div class="antioxidants-groups-list__item--img antioxidants-groups-list__item--img-3 animate" v-animate="'slide-left'">
@@ -432,7 +432,7 @@
                 </section>
                 <section class="buy-section buy-section--middle">
                     <div class="container">
-                        <div class="wrapper animate" v-animate="'slide-left'">
+                        <div class="wrapper">
                             <h2 class="title">
                                 Синергин – всего 2 капсулы
                                 в день для замедления
@@ -451,7 +451,7 @@
                                         alt="">ГДЕ КУПИТЬ?</button>
                             </div>
                         </div>
-                        <div class="buy-section__product animate" v-animate="'slide-right'">
+                        <div class="buy-section__product">
                             <img class="buy-section__product-img" src="img/sinergin-right.png" alt="">
                             <a target="_blank" class="pdf-link" href="https://sinergin.ru/themes/sinergin/assets/Sinergin.pdf">Скачать
                                 инструкцию в PDF</a>
@@ -460,9 +460,9 @@
                 </section>
                 <section id="efficiency-section" data-navigation="efficiency">
                     <div class="container">
-                        <h2 class="title animate" v-animate="'slide-left'">Доказанная эффективность</h2>
+                        <h2 class="title">Доказанная эффективность</h2>
                         <div class="efficiency-list ">
-                            <div class="efficiency-list__item animate" v-animate="'slide-left'">
+                            <div class="efficiency-list__item">
                                 <img data-src="img/coensim-small.svg" alt="">
                                 <div> После 35 лет начинает снижаться я синтез Q<sub>10</sub> – одного из мощнейших
                                     антиоксидантов в
@@ -472,7 +472,7 @@
                                     крови организм «считает» своеобразным маркером возраста.</div>
                                 <img data-src="img/chart.png" alt="" class="chart">
                             </div>
-                            <div class="efficiency-list__item animate" v-animate="'slide-left'">
+                            <div class="efficiency-list__item">
                                 <img data-src="img/vitamin-c.svg" alt="">
                                 <div>
                                     <p>
@@ -488,7 +488,7 @@
                                         в день позволило снизить относительную смертность на 20%.</p>
                                 </div>
                             </div>
-                            <div class="efficiency-list__item animate" v-animate="'slide-left'">
+                            <div class="efficiency-list__item">
                                 <img data-src="img/beta-karotin.svg" alt="">
                                 <div>
                                     <p>
@@ -499,7 +499,7 @@
                                         от которых может защитить бета-каротин.</p>
                                 </div>
                             </div>
-                            <div class="efficiency-list__item animate" v-animate="'slide-left'">
+                            <div class="efficiency-list__item">
                                 <img data-src="img/likopin.svg" alt="">
                                 <div>
                                     <p> Употребление ликопина помогает на 50% снизить повреждения ДНК клеток и
@@ -507,7 +507,7 @@
                                         окислительный стресс, который приводит к старению организма.</p>
                                 </div>
                             </div>
-                            <div class="efficiency-list__item animate" v-animate="'slide-left'">
+                            <div class="efficiency-list__item">
                                 <img data-src="img/vitamin-e.svg" alt="">
                                 <div>
                                     <p> У людей, которые употребляют достаточное количество витамина Е, на 36 %
@@ -519,7 +519,7 @@
                                         восприятия).</p>
                                 </div>
                             </div>
-                            <div class="efficiency-list__item animate" v-animate="'slide-left'">
+                            <div class="efficiency-list__item">
                                 <img data-src="img/rutin.svg" alt="">
                                 <div>
                                     <p> Употребление рутина может сократить количество сенесцентных <br> клеток на 40%.</p>
@@ -530,9 +530,9 @@
                 </section>
                 <section id="feedback-section" data-navigation="feedback">
                     <div class="container">
-                        <h2 class="title animate" v-animate="'slide-left'">Отзывы потребителей</h2>
+                        <h2 class="title">Отзывы потребителей</h2>
                         <div class="feedback-list">
-                            <div class="feedback-list__item animate" v-animate="'slide-left'">
+                            <div class="feedback-list__item">
                                 <div class="feedback-list__item_user">
                                     <div class="feedback-list__item_user--icon"><img data-src="img/comment-icon.svg" alt=""></div>
                                     <div class="feedback-list__item_user--name">Маргарита</div>
@@ -553,7 +553,7 @@
                                     <!-- <div class="feedback-list__item_details--date">20.03.18</div> -->
                                 </div>
                             </div>
-                            <div class="feedback-list__item animate" v-animate="'slide-right'">
+                            <div class="feedback-list__item">
                                 <div class="feedback-list__item_details">
                                     <div class="feedback-list__item_details--text">
                                         Покупала особо ни на что не надеясь, так… для поддержки организма. Но спустя
@@ -568,7 +568,7 @@
                                     <div class="feedback-list__item_user--place">г. Москва</div>
                                 </div>
                             </div>
-                            <div class="feedback-list__item animate" v-animate="'slide-left'">
+                            <div class="feedback-list__item">
                                 <div class="feedback-list__item_user">
                                     <div class="feedback-list__item_user--icon"><img data-src="img/comment-icon.svg" alt=""></div>
                                     <div class="feedback-list__item_user--name">Екатерина</div>
@@ -585,7 +585,7 @@
                                     <!-- <div class="feedback-list__item_details--date">20.03.18</div> -->
                                 </div>
                             </div>
-                            <div class="feedback-list__item animate" v-animate="'slide-right'">
+                            <div class="feedback-list__item">
                                 <div class="feedback-list__item_details">
                                     <div class="feedback-list__item_details--text">
                                         По правде говоря, я не очень верила, что этот Синергин как-то так очень круто
@@ -603,7 +603,7 @@
                                     <div class="feedback-list__item_user--place">г. Пермь</div>
                                 </div>
                             </div>
-                            <div class="feedback-list__item animate" v-animate="'slide-left'">
+                            <div class="feedback-list__item">
                                 <div class="feedback-list__item_user">
                                     <div class="feedback-list__item_user--icon"><img data-src="img/comment-icon.svg" alt=""></div>
                                     <div class="feedback-list__item_user--name">Александр</div>
@@ -630,7 +630,7 @@
                                     <!-- <div class="feedback-list__item_details--date">20.03.18</div> -->
                                 </div>
                             </div>
-                            <div class="feedback-list__item animate" v-animate="'slide-right'">
+                            <div class="feedback-list__item">
                                 <div class="feedback-list__item_details">
                                     <div class="feedback-list__item_details--text">
                                         Классный комплекс! Улучшает память и внимание, нормализует давление, помогает
@@ -646,7 +646,7 @@
                                     <div class="feedback-list__item_user--place">г. Москва</div>
                                 </div>
                             </div>
-                            <div class="feedback-list__item animate" v-animate="'slide-left'">
+                            <div class="feedback-list__item">
                                 <div class="feedback-list__item_user">
                                     <div class="feedback-list__item_user--icon"><img data-src="img/comment-icon.svg" alt=""></div>
                                     <div class="feedback-list__item_user--name">Evgeniy2017</div>
@@ -669,19 +669,19 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-transparent animate" v-animate="'slide-up'"
+                        <button class="btn btn-transparent"
                         @click.stop="openModal('feedback')"><img data-src="img/comments.svg"
                                 alt=""> ДОБАВИТЬ ОТЗЫВ</button>
                     </div>
                 </section>
                 <section class="buy-section buy-section--bottom">
                     <div class="container">
-                        <div class="buy-section__product animate" v-animate="'slide-left'">
+                        <div class="buy-section__product">
                             <img class="buy-section__product-img" src="img/sinergin.png" alt="">
                             <a target="_blank" class="pdf-link" href="https://sinergin.ru/themes/sinergin/assets/Sinergin.pdf">Скачать
                                 инструкцию в PDF</a>
                         </div>
-                        <div class="wrapper animate" v-animate="'slide-right'">
+                        <div class="wrapper">
                             <h2 class="title">
                                 Тысчячи людей убедились <br>
                                 в эффективности Синергина.
@@ -697,7 +697,7 @@
                 </section>
             </main>
             <footer class="">
-                <div class="container animate" v-animate="'slide-left'">
+                <div class="container">
                     <div class="descr">
                         Биологическая активная добавка к пище. Не является лекарством. СГР №
                         RU.77.99.11.003.Е.003739.08.18
