@@ -450,7 +450,7 @@
         margin-top: 17px;
         font-family: Proxima-Nova, sans-serif;
         letter-spacing: 0.1px;
-        padding: 41px 35px 35px 33px;
+        padding: 41px 35px 35px 45px;
 
         @media screen and (max-width: 1200px) {
             font-size: 25px;
@@ -462,7 +462,7 @@
 
         @media screen and (max-width: 600px) {
             font-size: 18px;
-            padding: 25px;
+            padding: 25px 35px;
         }
     }
 }

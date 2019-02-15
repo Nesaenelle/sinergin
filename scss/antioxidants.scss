@@ -135,8 +135,9 @@
       height: 590px;
 
       @media screen and (max-width: 980px) {
-        position: static;
-        max-height: 300px;
+        // position: static;
+        // max-height: 300px;        
+        display: none;
       }
     }
   }
@@ -441,7 +442,7 @@
 
     @media screen and (max-width: 600px) {
       font-size: 18px;
-      padding: 25px;
+      padding: 25px 35px;
     }
   }
 }

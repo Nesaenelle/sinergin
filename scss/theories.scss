@@ -232,7 +232,7 @@
 
     .info-block {
         background: $c-light-blue;
-        padding: 30px 30px 35px 30px;
+        padding: 30px 30px 35px 45px;
         color: #fff;
         font-size: 33px;
         line-height: 1.3em;
@@ -252,7 +252,7 @@
 
         @media screen and (max-width: 600px) {
             font-size: 18px;
-            padding: 25px;
+            padding: 25px 35px;
         }
     }
 }
