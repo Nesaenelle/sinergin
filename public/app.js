@@ -217,22 +217,11 @@ var app = new Vue({
             });
         }, false);
 
+        $('.efficiency-tooltip').each(function (i, element) {
+            _this.tooltipPosition(element);
+        });
         $('.efficiency-tooltip').on('mouseenter', function (e) {
-            var $tooltip = $(e.currentTarget);
-            var $content = $(e.currentTarget).find('.efficiency-tooltip__content');
-            var boundingTooltip = $tooltip[0].getBoundingClientRect();
-            var boundingContent = $content[0].getBoundingClientRect();
-
-            var hasSpaceRight = boundingTooltip.right + boundingContent.width < window.innerWidth;
-
-            if (hasSpaceRight) {
-                $content.addClass('left');
-                $content.removeClass('right');
-            } else {
-                $content.addClass('right');
-                $content.removeClass('left');
-                return;
-            }
+            _this.tooltipPosition(e.currentTarget);
         });
     },
 
@@ -287,6 +276,22 @@ var app = new Vue({
         closeModal: function closeModal() {
             $('.modal').removeClass('opened');
             $('.main-wrapper').removeClass('opened');
+        },
+        tooltipPosition: function tooltipPosition(element) {
+            var $tooltip = $(element);
+            var $content = $(element).find('.efficiency-tooltip__content');
+            var boundingTooltip = $tooltip[0].getBoundingClientRect();
+            var boundingContent = $content[0].getBoundingClientRect();
+
+            var hasSpaceRight = boundingTooltip.right + boundingContent.width < window.innerWidth;
+
+            if (hasSpaceRight) {
+                $content.addClass('left');
+                $content.removeClass('right');
+            } else {
+                $content.addClass('right');
+                $content.removeClass('left');
+            }
         }
     }
 });
