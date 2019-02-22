@@ -223,16 +223,12 @@ var app = new Vue({
             var boundingTooltip = $tooltip[0].getBoundingClientRect();
             var boundingContent = $content[0].getBoundingClientRect();
 
-            var hasSpaceLeft = boundingTooltip.left > boundingContent.width;
             var hasSpaceRight = boundingTooltip.right + boundingContent.width < window.innerWidth;
 
             if (hasSpaceRight) {
                 $content.addClass('left');
                 $content.removeClass('right');
-                // return;
             } else {
-
-                // if(hasSpaceLeft) {
                 $content.addClass('right');
                 $content.removeClass('left');
                 return;

@@ -121,25 +121,20 @@ var app = new Vue({
         $('.efficiency-tooltip').on('mouseenter', (e)=>{
             let $tooltip = $(e.currentTarget);
             let $content = $(e.currentTarget).find('.efficiency-tooltip__content');
-            var boundingTooltip = $tooltip[0].getBoundingClientRect();
-            var boundingContent = $content[0].getBoundingClientRect();
+            let boundingTooltip = $tooltip[0].getBoundingClientRect();
+            let boundingContent = $content[0].getBoundingClientRect();
 
-            let hasSpaceLeft = (boundingTooltip.left > boundingContent.width);
             let hasSpaceRight = (boundingTooltip.right +  boundingContent.width < window.innerWidth);
 
             if(hasSpaceRight) {
                 $content.addClass('left');
                 $content.removeClass('right');
-                // return;
+      
             } else {
-
-              // if(hasSpaceLeft) {
                   $content.addClass('right');
                   $content.removeClass('left');
                   return;
               } 
-
-
         });
     },
     methods: {
