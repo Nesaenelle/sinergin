@@ -185,6 +185,20 @@
                 font-family: Proxima-Nova, sans-serif;
                 letter-spacing: 0.5px;
                 padding-right: 97px;
+                &.big {
+                    font-size: 30px;
+                    @media screen and (max-width: 1200px) {
+                        font-size: 24px;
+                    }
+
+                    @media screen and (max-width: 980px) {
+                        font-size: 22px;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        font-size: 20px;
+                    }
+                }
 
                 @media screen and (max-width: 1200px) {
                     font-size: 20px;

@@ -4,7 +4,6 @@ import { isScrolledIntoView, scrollToAnimate, isInViewport } from './Utils.js'
 let scrollInstance = new scrollToAnimate();
 
 
-
 let directive = Vue.directive('animate', {
 
     bind: (el, binding, vnode) => {
@@ -118,6 +117,33 @@ var app = new Vue({
                 }
             });
         }, false);
+
+        $('.efficiency-tooltip').on('mouseenter', (e)=>{
+            let $tooltip = $(e.currentTarget);
+            let $content = $(e.currentTarget).find('.efficiency-tooltip__content');
+            var boundingTooltip = $tooltip[0].getBoundingClientRect();
+            var boundingContent = $content[0].getBoundingClientRect();
+
+            let hasSpaceLeft = (boundingTooltip.left > boundingContent.width);
+            let hasSpaceRight = (boundingTooltip.right +  boundingContent.width < window.innerWidth);
+
+            // let rightOutside = (boundingContent.right > (window.innerWidth || document.documentElement.clientWidth));
+            // if(hasSpace) return;
+
+            if(hasSpaceRight) {
+                $content.addClass('left');
+                $content.removeClass('right');
+                return;
+            } 
+            
+              if(hasSpaceLeft) {
+                  $content.addClass('right');
+                  $content.removeClass('left');
+                  return;
+              } 
+
+
+        });
     },
     methods: {
         goTop() {
@@ -173,3 +199,4 @@ var app = new Vue({
         }
     }
 });
+

@@ -216,6 +216,31 @@ var app = new Vue({
                 }
             });
         }, false);
+
+        $('.efficiency-tooltip').on('mouseenter', function (e) {
+            var $tooltip = $(e.currentTarget);
+            var $content = $(e.currentTarget).find('.efficiency-tooltip__content');
+            var boundingTooltip = $tooltip[0].getBoundingClientRect();
+            var boundingContent = $content[0].getBoundingClientRect();
+
+            var hasSpaceLeft = boundingTooltip.left > boundingContent.width;
+            var hasSpaceRight = boundingTooltip.right + boundingContent.width < window.innerWidth;
+
+            // let rightOutside = (boundingContent.right > (window.innerWidth || document.documentElement.clientWidth));
+            // if(hasSpace) return;
+
+            if (hasSpaceRight) {
+                $content.addClass('left');
+                $content.removeClass('right');
+                return;
+            }
+
+            if (hasSpaceLeft) {
+                $content.addClass('right');
+                $content.removeClass('left');
+                return;
+            }
+        });
     },
 
     methods: {

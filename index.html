@@ -194,7 +194,7 @@
                                 <div class="free-radicals__details_item--title">Как свободные радикалы ускоряют 
                                     старение?
                                 </div>
-                                <p class="free-radicals__details_item--text animate" v-animate="'slide-left'">Старение начинается на клеточном уровне:
+                                <p class="free-radicals__details_item--text big animate" v-animate="'slide-left'">Старение начинается на клеточном уровне.
                                 </p>
                             </div>
                         </div>
@@ -207,7 +207,7 @@
                             <div class="free-radicals__images_item animate" v-animate="'slide-up'">
                                 <div class="free-radicals__images_item--image"><img data-src="img/molecule.svg" alt=""></div>
                                 <div class="free-radicals__images_item--text">Здоровые клетки начинают перерождаться в
-                                    стареющие (сенесцентные) клетки.. </div>
+                                    стареющие (сенесцентные) клетки.</div>
                             </div>
                             <div class="free-radicals__images_item animate" v-animate="'slide-up'">
                                 <div class="free-radicals__images_item--image"><img data-src="img/dna-2.svg" alt=""></div>
@@ -220,7 +220,7 @@
                                 <div class="free-radicals__images_item--image"><img data-src="img/cell.svg" alt=""></div>
                                 <div class="free-radicals__images_item--text">Стареющие клетки разрушительно действуют
                                     на
-                                    окружающие ткани и вызывают воспалительные реакции. [<a href="#link-11">11</a>, <a href="#link-12">12</a> , <a href="#link-13">13</a>]</div>
+                                    окружающие ткани и вызывают воспалительные реакции. [11, 12, 13]</div>
                             </div>
                         </div>
                         <div class="info-block animate"  v-animate="'slide-left'">
@@ -361,16 +361,16 @@
                                     <img data-src="img/coensim.jpg" alt="">
                                 </div>
                                 <div class="antioxidants-groups-list__item--text animate" v-animate="'slide-right'">
-                                    <h3>Коэнзим Q10</h3>
+                                    <h3>Коэнзим Q<sub>10</sub></h3>
                                     <p> Достоверно помогает уменьшить признаки старения кожи при приеме в течение 12
                                         недель.
-                                        <a href="#link-5"><sup> 5</sup></a></p>
+                                        <sup> 5</sup></p>
                                     <p> Замедляет процессы старения. </p>
                                     <p> Предотвращает развитие возраст-ассоциированных заболеваний: диабет,
                                         нейродегенеративные
                                         расстройства, заболевания сердца, почек, нарушения работы репродуктивной
                                         системы.
-                                        <a href="#link-4"><sup>4</sup></a></p>
+                                        <sup>4</sup></p>
                                 </div>
                             </div>
                             <div class="antioxidants-groups-list__item">
@@ -476,13 +476,20 @@
                         <div class="efficiency-list ">
                             <div class="efficiency-list__item">
                                 <img data-src="img/coensim-small.svg" alt="">
-                                <div> После 35 лет начинает снижаться я синтез Q<sub>10</sub> – одного из мощнейших
+                                <div> После 35 лет начинает снижаться синтез Q<sub>10</sub> – одного из мощнейших
                                     антиоксидантов в
-                                    организме. В 45 его недостаток становится уже заметными и ощутимым. Поэтому уровень
+                                    организме. В 45 его недостаток становится уже заметным и ощутимым. Поэтому уровень
                                     Q<sub>10</sub>
                                     в
-                                    крови организм «считает» своеобразным маркером возраста.</div>
-                                <img data-src="img/chart.png" alt="" class="chart">
+                                    крови организм «считает» своеобразным маркером
+                                    <span class="efficiency-tooltip">  возраста.
+                                        <img src="img/info.svg" alt="" class="info-icon">
+                                        <span class="efficiency-tooltip__content">
+          
+                                        </span>
+                                    </span>
+                                </div>
+                                <img data-src="img/chart2.png" alt="" class="chart">
                             </div>
                             <div class="efficiency-list__item">
                                 <img data-src="img/vitamin-c.svg" alt="">
@@ -491,13 +498,25 @@
                                         Употребление витамина С позволяет на 52-62% снизить темпы укорачивания теломер
                                         –
                                         «счетчиков» на конце хромосом, что способствует обновлению организма и
-                                        замедляет
-                                        старение.
+                                        замедляет 
+                                        <span class="efficiency-tooltip">старение.
+                                            <img src="img/info.svg" alt="" class="info-icon">
+                                            <span class="efficiency-tooltip__content">
+                                                Age-dependent telomere shortening is slowed down by enrichment of intracellular vitamin C via suppression of oxidative stress. Furumoto K., et al. Life Sciences 63: 935-48, 1998.
+                                            </span>
+                                        </span>
                                     </p>
                                     <p> Среди мужчин и женщин в возрасте 45-79 лет увеличение потребления витамина С
-                                        всего <br> на
+                                        всего на
                                         50 мг
-                                        в день позволило снизить относительную смертность на 20%.</p>
+                                        в день позволило снизить относительную смертность на 20%.
+                                        <span class="efficiency-tooltip">
+                                            <img src="img/info.svg" alt="" class="info-icon">
+                                            <span class="efficiency-tooltip__content">
+                                                Khaw K., et al, Relation between plasma ascorbic acid and mortality in men and women in EPIC-Norfolk prospective study: a prospective population study, The Lancet 357: March 3, 2001.
+                                            </span>
+                                        </span>
+                                    </p>
                                 </div>
                             </div>
                             <div class="efficiency-list__item">
@@ -508,7 +527,9 @@
                                         ультрафиолетовых
                                         <br>
                                         лучей,
-                                        от которых может защитить бета-каротин.</p>
+                                        от которых может защитить бета-каротин.
+
+                                    </p>
                                 </div>
                             </div>
                             <div class="efficiency-list__item">
@@ -516,7 +537,14 @@
                                 <div>
                                     <p> Употребление ликопина помогает на 50% снизить повреждения ДНК клеток и
                                         уменьшить
-                                        окислительный стресс, который приводит к старению организма.</p>
+                                        окислительный стресс, который приводит к старению организма.
+                                        <span class="efficiency-tooltip">
+                                            <img src="img/info.svg" alt="" class="info-icon">
+                                            <span class="efficiency-tooltip__content">
+                                                Lymphocyte lycopene concentration and DNA protection from oxidative damage is increased in women after a short period of tomato consumption. Porrini M., Riso P. The Journal of nutrition. 2000 Feb;130(2):189-92.
+                                            </span>
+                                        </span>
+                                    </p>
                                 </div>
                             </div>
                             <div class="efficiency-list__item">
@@ -528,13 +556,27 @@
                                         возраст-ассоциированное ухудшение когнитивных функций (память, скорость
                                         реакции,
                                         внимание,
-                                        восприятия).</p>
+                                        восприятия).
+                                        <span class="efficiency-tooltip">
+                                            <img src="img/info.svg" alt="" class="info-icon">
+                                            <span class="efficiency-tooltip__content">
+                                                Vitamin E and cognitive decline in older persons. Morris M.C., Evans D.A., Bienias J.L., Tangney C.C., Wilson R.S. Archives of neurology. 2002 Jul;59(7):1125-32.
+                                            </span>
+                                        </span>
+                                    </p>
                                 </div>
                             </div>
                             <div class="efficiency-list__item">
                                 <img data-src="img/rutin.svg" alt="">
                                 <div>
-                                    <p> Употребление рутина может сократить количество сенесцентных <br> клеток на 40%.</p>
+                                    <p> Употребление рутина может сократить количество сенесцентных <br> клеток на 40%.
+                                        <span class="efficiency-tooltip">
+                                            <img src="img/info.svg" alt="" class="info-icon">
+                                            <span class="efficiency-tooltip__content">
+                                                Biological effects of rutin on skin aging. Jin Choi, Seong Lee, Sung-Nae Kim, et al. International Journal of Molecular Medicine. 2016: 38. 10.3892.
+                                            </span>
+                                        </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -913,12 +955,12 @@
                 <h2>Добавить отзыв</h2>
                 <form>
                     <input type="text" placeholder="Ваше имя*" required  maxlength="40">
-                    <input type="email" placeholder="Город" required maxlength="40">
-                    <textarea placeholder="Текст отзыва" required maxlength="200"></textarea>
+                    <input type="text" placeholder="Город" required maxlength="40">
+                    <textarea placeholder="Текст отзыва*" required maxlength="200" required></textarea>
                     <div class="annotation">Пункты обозначенные *, обязательны к заполнению.</div>
                     <div class="g-recaptcha" data-sitekey="6LfiuZAUAAAAAD6BCbKl1nJ8XFmCZ46ItKDXbbQj"></div>
                     <label class="checkbox">
-                        <input type="checkbox">
+                        <input type="checkbox" required>
                         <i></i>
                         <span>Я согласен на обработку персональных данных</span>
                     </label>
@@ -933,11 +975,11 @@
                 <form>
                     <input type="text" placeholder="Ваше имя*" required maxlength="40">
                     <input type="email" placeholder="Электронная почта*" required maxlength="40">
-                    <textarea placeholder="Задайте вопрос" required maxlength="200"></textarea>
+                    <textarea placeholder="Задайте вопрос*" required maxlength="200"></textarea>
                     <div class="annotation">Пункты обозначенные *, обязательны к заполнению.</div>
                     <div class="g-recaptcha" data-sitekey="6LfiuZAUAAAAAD6BCbKl1nJ8XFmCZ46ItKDXbbQj"></div>
                     <label class="checkbox">
-                        <input type="checkbox">
+                        <input type="checkbox" required>
                         <i></i>
                         <span>Я согласен на обработку персональных данных</span>
                     </label>
