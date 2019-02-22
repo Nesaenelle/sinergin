@@ -159,19 +159,23 @@
       &:hover {
         box-shadow: 0 0 30px -10px #000;
       }
+      svg {
+       max-width: 75px; 
+       width: 100%;
+      }
       img {
-        max-width: 75px;
+        max-width: 70px;
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
+        width: 100%;
         @media screen and (max-width: 980px) {
-          width: 100%;
           padding: 0 15px;
         }
         @media screen and (max-width: 800px) {
           padding: 0 0;
-          max-width: 60px;
+          // max-width: 60px;
         }
       }
       span {
@@ -181,6 +185,9 @@
         color: #22627c;
         font-size: 20px;
         font-family: "Proxima-Nova", sans-serif;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
         @media screen and (max-width: 980px) {
           font-size: 18px;
         }
