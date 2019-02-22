@@ -118,6 +118,12 @@ var app = new Vue({
             });
         }, false);
 
+        window.addEventListener('resize', () => {
+            $('.efficiency-tooltip').each((i, element) => {
+                this.tooltipPosition(element);
+            });
+        });
+
         $('.efficiency-tooltip').each((i, element) => {
             this.tooltipPosition(element);
         });
@@ -184,7 +190,7 @@ var app = new Vue({
             let boundingTooltip = $tooltip[0].getBoundingClientRect();
             let boundingContent = $content[0].getBoundingClientRect();
 
-            let hasSpaceRight = (boundingTooltip.right + boundingContent.width < window.innerWidth);
+            let hasSpaceRight = (boundingTooltip.right + boundingContent.width < window.innerWidth - 20);
 
             if (hasSpaceRight) {
                 $content.addClass('left');
