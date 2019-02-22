@@ -127,16 +127,13 @@ var app = new Vue({
             let hasSpaceLeft = (boundingTooltip.left > boundingContent.width);
             let hasSpaceRight = (boundingTooltip.right +  boundingContent.width < window.innerWidth);
 
-            // let rightOutside = (boundingContent.right > (window.innerWidth || document.documentElement.clientWidth));
-            // if(hasSpace) return;
-
             if(hasSpaceRight) {
                 $content.addClass('left');
                 $content.removeClass('right');
-                return;
-            } 
-            
-              if(hasSpaceLeft) {
+                // return;
+            } else {
+
+              // if(hasSpaceLeft) {
                   $content.addClass('right');
                   $content.removeClass('left');
                   return;
