@@ -338,7 +338,9 @@
         p {
           padding-top: 14px;
           letter-spacing: 0.5px;
-
+           @media screen and (max-width: 600px) {
+            padding-top: 8px;
+           }
           &:first-child {
             padding-top: 0;
           }
@@ -365,6 +367,7 @@
           @media screen and (max-width: 600px) {
             font-size: 20px;
             margin-top: 15px;
+            margin-bottom: 10px;
           }
         }
       }
