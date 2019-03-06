@@ -24,7 +24,15 @@
     // position: relative;
     position: absolute;
     margin-left: 4px;
-
+    &.relative {
+      position: relative;
+      .info-icon {
+        position: absolute;
+        right: -21px;
+        bottom: 0;
+        margin: auto;
+      }
+    }
     &:hover {
       .efficiency-tooltip__content {
         opacity: 1;
